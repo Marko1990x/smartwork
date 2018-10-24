@@ -1,0 +1,3 @@
+Na osnovu slike domaci1.jpg koristeci HTML 
+napraviti index.html stranicu.
+Slika potrebna za izradu domaceg zadatka se nalazi u folderu images.
