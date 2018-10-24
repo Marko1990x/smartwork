@@ -6,15 +6,18 @@
     <meta charset="utf-8"> </head>
 
 <body>
-    <form><fieldset> Unesi email:
+    <form><fieldset style="color: red"> Unesi email:
+        <legend>Forma na casu</legend>
         
         <br>
-        <input type="email" name="email" required>
+        <input type="email" name="email" required size="30" maxlength="20">
         <br> Izaberi datum svog rođenja:
         <br>
-        <input type="date" name="bday">
+        <!--size menja maximalnu duzinu igleda polja-->
+        <!-- max lenght menja maximalni broj karaktera u nekom polju -->
+        <input type="date" name="bday" size="15">
         <br>
-        <input type="time" name="today">
+        <input type="time" name="today" size="15">
         <br> Unesi broj jezika koje znaš:
         <br>
         <input type="number" min="1" max="10">
@@ -24,9 +27,9 @@
         <br> Izaberi auto koji voziš:
         <br>
         <select name="cars" size="4">
-            <option value="jugo">Jugo</option>
+            <option value="jugo" selected>Jugo</option>   <!-- selected je kada imamo vise opcija u padajucem meniju-->
             <option value="volvo">Volvo</option>
-            <option value="fiat" selected>Fiat</option>
+            <option value="fiat" >Fiat</option>
             <option value="škoda">Škoda</option>
             <option value="pežo">Pežo</option>
         </select>
@@ -34,7 +37,27 @@
         <input type="submit" value="Potvrdi">
         <br>
         <input type="reset" value="Obriši">
+        <input type="checkbox" name="vehicle1" value="bike" checked> ja imam bicikli
+        <!--checked je kada imamo da izaberemo opciju 
+                bez padajuceg menija-->
+        <br>
+        <input type="checkbox" name="vehicle2" value="car"> ja imam auto
+        <br>
+        <input type="submit" value="value">
+        <input type="reset" value="izbrisi">
+        <br>
+        <br>
+        <select name="cars" id="cars" style="padding-right: 10em">  <!-- padajuci meni sa selektovanom opcijom-->
+            <option value="Volvo">Volvo</option>
+            <option value="Saab" selected>Saab</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Audi">Audi</option>
+        </select>
         <br> </fieldset></form>
+       
+    <form action="">
+        
+    </form>
 </body>
 
 </html>

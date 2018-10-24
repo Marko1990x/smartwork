@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Proba form elemenata</title>
+    </head>
+    <body>
+        <h1>Proba form elemenata</h1>
+        <!-- 
+            form element - "kontejner" za smeštanje polja za unos podataka
+
+            ATRIBUTI SU VAŽNI!
+
+            action - url stranice na koju će podaci biti poslati
+            method - tip zahteva (HTTP način - metoda) koji će se koristiti pri slanju podataka
+                    GET - ako nije baš zahtevan izbeći
+            enctype - ako se ne navede uopšte podrazumeva se url-encoded
+                    
+                    Ako forma sadrži barem jedno file polje (upload polje) mora biti "multipart/encoded" da bi se sam fajl poslao na server.
+        -->
+        <form method="post" 
+              enctype="multipart/form-data"
+              action="http://www.thezarichi.com/testbed/form-response.php"
+        >
+            <!--
+                label element - obezbeđuje vidljivu labelu/naziv polja korisniku
+                                nije obavezan, ali ga je poželjno koristiti
+                    for atribut definiše za koji element je to labela - posmatrani element mora imati id atribut sa tom vrednošću
+            -->
+            <label for="imeField">Ime: </label>
+            <!--
+                input element -  u zavisnosti od vrednosti type atributa predstavlja različit
+                                interfejs za unos podataka. Podrazumevnao je text polje.
+                    required atribut - omogućava da browser odradi internu validaciju 
+                                        da li je polje prazno
+                    placeholder atribut - prikazuje zadati tekst kao uputstvo korisniku 
+                                        šta se u tom polju očekuje - NIJE VREDNOST, NE ŠALJE SE NA SERVER
+                    readonly atribut - zaključava polje, pa ne može da se unese nova vrednost, 
+                                        ali se ona koja je već upisana, ako postoji, šalje na server
+                    disabled atribut - polje je zaključano, a ako je bilo šta i postojalo u njemu 
+                                        NE ŠALJE SE NA SERVER
+
+                    name atribut - OBAVEZNO PISATI, TO JE NAZIV PARAMETRA (varijable) u kojoj će server primiti podataka sa datog polja.
+
+                    value atribut - koristi se ako je potrebno unapred postaviti predefinisanu vrednost polja
+
+                POGLEDATI MOGUĆE TIPOVE POLJA NA SLAJDOVIMA
+            -->
+            <input id="imeField" type="text"
+                   name="ime" size="25" maxlength="35"
+                   required="required" 
+                   placeholder="Unesite ime"
+                   list="imena"
+                   disabled
+            />
+            <br/>
+            <label for="passField">Lozinka: </label>
+            <!-- password polje "sakriva" ukucani tekst jer prikazuje •  -->
+            <input id="passField" type="password"
+                   name="lozinka"
+            />
+            <br/>
+            <!-- 
+                email polje - novi tip, ako je uključena validacija proverava da li je tekst u formatu email 
+            -->
+            <label for="emailField">E-mail: </label>
+            <input id="emailField" type="email"
+                   name="email"
+            />
+            <br/>
+            <!-- 
+                date polje - novi tip, ako ga browser razume prikazaće kalendar 
+                            za izbor datuma, ako ne razume onda samo tekst polje
+            -->
+            <label for="datumField">Datum: </label>
+            <input id="datumField" type="date"
+                   name="date"
+            />
+            <br/>
+            <!-- 
+                range polje - novi tip, pogodno za opseg brojeva
+            -->
+            <label for="rangeField">Opseg: </label>
+            <input id="rangeField" type="range"
+                   name="opseg" min="50" max="100"
+            />
+            <br/>
+            <fieldset>
+                <!-- 
+                    radio polje - omogućava izbor jedne od ponuđenih opcija
+                                da bi radilo korektno sve međusobno isključive opcije 
+                                MORAJU IMATI isti name atribut
+                -->
+                Pol:<br/>
+                <label for="muski">Muški</label>
+                <input id="muski" type="radio" 
+                       name="pol" value="m" checked="checked" />
+                <br/>
+                <label for="zenski">Ženski</label>
+                <input id="zenski" type="radio" 
+                       name="pol" value="ž" />
+                <br/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <!-- 
+                    checkbox polje - omogućava izbor 0, 1 ili više od ponuđenih opcija
+                                pogodno je da se u name upiše pored imena parametra i [] kako bi
+                                sve selektovane vrednosti bile upakovane u jednu varijablu tipa niza
+                -->
+                Paket:<br/>
+                <label for="osnovni">osnovni</label>
+                <input id="osnovni" type="checkbox" 
+                       name="paket[]" value="osnovni" 
+                       checked="checked" 
+                />
+                <br/>
+                <label for="standard">standard</label>
+                <input id="standard" type="checkbox" 
+                       name="paket[]" value="standard" 
+                />
+                <br/>
+                <label for="ekskluziv">ekskluziv</label>
+                <input id="ekskluziv" type="checkbox" 
+                       name="paket[]" value="ekskluziv" 
+                />
+                <br/>
+            </fieldset>
+            <br/>
+            <!-- 
+                    select element - drop down sa stavkama koje korisnik bira.
+                    
+                        option element - jedna stavka drop down liste, poželjno da ima postavljen value atribut
+
+                    Ukoliko ima atribut multiselect omogućava izbor više od jedne stavke menija.
+                    U ovakvom slučaju je kao i kod checkboxa poželjno u name atribut napisati naziv parametra kao niza.  
+            -->
+            <select name="izbor" required>
+                <option value="">-- Izaberite jednu stavku --</option>
+                <optgroup label="standard">
+                    <option value="1" selected>Opcija 1</option>
+                    <option value="2">Opcija 2</option>
+                </optgroup>
+                <optgroup label="super">
+                    <option value="3" >Opcija 3</option>
+                    <option value="4">Opcija 4</option>
+                    <option value="5">Opcija 5</option>
+                </optgroup>
+            </select>
+            <br/>
+            <br/>
+            <!-- 
+                    textbox element - polje za unos veće količine teksta 
+            -->
+            <textarea name="poruka">Ovo je moja poruka</textarea>
+            <br/>
+            <label for="photoField">Photo</label>
+            <!-- 
+                    input polje tipa file - omogućava da se uz zahtev serveru "prikače" 
+                                            i podaci iz selektovanog fajla - upload fajla
+            -->
+            <input id="photoField" type="file" name="photo" accept="image/jpeg" />
+            <br/>
+            <input type="submit" />
+            <!--
+                datalist - u kombinaciji sa list atributom u input polju prikazuje korisniku "listu sugestija"
+            -->
+            <datalist id="imena">
+                <option value="Ana"/>
+                <option value="Aleksandar"/>
+                <option value="Aleksa"/>
+                <option value="Marko"/>
+                <option value="Marija"/>
+            </datalist>
+            
+            <!-- 
+                NAPOMENA: Kada radite sa formama koristite inspektor (Network komponentu) kako bi pratili šta se stvarno i kako poslalo serveru, i koji je njegov odgovor na primljene podatke.
+            -->
+        </form>
+        
+    </body>
+</html>
