@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forma jedna xoxo</title>
+</head>
+<body>
+
+    <h1>Profile information</h1>
+
+    <section>
+
+        <form action="#">
+            <fieldset>
+                <legend>
+                    Contact information
+                </legend>
+                First Name: <input type="text" tabindex="1" accesskey="p"> <br>
+                Last Name: <input type="text" tabindex="3" accesskey="l"> <br>
+                Email: <input type="email" name="email" id="email" tabindex="4" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Login information
+            
+                </legend>
+                USername: <input type="text" tabindex="2" readonly><br>
+                Disabled Text: <input type="text" name="foo" value="foo" disabled><br>
+                password: <input type="password" name="pass" id="pass" tabindex="5"><br>
+                sakriveno polje:<input type="text" hidden><br>
+                disabled polje:<input type="text" disabled>
+            </fieldset>
+
+            <fieldset>
+                Bio: <br>
+                <textarea name="textarea" id="textarea" cols="50" rows="5" tabindex="8" accesskey="b"></textarea> <br>
+                Ocupation
+                <select name="Ocupation" size="3">
+                    <option value="Web designer">web designer</option>
+                    <option value="non tehnician" selected>non tehnician</option>
+                    <option value="Consultant">consultant</option>
+            
+                </select>
+                <br>
+                Gender: Male<input type="radio" name="Gender" id="male"> Female <input type="radio" name="Gender" id="female"> <br>
+                Preferences:
+                <input type="Checkbox" name="name1"> Send me a newsletter
+                <input type="Checkbox" name="name2" tabindex="7"> Send me partner offers
+                <input type="Checkbox" name="name3" tabindex="6"> Send me marketing materials
+            </fieldset>
+            <input type="submit" name="submit"> <input type="reset" name="reset"> <input type="button" value="push button">
+            <input type="button" value="button with content">
+
+
+        </form>      
+    </section>
+
+    <!-- postiji i type hidden za polje osim atributa-->
+
+    <!-- https://www.w3schools.com/tags/att_global_accesskey.asp globalni kljuc za alt + nesto-->
+
+    <!-- https://www.w3schools.com/tags/att_global_tabindex.asp tab index za polja -->
+    
+</body>
+
+</html>
