@@ -1,6 +1,0 @@
-Na osnovu slike domaci2-1.jpg i domaci 2-2.jpg koristeci HTML 
-napraviti pictures.html stranicu.
-Slike potrebne za izradu domaceg zadatka se nalazi u folderu images.
-Kao source za video koristiti sledeci link
-
-https://www.youtube.com/embed/lTB-izxRuNY
