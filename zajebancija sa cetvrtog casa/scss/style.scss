@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+
+section {
+    @include clearfix;
+    width: 100%;
+    margin: 1em auto;
+    
+}
+
+ body h1{
+    color: red;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.div1, .div2{
+    color: darkblue;
+    width: 45%;
+    display: inline-block;
+    background-color: $section_grey;
+}
+
+.div1{
+    margin-right: 1em;
+    margin-left: 2em;
+}
+
+.div3{
+
+   // margin: 1em 3em 1em 3em;
+    width: 50%;
+    position: relative;
+    transform: translate(50%,0%);
+    background-color: $section_grey;
+
+}
+
