@@ -17,4 +17,20 @@ section:after {
   clear: both;
 }
 
+#test {
+  color: red;
+  font-size: 2em;
+}
+
+#first-div {
+  margin: 2em auto;
+  color: turquoise;
+  text-align: center;
+}
+
+img[alt=spacer] {
+  padding: 0px;
+  margin: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */

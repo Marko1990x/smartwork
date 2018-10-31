@@ -8,8 +8,32 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="shortcut icon" href="img/fawicon.png" type="image/x-icon">
     <title>Document</title>
+
+    <style> h2 {color:red} </style>   <!-- sve sto je ovde stavljeno vazi globalno-->
+
 </head>
 <body>
+    <h1 style="color: blue">this is a test style</h1>  <!-- sve sto je ovde stavljeno vazi samo za ovaj element-->
+    <h2>this is a second test</h2>
+    <h1>this is a third test</h1>
+
+    <p id="test">this is a test za ciljane css preko id</p>
+
+    <div class="content" id="first-div">
+        <h2>subheading</h2>
+        <p>Paragraph 1 in the div</p>
+        <p>Paragraph 2 in the div</p>
+        <div id="second-div">
+            <p>paragraph 3 in the 2nd div</p>
+        </div>
+    </div>
+
+    <p>paragraph 4 not in a div</p>
+    <p>paragraph 5 not in a div</p>
+
+    <img src="img/proizvod1.jpg" alt="spacer">
+
     
+
 </body>
 </html>

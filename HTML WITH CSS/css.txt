@@ -1,0 +1,35 @@
+* {
+margin 0
+padding 0
+}
+
+reset na 0;
+
+inline element - kada zelimo da promenimo stil jednog elementa brzo
+inline element je najjaci pa interni pa externi - jedan element moze da se menja na 3 nacina u isto vreme.
+
+<head>
+<style>   stil vazi na svim delovima stranice 
+h1 {color:blue}
+<style/>
+<head/>
+
+
+zadnje css ima vecu vaznost
+
+calkulator za vaznost css -a ?? pronadji na internetu.
+
+<p id="opis">   preko id  p#opis{ color:blue} -- xd
+<
+jedan element moze da ima vise klasa class = "content first"
+dve klase u okviru jednog elementa
+
+id je jaci od classe za ciljanje elemenata.
+
+#first-id p {
+ pronalazi sve p elementa koji su u okviru first-id elementa - drugi nacin da se poziva id
+}
+
+#first-div > p{ cilja samo prve potomke id-a na istom nivou
+color : blue
+}
