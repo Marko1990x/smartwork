@@ -1,0 +1,32 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+body .mcenter{
+ text-align: center;
+}
+
+.biljka{
+	margin: 1em auto;
+	font-size: 1.5em;
+	
+}
+
+.drugi{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.slika{
+	width: 300px;
+	height: 300px;
+}
+
+

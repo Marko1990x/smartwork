@@ -33,4 +33,18 @@ img[alt=spacer] {
   margin: 1em;
 }
 
+[class*=wrap] {
+  background-color: darkred;
+  min-height: 300px;
+}
+[class*=wrap] p {
+  color: azure;
+  text-align: center;
+  padding-top: 5em;
+}
+
+[class|=first] {
+  background: red;
+}
+
 /*# sourceMappingURL=style.css.map */

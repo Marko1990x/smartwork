@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 3em 15%;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+* {
+  margin: 1em auto;
+}
+
+#naslov {
+  color: red;
+}
+
+.blue {
+  color: green;
+}
+
+#zuta {
+  color: yellow;
+}
+
+#prvi {
+  color: blue;
+}
+
+#drugi {
+  color: purple;
+}
+
+/*# sourceMappingURL=style.css.map */
