@@ -24,11 +24,31 @@ section {
 
 #zuta{
 	color: yellow;
+	text-align: left;
+	text-decoration: underline;
+	
+}
+
+#right{
+	text-align: right;
+	text-decoration: line-through;
 }
 
 #prvi{
 	color: blue;
+	letter-spacing: 100px;
+	
 }
 #drugi{
 	color: purple;
+}
+
+#ident{
+	text-indent: 4em;
+	text-align: justify;
+}
+
+#justify{
+	text-align: justify;
+	text-transform: uppercase;
 }

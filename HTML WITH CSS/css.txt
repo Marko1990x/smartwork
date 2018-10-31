@@ -33,3 +33,5 @@ id je jaci od classe za ciljanje elemenata.
 #first-div > p{ cilja samo prve potomke id-a na istom nivou
 color : blue
 }
+
+1em = 16 pixela
