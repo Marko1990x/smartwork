@@ -35,3 +35,6 @@ color : blue
 }
 
 1em = 16 pixela
+
+
+// 12 pt == 16 px == 1em;

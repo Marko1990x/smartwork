@@ -1,0 +1,45 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+body{
+
+	background-image: linear-gradient(whitesmoke, darkred);
+	background-image: url(../img/photo-1530482817083-29ae4b92ff15.jpg);
+	//background-repeat: repeat-x;
+	//background-repeat: repeat-y;
+	//background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-attachment: fixed;
+//	background-size: cover  // ovo mi je stretch
+  // slika je fixirana pa se pozadina ne mrda
+//background-attachment: scroll; // standardno skroluje sa elementom
+
+	background-size: 500px 5000px;
+}
+
+p{
+	line-height: 5em;
+	color: #ff8000; // hexadecad
+	font-size: 20px;
+}
+
+.spacing{
+	word-spacing: 3em;
+	color: rgb(21, 121, 179); // rgb
+	font-style: oblique;
+}
+
+// 12 pt == 16 px == 1em;
+
+.bold{
+	font-weight: bold;
+}

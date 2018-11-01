@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 3em 15%;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+body {
+  background-image: linear-gradient(whitesmoke, darkred);
+  background-image: url(../img/photo-1530482817083-29ae4b92ff15.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  background-size: 500px 5000px;
+}
+
+p {
+  line-height: 5em;
+  color: #ff8000;
+  font-size: 20px;
+}
+
+.spacing {
+  word-spacing: 3em;
+  color: #1579b3;
+  font-style: oblique;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
