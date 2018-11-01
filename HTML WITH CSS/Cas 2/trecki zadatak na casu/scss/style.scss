@@ -1,0 +1,25 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+
+.podnaslov{
+	color: red;
+}
+
+label[for="ime"]{    // drugi nacin ciljanja elementa
+	color: red;
+	
+}
+
+#ime{
+	background-color: yellow; // pozadina
+	color: red;   // ovo bi gadjalo text
+}
