@@ -38,3 +38,7 @@ color : blue
 
 
 // 12 pt == 16 px == 1em;
+
+
+margine mogu da imaju negativnu vrednost
+paddding ne moze zbog boardera

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 3em 15%;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+table {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5em;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+table tr td {
+  border: 2px solid red;
+  width: 50px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
