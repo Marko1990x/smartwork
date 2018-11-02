@@ -1,0 +1,66 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+.drugi{
+//	margin-left: 10em;
+//	margin-top: 1em;
+	background-color: black;
+	
+}
+
+body{
+	background-color: black;
+}
+
+.table{
+
+	max-width: 550px;
+	max-height: 600px;
+
+
+	margin-left: 5px;
+	margin-top: 1em;
+	min-height: 400px;
+	background-color: bisque;
+
+	h1{
+		text-align: center;
+
+		font-size: 20px;
+	}
+
+	tr{
+		
+		td{
+			img{
+				width: 100px;
+				height: 100px;
+				border: 2px solid black;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+}
+
+.slike2{
+	width: 25px;
+	height: 25px;
+	
+}
+
+.div2{
+	display: flex;
+	margin-left: 10em;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
