@@ -1,0 +1,65 @@
+.wrapper
+{
+	width: 700px;
+	background-color: beige;
+	height: 700px;
+	padding: 20px;
+	
+
+}
+
+.header
+{
+	width: 500px;
+	margin-left: 100px;
+
+
+}
+
+
+.headerimg
+{
+	display: inline ;
+	width: 100px;
+	height: 50px;
+
+
+}
+.header2
+{
+	display:inline;
+
+}
+.headerimg2
+{
+	display:inline;
+	width: 100px;
+	height: 50px;
+
+}
+
+.blockimages
+{
+	background-color: beige;
+	width: 700px;
+	height: 450px;
+
+}
+
+
+.blockimages1 img
+{
+	width: 120px;
+	height:120px;
+	display: inline;
+	margin: 5px;
+	border: 3px solid black;
+
+
+}
+
+
+
+
+
+

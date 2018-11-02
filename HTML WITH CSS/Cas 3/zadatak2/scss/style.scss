@@ -1,0 +1,10 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
