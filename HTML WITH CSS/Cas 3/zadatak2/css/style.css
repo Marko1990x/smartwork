@@ -17,4 +17,73 @@ section:after {
   clear: both;
 }
 
+body {
+  background-image: url(../img/background-10.jpg);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+body h1 {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  background-color: beige;
+}
+body div {
+  display: flex;
+}
+body div h2 {
+  color: red;
+  background-color: azure;
+  width: 98%;
+  font-style: italic;
+}
+body div a {
+  float: right;
+  border: 1px solid blue;
+  background-color: white;
+}
+
+#img1 {
+  display: block;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.h2drugi {
+  width: 100%;
+  background-color: azure;
+  margin-bottom: 1em;
+  color: red;
+}
+
+#lorem {
+  margin-bottom: 1em;
+}
+
+.details {
+  display: block;
+  background-color: darkgoldenrod;
+  width: 95%;
+  height: auto;
+  margin: 1em auto;
+}
+
+h3 {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+#contact {
+  color: red;
+  font-size: 14px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
