@@ -42,3 +42,14 @@ color : blue
 
 margine mogu da imaju negativnu vrednost
 paddding ne moze zbog boardera
+
+
+
+
+pseudoklase elementi
+
+:focus 
+
+- pozadinska boja input polja    // hover 
+focus - kada god je selektovan 
+active -- stilizovanje linka pogledaj 

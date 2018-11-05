@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/fawicon.png" type="image/x-icon">
+    <title>Zadatak 1 na casu</title>
+</head>
+
+<body>
+
+    <h1>PSEUDO KLASE</h1>
+
+    <div id="contact-wrapper">
+        <form>
+            <input type="text" name="name" id="name" placeholder="NAME">
+            <br>
+            <input type="text" name="email" id="email" placeholder="E-MAIL">
+            <br>
+            <input disabled type="text" name="subject" id="subject" placeholder="SUBJECT (disabled)">
+            <br>
+            <input type="submit" name="submit" id="submit" value="SEND">
+            <br>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">YES, I WANT TO RECEIVE INFORMATION</label>
+        </form>
+    </div>
+
+    <style>
+        input[type="text"]:hover {
+            /*  hover je samo kada mis predje preko elementa ili bilo kada je element selektovan  
+            mis moze samo hover*/
+            border: solid 2px #2ee527;
+        }
+
+        input[type="text"]:focus {
+            /*  focus je kada se element klickne  -- kada tab doje do elementa ili se klikne */
+            border: solid 2px #e62121;
+
+        }
+
+        input[type="text"]:disabled {
+            background-color: lightgreen;
+        }
+
+        input[type="sumbit"]:focus {
+            /*  ovaj deo ne radi zbog nekog razloga */
+            border: solid 2px #e62121;
+        }
+
+        input[type="submit"]:active {
+            /* klik na submit dugme je aktiv */
+            border: solid 2px #41B9E1;
+        }
+
+        input[type="submit"]:hover {
+            border: solid 2px #2ee527;
+        }
+
+        input[type="checkbox"]:checked+label {
+            /*  kada se cekira onda ce se ofarbati u plavu boju */
+            color: #41B9E1
+        }
+
+        /*  pogldaj kako ovo ide za sass*/
+    </style>
+
+</body>
+
+</html>

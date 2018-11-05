@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 3em 15%;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+/*# sourceMappingURL=style.css.map */

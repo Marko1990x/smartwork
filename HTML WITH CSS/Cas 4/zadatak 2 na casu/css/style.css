@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 3em 15%;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+p:first-child {
+  color: red;
+}
+
+p:last-child {
+  color: palevioletred;
+}
+
+p:first-of-type {
+  color: red;
+}
+
+p:last-of-type {
+  color: yellowgreen;
+}
+
+p:only-child {
+  color: red;
+}
+
+p:only-of-type {
+  color: darkviolet;
+}
+
+p:nth-child(2) {
+  color: aqua;
+}
+
+p:nth-child(odd) {
+  /* NEPARNI BROJEVI! (an+b) a mnozilac n brojac brojac pocinje od 0 b offset*/
+  color: crimson;
+}
+
+p:nth-child(even) {
+  /* PARNI BROJEVI!*/
+  /* (an +b) (2n+2) */
+  color: chartreuse;
+}
+
+p:nth-child(2n+1) {
+  color: violet;
+}
+
+p:nth-child(2n+2) {
+  color: darkred;
+}
+
+p:nth-last-child(2) {
+  color: blue;
+}
+
+/* first of type 
+prvi potomak svok tipa - gadja sve elemente koje odgovaraju uslovu*/
+/* last of type
+obrnuto od first of type */
+/* only child jedini potomak svog elementa*/
+/* only of type jedini potomak svog tipa */
+/* nth child*/
+/* odd even nth child parni neparan */
+/* *nth last child ide od dole i glde gje je paragraf drugi po redu*/
+
+/*# sourceMappingURL=style.css.map */
