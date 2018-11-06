@@ -17,9 +17,15 @@ section:after {
   clear: both;
 }
 
-div {
-  margin-left: 5em;
-  margin-top: 5em;
+.div1 {
+  margin-top: 2em;
+  margin-left: 10em;
+}
+
+.div2 {
+  margin-top: 3em;
+  margin-left: 10em;
+  margin-bottom: 5em;
 }
 
 .prvaboja {

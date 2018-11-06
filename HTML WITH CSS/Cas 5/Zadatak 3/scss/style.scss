@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    width: 60%;
+    margin-left: 5em;
+    margin-top: 2em;
+    color: white;
+}
+
+
+a{
+    &:link{
+         color: #FF0000;
+    }
+    &:visited{
+        color: #00FF00;
+    }
+    &:hover{
+         color: #FF00FF;
+         font-size: 2em;
+        font-weight: bold;
+    }
+    &::active{
+         color: #0000FF;
+    }
+}
