@@ -1,0 +1,94 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+table{
+	
+	margin: 2em;
+	border: 2px solid black;
+	width: 50%;   /* Modifikovano da mi izlgleda lepse */
+
+	th{
+		border: 2px solid red;
+		/*text-align: center;*/
+		height: 50px;
+		text-align: right;
+		padding-right: 10px;
+		background-color: darkslategrey;
+		color: whitesmoke;
+	}
+
+	td{
+		border: 2px solid blueviolet;
+		text-align: left;
+		height: 30px;
+		vertical-align: bottom;
+		color: darkmagenta;
+		padding-left: 10px;
+	}
+}
+
+table, th, td{
+	border-collapse: collapse;  /* colapse uklanja praznine izmedju elemenata tabela */
+}
+
+
+img{
+
+	width: 300px;
+	height: 300px;
+}
+
+.slika1{
+	float: left;
+}
+
+div{
+	margin-bottom: 20em;
+}
+
+/*
+.paragraf{
+	clear: left;
+	color: red;
+}
+
+*/
+
+/* 
+
+table{
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+*/
+
+/*
+
+Static
+Relative
+Absolute
+Fixed
+
+position reltive i vrednost
+
+*/
+
+
+/* 
+
+flaot left
+
+float right 
+
+clear float
+
+*/

@@ -52,4 +52,12 @@ pseudoklase elementi
 
 - pozadinska boja input polja    // hover 
 focus - kada god je selektovan 
-active -- stilizovanje linka pogledaj 
+active -- stilizovanje linka pogledaj
+
+pseudoelementi kreiraju nove elemente koji nisu navedeni u strukturi dockumenta
+
+
+elementi po jedan bod 
+klasa 10 bodova 
+id  100 bodova
+inline 1000

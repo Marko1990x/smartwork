@@ -1,0 +1,35 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+div{
+	margin-left: 5em;
+	margin-top: 5em;
+}
+
+.prvaboja{
+	background-color: darkslategrey;
+}
+
+.orange{
+	background-color: orange;
+}
+
+.zadnjaboja{
+	background-color: darkgoldenrod;
+}
+
+.total{
+	background-color: green;
+}
+
+.centered{
+	text-align: center;
+}

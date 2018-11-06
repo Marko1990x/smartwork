@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 3em 15%;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+div {
+  margin-left: 5em;
+  margin-top: 5em;
+}
+
+.prvaboja {
+  background-color: darkslategrey;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.zadnjaboja {
+  background-color: darkgoldenrod;
+}
+
+.total {
+  background-color: green;
+}
+
+.centered {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

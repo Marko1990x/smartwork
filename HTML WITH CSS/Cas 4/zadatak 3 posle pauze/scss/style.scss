@@ -1,0 +1,66 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+a{
+	&:link{
+		text-decoration: none;
+		color: red;
+	}
+	&:visited{
+		text-decoration: none;
+		color: green;
+
+	}
+	&:hover{
+		text-decoration: underline;
+		color: blue;
+		padding: 2em;
+		background-color: aquamarine;
+
+	}
+	&:active{   /* kada se drizi click misa na elementu*/
+		text-decoration: underline;
+	}
+
+	
+}
+
+p{
+	&::after{
+		margin-left: 5em;
+		content: " - Remember this after"; color:  red;
+	}
+	&::before{
+		margin-right: 2em;
+		content: " Remember this before -"; color: blueviolet;
+	}
+	&::first-letter{
+		color: red;
+		font-size: 130%;
+	}
+	&::first-line{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	&::selection{
+		color: white;
+		background: red;
+	}
+}
+
+
+/*  css linovi moraju ici redom
+a: link{}
+a: visited{}
+a: hover{}
+a: active{}*/
+
+/* specificity css */

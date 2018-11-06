@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 3em 15%;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+a:link {
+  text-decoration: none;
+  color: red;
+}
+a:visited {
+  text-decoration: none;
+  color: green;
+}
+a:hover {
+  text-decoration: underline;
+  color: blue;
+  padding: 2em;
+  background-color: aquamarine;
+}
+a:active {
+  /* kada se drizi click misa na elementu*/
+  text-decoration: underline;
+}
+
+p::after {
+  margin-left: 5em;
+  content: " - Remember this after";
+  color: red;
+}
+p::before {
+  margin-right: 2em;
+  content: " Remember this before -";
+  color: blueviolet;
+}
+p::first-letter {
+  color: red;
+  font-size: 130%;
+}
+p::first-line {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+p::selection {
+  color: white;
+  background: red;
+}
+
+/*  css linovi moraju ici redom
+a: link{}
+a: visited{}
+a: hover{}
+a: active{}*/
+
+/*# sourceMappingURL=style.css.map */
