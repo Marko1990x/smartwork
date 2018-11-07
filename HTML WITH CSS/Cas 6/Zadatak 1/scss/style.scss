@@ -1,0 +1,145 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	//width: 100%;
+	//padding: 3em 15%;
+	@include clearfix;
+}
+
+body{
+background-image: url(../img/bkg.jpg);
+color: whitesmoke;
+font-family: helvetica, arial;
+line-height: 25px;   /*  visina izmedju redova  */
+
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+}
+
+#wrapper{
+	width: 920px;
+	margin: 20px auto;
+	background-color: #000;
+}
+
+
+header{
+	padding: 25px;
+}
+
+.fl_left{
+	float: left;
+}
+.fl_right{
+	float: right;
+}
+
+.fl_left a{
+	text-decoration: none;
+	color: #ffa31a;
+}
+
+.fl_right ul{   // ne sortirana lista
+	list-style-type: none;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0%;
+	background-color: #333;
+}
+
+nav li{
+	//display: inline-block;
+	float: left;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+
+nav li a:hover{
+	background-color: #420808;
+}
+
+h2{
+font-size: 25px;
+padding: 10px 0;
+text-align: center;
+}
+
+h3{
+	font-size: 15px;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+}
+
+
+p{
+	text-align: justify;
+	margin: 20px;
+	font-size: 18px;
+}
+
+
+#content{
+	width: 700px;
+	float: left;
+	margin-left: 20px;  // zbog sirine 240 pixela koja je visak se floatuje levo
+}
+
+article{
+	border: 2px solid #e68a00;
+	margin: 20px;
+}
+
+table, td, th{
+	border: 1px solid #e68a00;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 5px
+}
+
+th{
+	text-align: center;
+	background-color: #e68a00;
+}
+aside{
+	float: left;
+	width: 200px;
+}
+
+table{
+	width: 100%;
+}
+
+footer{
+	clear: both;
+	background-color: #333;
+	border-radius: 10px;
+}
+
+iframe{
+	width: 608px;
+	height: 342px;
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 10px;
+	border: none;
+}

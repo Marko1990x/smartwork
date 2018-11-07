@@ -1,0 +1,18 @@
+@mixin main {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: $main_font;
+	}
+}
+
+@mixin clearfix {
+	&:before, &:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+}
