@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 1em;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+
+table {
+  border: 1px solid black;
+  width: 500px;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+table tr {
+  text-align: center;
+}
+table td button {
+  width: 80px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: indigo;
+  color: whitesmoke;
+}
+table td button:link {
+  color: #FF0000;
+}
+table td button:visited {
+  color: #00FF00;
+}
+table td button:hover {
+  color: #FF00FF;
+}
+table td button:active {
+  color: #0000FF;
+}
+
+input {
+  width: 470px;
+  border: 1px solid black;
+  text-align: right;
+  position: relative;
+  transform: translate(3%, 150%);
+  height: 30px;
+  box-shadow: 2px 5px #888888;
+}
+
+#calc {
+  position: relative;
+  transform: translate(75%, -250%);
+  font-weight: bold;
+}
+
+.sve {
+  width: 500px;
+  margin-left: 15em;
+}
+
+/*# sourceMappingURL=style.css.map */
