@@ -1,0 +1,79 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+
+.calculator-container{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.row{
+	display: table;
+	width: 100%;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.calculator-border{
+	border: 6.2px solid #EBF4FA;
+	outline: 0.2px solid #78bcea;
+	outline-offset: 1px;
+}
+
+.calculator-column{
+	cursor: pointer;
+	box-sizing: border-box;
+	display: table-cell;
+	font-size: 1.2em;
+	font-weight: 300;
+	height: 50px;
+	position: relative;
+	transition: background-color 2s ease-in-out;
+	vertical-align: middle;
+	width: 25%;
+
+	input[type=radio]{
+		-webkit-appearance: none;   // kills radio button
+		bottom: 0;
+		position: absolute;
+		height: 100%;
+  		left: 0;
+  		margin: 0;
+    	padding: 0;
+   		right: 0;
+    	top: 0;
+   		width: 100%;
+
+	}
+
+
+}
+
+.non-number-column{
+	background-color: #fffcfc;
+	color: #206BA4;
+    font-weight: bold;
+}
+
+.calculator-column:hover {    // affects transitions
+    background-color: #94b0c3; 
+}
+
+.calculator-input {
+    -webkit-box-sizing: border-box;
+    background-color: #FFF;
+    
+    height: 75px;
+    font-size: 3em;
+    /* Added to give padding so that text is not stuck to the edge*/
+    padding: 20px;
+    width: 100%;
+}

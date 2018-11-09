@@ -1,0 +1,93 @@
+/*centriramo ceo kalkulator i podesimo sirinu na 400px*/
+
+.calculator-container {
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+
+
+
+/*napravimo tabelu i stavimo da je 100 posto od 400 px*/
+
+.row {
+    display: table;
+    width: 100%;
+}
+
+
+/*u svakom divu centriramo tekst*/
+
+.text-center {
+    text-align: center;
+}
+
+
+/*U polje unosa stavimo da je poravnanje sa desne strane*/
+
+.text-right {
+    text-align: right;
+}
+
+
+/*svakoj labeli podesimo bordere i spoljna ivica pordera-outline*/
+
+.calculator-border {
+    border: 6.2px solid #EBF4FA;
+    outline: 0.2px solid #78bcea;
+    outline-offset: 1px;
+}
+
+
+/*svakoj labeli dajemo stilizaciju*/
+
+.calculator-column {
+    cursor: pointer;
+    box-sizing: border-box;
+    display: table-cell;
+    font-size: 1.2em;
+    font-weight: 300;
+    height: 50px;
+    position: relative;
+    transition: background-color 2s ease-in-out;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.calculator-column > input[type=radio] {
+    /*    WebKit is a HTML/CSS web browser rendering engine for Safari/Chrome.*/
+    /*   appearance:  remove platform specific styling to an element that does have it by default*/
+    -webkit-appearance: none;
+    /*    sa nulama se zalepi za roditelja*/
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.non-number-column {
+    background-color: #fffcfc;
+    color: #206BA4;
+    font-weight: bold;
+}
+/*primena tranizcije*/
+.calculator-column:hover {
+    background-color: #94b0c3;
+}
+
+.calculator-input {
+    -webkit-box-sizing: border-box;
+    background-color: #FFF;
+    
+    height: 75px;
+    font-size: 3em;
+    /* Added to give padding so that text is not stuck to the edge*/
+    padding: 20px;
+    width: 100%;
+}

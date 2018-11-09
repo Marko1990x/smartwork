@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 200px;
+    background: #f4f45c;
+    
+    transition: width 2s;
+}
+
+
+
+/* Standard syntax */
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div id="div1">linear - specifies a transition effect with the same speed from start to end</div><br>
+<div id="div2">ease -specifies a transition effect with a slow start, then fast, then end slowly (this is default)</div><br>
+<div id="div3">ease-in - specifies a transition effect with a slow start</div><br>
+<div id="div4">ease-out - specifies a transition effect with a slow end</div><br>
+<div id="div5">ease-in-out - specifies a transition effect with a slow start and end</div><br>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
