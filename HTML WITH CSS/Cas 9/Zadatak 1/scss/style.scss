@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+
+    margin: 0 5em;
+
+    text-shadow: 1px 1px 1px darkcyan;  
+    color: darkblue;
+        font-family: 'Allerta Stencil', sans-serif;
+
+    .text2{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .linear{
+        min-height: 300px;
+        background-color: aquamarine;
+        background: linear-gradient(#e66465, #9198e5);
+    }
+}
+
