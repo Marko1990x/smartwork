@@ -1,1 +1,0 @@
-URADI OVO KUCI

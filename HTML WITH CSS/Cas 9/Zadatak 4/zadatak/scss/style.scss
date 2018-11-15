@@ -17,7 +17,7 @@ body {
 
 	img{
 		position: relative;
-		transform: translate(+1100%, 5%);
+		transform: translate(+1650%, 5%);
 	}
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .form{
-	width: 70%;
+	width: 80%;
 	float: right;
 	background-color: whitesmoke;
 	border: 1px solid grey;
@@ -127,13 +127,17 @@ body {
 }
 
 .treci{
-	width: 70%;
+	width: 80%;
 	float: right;
 	background-color: whitesmoke;
 	font-size: 12px;
 	margin-top: 10px;
 	padding-left: 10px;
 	padding-top: 5px;
-	padding-bottom: 4px;
+	padding-bottom: 20px;
 	border: 1px solid grey;
+}
+
+#last{
+	width: 98%;
 }
