@@ -1,0 +1,268 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+body {
+	width: 100%;
+	@include clearfix;
+}
+
+
+/*reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/*font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	line-height: 1.5;*/
+	font: 15px/1.5 Arial,Helvetica,sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*Header*/
+header {
+	background-color: #000;
+	color: #fff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+
+header #logo {
+	float: left;
+}
+
+header img:hover {
+	transform: translate(20px,0px);
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header li {
+	float: left;
+}
+
+header a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 0 20px;
+	display: block;
+}
+
+header li a:hover:not(.active) {
+    color: #ccc;
+     color: #ccc;
+}
+
+header .active {
+    color: #e8491d;
+}
+
+/*opel*/
+#opel img {
+	width: 100%;
+	display: block;
+}
+
+
+/***newsletter***/
+#newsletter {
+	padding: 15px;
+	color: #fff;
+	background-color: #565656;
+}
+
+#newsletter h2 {
+	float: left;
+	padding-top: 10px;
+}
+
+#newsletter form {
+	float: right;
+	/*margin-top: 15px;*/
+}
+
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+.button_1 {
+	height: 35px;
+	background-color: #e8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+	margin: 10px;
+}
+
+.button_1:hover {
+	text-shadow: 2px 2px 2px #000;
+	box-shadow:  2px 2px 2px #000;
+}
+
+h2 {
+	animation: shadow 2s 2 ease-in;
+}
+
+@keyframes shadow {
+	from {
+		text-shadow: 0px 0px 4px #000;
+	}
+	50% {
+		text-shadow: 0px 0px 40px #000;
+	}
+	to {
+		text-shadow: 0px 0px 4px #000;
+	}
+}
+.fl_left{
+	float:left;
+}
+
+.fl_right {
+	float: right;
+}
+
+
+#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+#sidebar img {
+	width: 20%;
+	display: inline;
+	
+}
+
+#sidebar img:hover {
+	transform:rotate(10deg);
+}
+#main-col {
+	float: left;
+	width: 62%;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+fieldset {
+	margin-top: 20px;
+}
+
+input, label {
+	margin-bottom: 10px;
+	width: 80%;
+	height: 35px;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+input[type="color"] {
+	width: 40%;
+}
+
+.quote legend {
+	font-style: italic;
+	font-weight: bold;
+}
+
+textarea {
+	margin-bottom: 10px;
+	width: 80%;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+ul#services li {
+	padding: 20px;
+	border: #ccc solid 1px;
+	margin-bottom: 5px;
+	background-color: #e6e6e6;
+}
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #e8491d;
+	text-align: center;
+}
+/*
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+	width: 90%;
+	padding: 5px;
+}
+*/
+/***Media queries***/
+@media screen and (max-width:768px){      /*tablet screen size*/
+	/*za vezbu navesti ovo
+	body {
+		display: none;
+	}*/
+	/*1. najpre uklonimo float iz headera i podesimo širinu svim elementima*/
+	header #logo,
+	header nav,
+	header nav li,
+	#newsletter h2,
+	#newsletter form,
+	#boxes .box,
+	#main-col,
+	#sidebar {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	
+	header {
+		padding-bottom: 20px;
+	}
+	
+	#showcase h2 {
+		margin-top: 30px;
+	}
+	
+	#newsletter button {
+		display: block;
+		width: 100%;
+	}
+	
+	#newsletter form input[type="email"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width:960px){ 
+	
+	#newsletter button {
+		display: block;
+		width: 100%;
+	}
+}
+
+
