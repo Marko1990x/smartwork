@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin-left: 5px;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+
+.contact {
+  background: #1eb49b;
+}
+.contact h1 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+.contact .mapHolder {
+  float: left;
+  margin: 1em;
+  width: 30%;
+}
+.contact .mapHolder iframe {
+  width: 100%;
+}
+.contact form {
+  background-color: lightgrey;
+  border: 2px solid darkred;
+  box-shadow: 5px 10px #888888;
+  width: 60%;
+  margin: 1em;
+  margin-right: 20px;
+  float: right;
+  padding: 1em;
+  background: orange;
+}
+.contact form .contactInput {
+  float: left;
+  padding: 0.5em;
+  color: darkblue;
+  border: none;
+  margin: 1em;
+}
+.contact form .contactInput:focus {
+  background-color: lightgreen;
+}
+.contact form select {
+  width: 20%;
+}
+.contact form .contactInput[type=text] {
+  float: right;
+  width: 70%;
+}
+.contact form .contactInput[type=email] {
+  width: 96%;
+}
+.contact form textarea.contactInput {
+  width: 96%;
+}
+.contact form input[type=submit] {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+.contact form input[type=submit]:link {
+  color: #FF0000;
+}
+.contact form input[type=submit]:visited {
+  color: #00FF00;
+}
+.contact form input[type=submit]:hover {
+  color: #FF00FF;
+}
+.contact form input[type=submit]:active {
+  color: #0000FF;
+}
+
+.right {
+  min-height: 200px;
+  background-color: lightgrey;
+  border: 2px solid darkred;
+  box-shadow: 5px 10px #888888;
+  float: right;
+  width: 60%;
+  margin-right: 20px;
+}
+.right h2, .right h3 {
+  margin-left: 10px;
+}
+.right h2 {
+  text-align: center;
+  background-color: #FF0000;
+  margin: 0%;
+}
+
+table {
+  padding-top: 10px;
+  margin-left: 10px;
+}
+table td {
+  padding-bottom: 10px;
+  width: 300px;
+}
+
+/*# sourceMappingURL=contact.css.map */

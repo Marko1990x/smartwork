@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin-left: 5px;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body h1 {
+  color: #1dacdb;
+  margin-top: 10px;
+}
+body h2 {
+  font-size: 20px;
+  color: #1dacdb;
+  margin-top: 10px;
+}
+
+h1, h2, p {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header {
+  min-height: 100px;
+  background-color: orange;
+}
+
+.table1 td {
+  display: inline;
+  padding-right: 20px;
+  margin-left: 1em;
+}
+.table1 td a {
+  color: white;
+}
+
+.table2 {
+  border: 2px solid #1dacdb;
+}
+.table2 img {
+  width: 55px;
+  height: 55px;
+}
+.table2 th, .table2 td {
+  width: 150px;
+  padding-left: 10px;
+}
+.table2 th {
+  background-color: #1dacdb;
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.table2 .zadnji {
+  width: 300px;
+}
+
+table td {
+  color: 1px solid blue;
+}
+
+.table3 {
+  width: 752px;
+  padding-left: 10px;
+}
+
+.row1 {
+  border: 1px solid #1dacdb;
+  display: inline-flex;
+  background-color: #1dacdb;
+}
+.row1 h3 {
+  margin-left: 0;
+  color: white;
+  width: 150px;
+  text-indent: 10px;
+}
+
+.row2 {
+  display: inline-flex;
+  border: 1px solid #1dacdb;
+}
+.row2 img {
+  width: 50px;
+}
+.row2 p {
+  padding-top: 20px;
+  width: 150px;
+  padding-left: 10px;
+}
+
+.color {
+  border: 1px solid blue;
+}
+
+.logoa {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container {
+  background-color: lightgrey;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.orange {
+  background-color: orange;
+  width: 80%;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  background-color: #1dacdb;
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+}
+input[type=submit]:link {
+  color: #FF0000;
+}
+input[type=submit]:visited {
+  color: #00FF00;
+}
+input[type=submit]:hover {
+  color: #FF00FF;
+}
+input[type=submit]:active {
+  color: #0000FF;
+}
+
+#short {
+  width: 70%;
+  font-size: 12px;
+}
+
+table, tr, th, td {
+  border-collapse: collapse;
+}
+
+/*# sourceMappingURL=style.css.map */

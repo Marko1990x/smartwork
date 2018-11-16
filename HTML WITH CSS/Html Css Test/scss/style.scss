@@ -1,0 +1,184 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+body {
+	width: 100%;
+	@include clearfix;
+	margin-left: 5px;
+
+	h1{
+		color: rgb(29, 172, 219);
+		margin-top: 10px;
+	}
+
+	h2{
+		font-size: 20px;
+		color: rgb(29, 172, 219);
+		margin-top: 10px;
+	}
+
+}
+
+h1, h2, p{
+	margin-bottom: 10px;
+}
+
+ul{
+	margin-left: 50px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header{  
+	min-height: 100px;
+	background-color: orange;
+}
+
+.table1{
+	td{
+		display: inline;
+		padding-right: 20px;
+		margin-left: 1em;
+		
+		a{
+			color: white;
+		}
+	}
+}
+
+.table2{
+	
+	img{
+		width: 55px;
+		height: 55px;
+	}
+	border: 2px solid rgb(29, 172, 219);
+	th,td{
+		width: 150px;
+		padding-left: 10px;
+	}
+	th{
+		background-color: rgb(29, 172, 219);
+		color: white;
+		text-align: left;
+		padding-left: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		
+	}
+
+	.zadnji{
+		width: 300px;
+	}
+}
+
+table{
+	td{
+		color: 1px solid blue;
+	}
+}
+
+
+.table3{
+	width: 752px;
+	padding-left: 10px;
+}
+
+.row1{
+	border: 1px solid rgb(29, 172, 219);
+	display: inline-flex;
+	background-color: rgb(29, 172, 219);
+	h3{
+		margin-left: 0;
+		color: white;
+		width: 150px;
+		text-indent: 10px;
+		
+	}
+	
+}
+
+.row2{
+	
+	display: inline-flex;
+	border: 1px solid rgb(29, 172, 219);
+	img{
+		width: 50px;
+		
+	}
+
+	p{
+		padding-top: 20px;
+		width: 150px;
+		padding-left: 10px;
+	}
+}
+
+.color{
+	border: 1px solid blue;
+}
+
+  // odnosi se na dva texta ispod logo slike
+.logoa{  
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 5px;
+	
+}
+
+
+// forma
+
+.container{
+	background-color: lightgrey;
+	padding-left: 10px;
+	border-radius: 5px;
+	
+}
+
+.orange{
+	background-color: orange;
+	width: 80%;
+	border-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+input[type="submit"]{
+	background-color: rgb(29, 172, 219);
+	color: white;
+	width: 80px;
+	height: 40px;
+	border-radius: 10px;
+	&:link {
+    color: #FF0000;
+	}
+	&:visited {
+    color: #00FF00;
+	}
+	&:hover {
+    color: #FF00FF;
+	}
+	&:active {
+    color: #0000FF;
+	}
+}
+
+#short{
+ width: 70%;
+ font-size: 12px;
+}
+
+table,tr,th,td{
+	border-collapse: collapse;
+	
+}
+
