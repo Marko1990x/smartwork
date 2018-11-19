@@ -39,16 +39,177 @@ body {
 		li{
 			float: left;
 		}
+		a{
+			padding: 15px 31px 18px;   // 31 is left and right
+			font-size: 18px;
+			color: #fff;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 	bold;
+			text-decoration: none;
+			display: block;
+
+		}
+	}
+	.banner img{
+		height: 678px;
+		width: 100%;
 	}
 
+	h2{
+		text-align: center;
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	p{
+		font-size: 20px;
+		line-height: 25px;
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	.details a{
+		padding: 20px 40px;
+		background-color: #000;
+		color: #fff;
+		text-decoration: none;
+		font-size: 20px;
+		border-radius: 10px;
+
+		&:hover{
+			box-shadow: 5px 5px 10px #000;
+		}
+	}
+
+	#about{
+		background-color: #ff9000;
+		padding: 70px 0;
+	}
+
+	#wedding{
+		width: 100%;
+	}
+
+	.img-left{
+		float: left;
+		width: 50%;
+		height: 450px;
+		background: url(../img/1.jpg) no-repeat;
+		background-size: cover;
+	}
+	.img-right{
+		float: left;
+		width: 50%;
+		height: 450px;
+		background: url(../img/2.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	span{
+		color: orangered;
+	}
+
+
+	.title-wrap h2{
+		background-color: rgba(250,250,0,0.3);  // red green blue cetvrta vrednost je providnost od 0 do 1 1 je ne providno 0 je totalno providno
+		color: white;
+	}
+
+	
 
 }
 
 
+table, th, td{
+	background-color: #ff9000;
+				border: 1px solid #ddd;
+				text-align: left;
+}
+
+th{
+	text-align: center;
+	font-weight: bold;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+
+	th,td{
+		padding: 15px;
+	}
+}
+
+
+li{
+	a.active{
+		border-bottom: 5px solid #ff9000;
+	}
+	a:hover:not(.active){    // kada se hoveruje kada elementi koji nisu active
+		border-bottom: 5px solid #ff9000;
+	}
+}
+
+iframe{
+	width: 100%;
+	height: 450px;
+}
+
 .center{
-			width: 1100px;
-			margin: auto;
-		}
+	width: 1100px;
+	margin: auto;
+}
+
+footer p{
+	background-color: #000;
+	color: white;
+	padding: 20px;
+	margin-top: 0px;
+}
+
+
+// ANIMACIJE
+
+
+
+h1{
+	transition: transform 2s;
+	&:hover{
+		transform: scale(2);  // povecanje po elementu
+		transform: rotate(360deg);   // tranzicija sa transformacijom ako hocu da ga povecava i rotira u isto vreme
+	}
+}
+
+
+@keyframes kontakt{
+	from {
+		color: white; font-size: 16px;
+	}
+	to{
+		color: #e66311; font-size: 20px;
+	}
+	
+	// sa procentima namesti kontakt da se vrati na mesto
+
+}
+
+
+#kont{
+//	position: absolute; // fixira element da ne pomera ostale elemente
+// max-width 100 za animaciju isto resava problem
+	animation-name: kontakt;
+	animation-duration: 3s;
+	//animation-iteration-count: infinite;
+}
+
+li{
+	width: 130px;
+}
+
+
+
+
+
 
 // jane &john se rotira 360stepeni contact se povecava 
 // weding details  box shadow
