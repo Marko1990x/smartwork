@@ -1,0 +1,24 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+
+// @keyframes example animation - name animation -duration
+// % can be used to modify the  duration of animations 
+
+//animation duration animation delay animation name // negative value skips certain parts of the animation.
+
+//animation-iteration count 3 - aniamcija ce raditi 3 puta - kljucna rec infinite. 
+// reverse - animacija ide od pozadi.
+
+//animation-timing-function // linear ease ease-in ease-out ease-in-out
+
+
+//transformacije - // rotate  transform: rotate(90deg); transform: skewY(20deg) transform scaleY(1.5) ili scaleX povecavanej po x y osi.
