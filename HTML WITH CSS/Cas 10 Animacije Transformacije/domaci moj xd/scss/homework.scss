@@ -1,0 +1,189 @@
+body{
+    font-family: 'Allerta Stencil', sans-serif;
+    section{
+        min-height: 500px;
+        background-color: whitesmoke;
+        animation-name: container;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        
+    }
+
+    .part{
+        width: 30%;
+        background-color: rgb(185, 177, 177);
+        height: 400px;
+        display: inline-block;
+        margin-top: 50px;
+        margin-right: 10px;
+        border: 5px solid darkblue;
+        border-radius: 10px;
+        animation-name: background;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+        
+        
+    }
+
+    #deo2{
+            animation-direction: reverse;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+    #left{
+            margin-left: 50px;
+    }
+
+    .brick1{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(58, 88, 172);
+        margin: 10px;
+        border-radius: 10px;
+        animation-name: brick1;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        //-webkit-animation-name: inherit;
+       // -webkit-animation-duration: inherit;
+
+    }
+
+    .rotation{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: black;
+        animation-name: rotation;
+        animation-duration: 2s;
+
+        p{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            padding-top: 5px;
+        }
+
+        position: absolute;
+        margin-left: 200px;
+        margin-top: -66px;
+        animation-iteration-count: infinite;
+       
+
+    }
+
+    #deo2{
+        h1{
+            position: absolute;
+            margin-left: 80px;
+            margin-top: 50px;
+            padding: 10px;
+            border: 2px solid darkred;
+            background-color: whitesmoke;
+            box-shadow: 10px 10px black;
+            animation-name: h1tag;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    .brick2{
+        position: relative;
+        transform: translate(+50px, -55px);
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        margin: 10px;
+        border-radius: 10px;
+        animation-name: brick2;
+        animation-duration: 7s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+    }
+
+    #prvaleva{
+        margin-top: 150px;
+
+    }
+
+    .kockaleva{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        animation-name: levakocka;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .kockadesna{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        margin-bottom: 10px;
+        margin-left: 380px;
+        animation-name: desnakocka;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes brick1{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:330px; top:0px;}
+    50%  {background-color:blue; left:330px; top:280px;}
+    75%  {background-color:green; left:0px; top:280px;}
+    100% {background-color:red; left:0px; top:0px;}
+    }
+    @keyframes brick2{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:280px; top:0px;}
+    50%  {background-color:blue; left:280px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;} // vrednosti su obrnute zvog reverse od 100 prema 0 
+    100% {background-color:red; left:0px; top:0px;}
+    }
+    @keyframes background{
+    0%   {background-color:rgb(0, 195, 255);}
+    25%  {background-color:rgb(219, 74, 48);}
+    50%  {background-color:rgb(25, 25, 131);}
+    75%  {background-color:rgb(216, 160, 6);} 
+    100% {background-color:red;}
+    }
+    @keyframes rotation{
+    0%   {transform: rotate(0deg)}
+    25%  {transform: rotate(90deg)}
+    50%  {transform: rotate(180deg)}
+    75%  {transform: rotate(270deg)} // rotacija elementa
+    100% {transform: rotate(360deg)}
+    }
+
+    @keyframes h1tag {
+        0%{
+            background-color: inherit;
+            box-shadow: 10px 10px darkblue;
+        }
+        50%{
+            background-color: rgb(22, 206, 53);
+            box-shadow: 30px 30px darkred;
+        }
+    }
+
+    @keyframes container {
+        0% {background-color: seagreen;}
+        50% {background-color: darkred;}
+        100% {background-color: seagreen;}
+    }
+
+    @keyframes levakocka {
+        25%{top: inherit; left: inherit;}
+        50%{top: inherit; margin-left: 380px;}
+    }
+    @keyframes desnakocka {
+        25%{top: inherit; left: inherit;}
+        50%{top: inherit; margin-left: 20px;}
+    }
+}
+
+

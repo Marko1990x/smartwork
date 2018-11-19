@@ -1,0 +1,6 @@
+animacija 
+transformacija 
+media querry - responsive 
+
+
+19/11 -- animacije
