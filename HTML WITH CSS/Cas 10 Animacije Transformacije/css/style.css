@@ -5,16 +5,45 @@
   font-family: "Roboto", sans-serif;
 }
 
-section {
+body {
   width: 100%;
-  padding: 3em 15%;
+  font-family: "Montserrat", sans-serif;
 }
-section:before, section:after {
+body:before, body:after {
   content: "";
   display: table;
 }
-section:after {
+body:after {
   clear: both;
+}
+body header {
+  position: fixed;
+  background-color: black;
+  height: 60px;
+  width: 100%;
+}
+body .logo {
+  float: left;
+  padding: 12px 0;
+}
+body .logo h1 a {
+  text-transform: uppercase;
+  color: #fff;
+  font: "OpenSans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 30px;
+}
+body .navigation {
+  float: right;
+}
+body .navigation li {
+  float: left;
+}
+
+.center {
+  width: 1100px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
