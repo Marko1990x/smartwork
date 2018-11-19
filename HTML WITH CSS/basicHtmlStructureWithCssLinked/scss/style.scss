@@ -3,8 +3,9 @@
 
 @include main;
 
-section {
+// basic file structure set
+
+body {
 	width: 100%;
-	padding: 3em 15%;
 	@include clearfix;
 }

@@ -2,18 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
-section {
+body {
   width: 100%;
-  padding: 3em 15%;
 }
-section:before, section:after {
+body:before, body:after {
   content: "";
   display: table;
 }
-section:after {
+body:after {
   clear: both;
 }
 
