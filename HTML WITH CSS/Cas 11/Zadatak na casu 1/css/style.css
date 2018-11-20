@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  font-size: 1.6em;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body h2 {
+  font-size: 2.4em;
+  text-align: center;
+  border-bottom: 2px solid lightblue;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+body ul li {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  padding: 0 10px;
+  list-style-type: none;
+}
+body ul li figure figcaption {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+body ul li figure img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+body .button {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  text-align: left;
+}
+body .button:hover {
+  background-color: lightblue;
+  color: black;
+}
+body .pull-right {
+  float: right;
+}
+body .pull-left {
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  .test {
+    width: 45%;
+  }
+
+  #h2problem {
+    font-size: 2.6em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .test {
+    width: 30%;
+  }
+
+  #h2problem {
+    font-size: 2.8em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .test {
+    width: 23%;
+  }
+
+  #h2problem {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

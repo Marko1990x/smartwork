@@ -1,0 +1,111 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+// basic file structure set
+
+html{
+	font-size: 62.5%;
+	//font-family: 'Open Sans', sans-serif;
+	//relativne jedinice su bitne za responsive
+
+	
+}
+
+body {
+	width: 100%;
+	@include clearfix;
+	font-size: 1.6em;  // relativna jedinica
+
+	
+
+	h2{
+		font-size: 2.4em;
+		text-align: center;
+		border-bottom: 2px solid lightblue;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	ul{
+		
+		li{
+			font-size: 1.6em;
+			margin-bottom: 20px;
+			display: inline-block;
+			width: 100%;
+			padding: 0 10px;
+			list-style-type: none;  // prokleti kruzic
+			figure{
+				figcaption{
+				margin-bottom: 10px;
+				font-weight: bold;
+				}
+				img{
+					display: block;
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+			
+		}
+	}
+
+	.button{
+		text-decoration: none;
+		background-color: blue;
+		color: white;
+		padding: 2px 5px;
+		border-radius: 5px;
+		text-align: left;
+
+		&:hover{
+			background-color: lightblue;
+			color: black;
+		}
+	}
+
+	.pull-right{
+		float: right;
+	}
+	.pull-left{
+		float: left;
+	}
+
+	}
+
+@media screen and (max-width: 768px){
+	.test{
+		width: 45%; 
+	}
+	#h2problem{
+		font-size: 2.6em;
+	}
+}	
+
+
+@media screen and (min-width: 992px){
+	.test{
+		width: 30%
+	}
+	#h2problem{
+		font-size: 2.8em;
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+		
+		.test{
+			width: 23%;
+		}
+		#h2problem{
+			font-size: 2em;
+		}
+
+}
+
+
+
+// utility classes figcaption i span

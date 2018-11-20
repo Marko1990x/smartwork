@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: red;}
+/*    prva sekunda*/
+    25%  {background-color: yellow;}
+/*    od 25-50 je druga sekunda*/
+    50%  {background-color: blue;}
+/*    od 50-100 od druge do cetvrte sekunde*/
+    100% {background-color: green;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+</body>
+</html>
+
