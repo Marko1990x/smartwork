@@ -175,5 +175,42 @@ body {
 }
 
 @media screen and (max-width: 768px){
-	
+	// preradi ovu zajebanciju kuci
+	header #logo,
+	header nav,
+	header nav li,
+	#newsletter h2,
+	#newsletter form,
+	#boxes .box,
+	#main-col,
+	#sidebar{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header{
+		padding-bottom: 20px;
+
+	}
+
+	#showcase h2{
+		margin-top: 30px;
+	}
+
+	#newsletter button{
+		display: block;
+		width: 100%;
+	}
+	#newsletter form input[type="email"]{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 960px){
+	#newsletter button{
+		display: block;
+		width: 100%;
+	}
 }
