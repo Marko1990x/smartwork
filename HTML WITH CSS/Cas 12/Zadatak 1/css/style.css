@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+body {
+  width: 100%;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+body header {
+  background-color: #35424a;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+body header span {
+  color: #e8491d;
+}
+body header nav {
+  float: right;
+  margin-top: 10px;
+}
+body header ul {
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+}
+body header li {
+  float: left;
+}
+body header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 0 20px;
+  display: block;
+}
+body header a:hover:not(.active) {
+  color: #ccc;
+}
+body header .active {
+  color: #e8491d;
+}
+body #showcase {
+  min-height: 500px;
+  background: url(../images/convincer.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+body #showcase h2 {
+  margin-top: 120px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+body #showcase p {
+  font-size: 20px;
+}
+body #newsletter {
+  padding: 15px;
+  color: #fff;
+  background-color: #35424a;
+}
+body #newsletter h2 {
+  float: left;
+}
+body #newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+body #newsletter input[type=email] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+body .button_1 {
+  height: 35px;
+  background-color: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+}
+body #boxes {
+  margin-top: 20px;
+}
+body #boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+body #boxes .box img {
+  width: 130px;
+  margin-left: 95px;
+}
+body footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #e8491d;
+  text-align: center;
+}
+body #sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+  text-align: justify;
+}
+body #main-col {
+  float: left;
+  width: 62%;
+  margin-top: 20px;
+  text-align: justify;
+}
+body ul#services li {
+  padding: 20px;
+  border: #ccc solid 1px;
+  margin-bottom: 5px;
+  background-color: #e6e6ee;
+}
+body aside#sidebar .quoteinput, body aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

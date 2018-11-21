@@ -1,0 +1,179 @@
+@import 'vars';
+@import 'mixins';
+@import 'keyframes';
+
+@include main;
+
+// basic file structure set
+
+body {
+	width: 100%;
+	@include clearfix;
+
+	font: 15px/1.5 Arial,Helvetica, sans-serif;
+
+
+	.container{
+		width: 80%;
+		margin: auto;
+		overflow: hidden;  // dozvoljava samo da se text siri u blok elementu max po njegovoj visini i sirini.
+	}
+
+	header{
+		background-color: $pozadinska_boja;
+		color: #fff;
+		padding-top: 30px;
+		min-height: 70px;
+		border-bottom: $borderspan 3px solid;
+
+		span{
+			color: $borderspan;
+		}
+
+		nav{
+			float: right;
+			margin-top: 10px;
+		}
+
+
+		ul{
+			margin: 0%;
+			padding: 0%;
+			list-style-type: none;
+		}
+
+		li{
+			float: left;
+		}
+
+		a{
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 16px;
+			padding: 0 20px;
+			display: block;
+
+			&:hover:not(.active){
+				color: #ccc;
+
+			}
+
+
+		}
+
+		.active{
+			color: #e8491d;
+		}
+
+
+
+
+
+	}
+
+	#showcase{
+		min-height: 500px;
+		background:url(../images/convincer.jpg)no-repeat;
+		background-size: cover;
+		text-align: center;
+		color: #fff;
+
+		h2{
+			margin-top: 120px;
+			font-size: 55px;
+			margin-bottom: 10px;
+		}
+
+		p{
+			font-size: 20px;
+		}
+
+	}
+
+	#newsletter{
+		padding: 15px;
+		color: #fff;
+		background-color: #35424a;
+		h2{
+			float: left;
+		}
+
+		form{
+			float: right;
+			margin-top: 15px;
+		}
+
+		input[type="email"]{
+			padding: 4px;
+			height: 25px;
+			width: 250px;
+		}
+
+	}
+
+	.button_1{
+		height: 35px;
+		background-color: #e8491d;
+		border: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: #fff;
+	}
+
+	#boxes{
+		margin-top: 20px;
+		.box{
+			float: left;
+			width: 30%;
+			padding: 10px;
+			text-align: center;
+
+			img{
+				width: 130px;
+				margin-left: 95px;
+			}
+		}
+
+	}
+
+	footer{
+		padding: 20px;
+		margin-top: 20px;
+		color: #fff;
+		background-color: #e8491d;
+		text-align: center;
+	}
+
+	#sidebar{
+		float: right;
+		width: 30%;
+		margin-top: 10px;
+		text-align: justify;
+	}
+
+	#main-col{
+		float: left;
+		width: 62%;
+		margin-top: 20px;
+		text-align: justify;
+	}
+
+	ul#services {
+		li{
+			padding: 20px;
+			border: #ccc solid 1px;
+			margin-bottom: 5px;
+			background-color: #e6e6ee;
+		}
+	}
+
+	aside#sidebar .quoteinput, aside#sidebar .quote textarea{
+		width: 90%;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	
+}
