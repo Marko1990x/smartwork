@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body header {
+  background-color: black;
+}
+body header #logo {
+  float: left;
+  position: relative;
+  transform: translate(30px, 20px);
+  margin-right: 400px;
+}
+body header div ul li {
+  display: inline-block;
+  width: 200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+body header div ul li a {
+  color: whitesmoke;
+}
+body header div ul li a:hover {
+  background-color: orange;
+  color: black;
+}
+body header #colornav {
+  color: red;
+  position: absolute;
+  transform: translate(100px, 8px);
+}
+
+#opel img {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+#newsletter {
+  background-color: darkslategrey;
+  min-height: 60px;
+}
+#newsletter h2 {
+  float: left;
+  color: whitesmoke;
+  margin: 15px;
+  margin-left: 130px;
+}
+#newsletter form {
+  float: right;
+}
+#newsletter form button {
+  color: whitesmoke;
+  background-color: red;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  margin: 15px;
+  margin-right: 7em;
+}
+
+.container {
+  background-color: lightgrey;
+  width: 60%;
+  margin-left: 5em;
+  text-align: left;
+  transform: translate(0%, -3%);
+}
+
+form legend {
+  font-weight: bold;
+  font-style: italic;
+}
+form label {
+  margin: 5px;
+}
+form .form2 {
+  height: 50px;
+  width: 90%;
+  margin: 5px;
+}
+form #button_1 {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  margin: 5px;
+  color: whitesmoke;
+  border: none;
+}
+
+article {
+  margin: 10px;
+}
+article img {
+  float: left;
+}
+
+div {
+  /*position: relative;
+  transform: translate(+110%,-1230px);*/
+}
+div a img {
+  width: 40px;
+  height: 40px;
+}
+
+#sidebar {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  margin-right: 10em;
+}
+
+footer {
+  width: 100%;
+  min-height: 60px;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 25px;
+  color: red;
+  background-color: black;
+}
+
+.trick {
+  display: none;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1500px) {
+  body header #logo {
+    margin-right: 200px;
+  }
+
+  .container {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 960px) {
+  body header #logo {
+    margin-right: 20px;
+  }
+
+  .container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  body header #logo {
+    margin-right: 20px;
+  }
+
+  .container {
+    margin-top: 5em;
+    width: 80%;
+  }
+
+  #newsletter h2 {
+    margin: 10px;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .trick {
+    display: block;
+    text-align: center;
+  }
+  .trick a {
+    display: inline-flex;
+    height: 50px;
+    margin-top: -10%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
