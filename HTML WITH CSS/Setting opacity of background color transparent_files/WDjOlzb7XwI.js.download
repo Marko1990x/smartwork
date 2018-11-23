@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["wX9z8"]); }
+
+__d("XChatCommandResultCommentPreviewController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/chat_command_result/live_comment_attachment/",{})}),null);

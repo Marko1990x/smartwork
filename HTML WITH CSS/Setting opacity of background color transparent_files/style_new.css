@@ -1,0 +1,21 @@
+body {
+background: #fff !important;
+}
+#sticky-posts-2 .post-title a {
+color: #222;
+font-weight: bold;
+font-size: 17px;
+}
+#sticky-posts-2 .post-title {
+margin-bottom: 5px;
+}
+#sticky-posts-2 .post-title { 
+margin-top: 20px;
+}
+
+.site-logo {
+font: 900 4.0em/1 'Raleway', sans-serif !important;
+}
+.site-logo strong {
+font-size: .25em !important;
+}
