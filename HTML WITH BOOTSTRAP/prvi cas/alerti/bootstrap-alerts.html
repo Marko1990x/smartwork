@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap alerti</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Alerti</h2>
+        <div class="alert alert-success">
+            <strong>Ovo je alert klase .alert-success!</strong> Ovaj alert može da pokazuje uspešnu ili pozitivnu akciju. Npr. unos uspešno izvršen
+        </div>
+        <div class="alert alert-info">
+            <strong>Ovo je alert klase .alert-info</strong> Ovaj alert može da pokazuje neutralnu informaciju neke promene ili akcije . Npr. dugme je pritisnuto
+        </div>
+        <div class="alert alert-warning">
+            <strong>Ovo je alert klase .alert-warning</strong> Ovaj alert može da pokazuje upozorenje koje zahteva određenu pažnju. Npr. uskoro vam ističe lozinka
+        </div>
+        <div class="alert alert-danger">
+            <strong>Ovo je alert klase .alert-danger</strong> Ovaj alert može da pokazuje opasnu ili potencijalno negativnu akciju. Npr. uneli ste pogrešnu šifru
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Alert linkovi </h2>
+        <p>Dodali smo klasu .alert-link u svaki alert box kako bi napravili ofarbane linkove.</p>
+        <div class="alert alert-success">
+            <strong>Ovo je alert klase .alert-success!</strong> <a href="#" class="alert-link">Klikni me</a>.
+        </div>
+        <div class="alert alert-success">
+            <strong>Ovo je alert klase .alert-success bez .alert-link klase</strong> <a href="#">Klikni me</a>.
+        </div>
+        <div class="alert alert-info">
+            <strong>Ovo je alert klase .alert-info</strong> <a href="#" class="alert-link">Klikni me</a>.
+        </div>
+        <div class="alert alert-warning">
+            <strong>Ovo je alert klase .alert-warning</strong> <a href="#" class="alert-link">Klikni me</a>.
+        </div>
+        <div class="alert alert-danger">
+            <strong>Ovo je alert klase .alert-danger</strong> <a href="#" class="alert-link">Klikni me</a>.
+        </div>
+    </div>
+<!--
+        .alert-dismissible {
+    padding-right: 35px;
+
+}
+-->
+
+<!--
+       stilizuje  x
+       
+       .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    
+  
+   
+}
+-->
+    <div class="container">
+        <h2>Alerti sa mogućnošću zatvaranja </h2>
+        <p>Element sa class="close" i data-dismiss="alert" se koriste za zatvaranje alert box-a.</p>
+        <p> alert-dismissible klasa dodaje jos padding-a na close dugme.</p>
+
+        <div class="alert alert-success alert-dismissable">
+
+            <a href="#" class="close" data-dismiss="alert">×</a>
+            <strong>Ovo je alert klase .alert-success!</strong> Ovaj alert može da pokazuje uspešnu ili pozitivnu akciju. Npr. unos uspešno izvršen
+        </div>
+
+    </div>
+
+</body>
+</html>
