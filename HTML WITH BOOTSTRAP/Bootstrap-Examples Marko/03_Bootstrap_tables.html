@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap tabele</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1>Bootstrap tabele</h1>
+    <hr>
+    <h4>Klasična tabela (klasa <code>.table</code>) </h4>
+    <table class="table">
+      <thead>
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td>ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+  
+    <hr>
+  
+    <h4>Crna tabela (klasa <code>.table-dark</code>) </h4>
+    <table class="table table-dark">
+      <thead>
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td>ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+  
+    <h4>Bojanje zaglavlja tabele (klasa .thead-dark na <code>&lt;thead&gt;</code> elementu) </h4>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td>ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h4>Tabela klase <code>table-striped</code> (naizmenični svetliji i tamniji redovi) </h4>
+    <table class="table table-striped">
+      <thead>
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td>ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+  
+  <hr>
+  
+    <h4>Tabela klase <code>table-bordered</code> (prisutni svi borderi) </h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td>ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+  
+  <hr>
+  
+    <h4>Tabela klase <code>table-hover</code> (hover preko redova tabele) </h4>
+    <table class="table table-hover table-responsive">
+      <thead>
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td>ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+  
+  <hr>
+  
+    <h4>Tabela klase <code>table-sm</code> (kompaktniji prikaz zbog smanjenog <code>padding</code>-a ćelija)</h4>
+    <table class="table table-sm">
+      <thead>
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td>ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+  
+  <hr>
+  
+    <h4>Primer dodeljivanja kontekstnih klasa redovima/ćelijama tabele</h4>
+    <table class="table">
+      <thead>
+        <tr><th>Ime</th><th>Prezime</th><th>Email</th><th>Starost</th><th>Zemlja</th></tr>
+      </thead>
+      <tbody>
+        <tr class="table-success"><td>Pera</td><td>Perić</td><td>pera.peric@gmail.com</td><td>20</td><td>Srbija</td></tr>
+        <tr class="table-danger"><td>Marko</td><td>Marković</td><td>marko.markovic@gmail.com</td><td>25</td><td>Srbija</td></tr>
+        <tr><td>Ivan</td><td>Ivanovic</td><td class="table-info">ivan.ivanovic@gmail.com</td><td>30</td><td>Srbija</td></tr>
+      </tbody>
+    </table>
+</body>
+</html>

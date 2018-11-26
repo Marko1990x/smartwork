@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap dugmići</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Bootstrap dugmići</h1>
+      <hr>
+      <h2>Veličine i boje</h2>
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary btn-lg">Primary</button>
+      <button type="button" class="btn btn-success btn-md">Success</button>
+      <button type="button" class="btn btn-info btn-sm">Info</button>
+      <button type="button" class="btn btn-warning btn-xs">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+
+      <hr>
+      <h2>Tipovi dugmića (različiti <code>html</code> tagovi)</h2>
+      <!-- # u href atributu: nemamo za šta da vežemo link, a ne želimo "404" grešku. U pravom primeru ovo bi bio link do postojeće web stranice-->
+      <a href="#" class="btn btn-info" role="button">Link Button</a>
+      <button type="button" class="btn btn-info">Button</button>
+      <input type="button" class="btn btn-info" value="Input Button">
+      <input type="submit" class="btn btn-info" value="Submit Button">
+
+      <hr>
+      <h2><code>block</code> dugmići</h2>
+      <h3>Normal</h3>
+      <button type="button" class="btn btn-primary btn-block">Button 1</button>
+      <button type="button" class="btn btn-default btn-block">Button 2</button>
+
+      <h3>Large</h3>
+      <button type="button" class="btn btn-primary btn-lg btn-block">Button 1</button>
+      <button type="button" class="btn btn-default btn-lg btn-block">Button 2</button>
+
+      <h3>Small</h3>
+      <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+      <button type="button" class="btn btn-default btn-sm btn-block">Button 2</button>
+
+      <hr>
+      <h2>Stanja</h2>
+      <button type="button" class="btn btn-primary">Primary Button</button>
+      <button type="button" class="btn btn-primary active">Active Primary</button>
+      <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+    </div>  
+  </body>
+</html>
