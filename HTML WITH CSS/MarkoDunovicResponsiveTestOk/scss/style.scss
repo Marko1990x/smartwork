@@ -1,0 +1,431 @@
+@import 'vars';   // roboto sans-serif odavde
+@import 'mixins';
+@import 'keyframes'; // po propisu zadatka
+
+
+@include main;
+
+// basic file structure set
+
+
+// roboto / sans serif je podesen po zadatku tacka 1.
+
+
+body {
+	width: 100%;
+	@include clearfix;
+
+	line-height: 1em;
+
+	.header{
+		height: 70px;  // po propisu zadatka zaglavlje header ima 70px visinu deo 1 tacke 3
+		width: 100%;
+		background-color: white;
+
+		
+
+		img{
+			float: left;   
+			margin-left: 8em;
+			height: 70px;
+
+			&:hover{
+				margin-left: 9.250em;   //20px	1.250em	 po tacki 3 drugi deo ... hover pomera udesno za jos 20 px
+			}
+
+
+		}
+
+		ul{
+			width: 80%;      // navigacioni deo sirina 80% tacka 2
+			float: right;
+			li{
+				float: right;
+				width: 90px;
+				font-size: 13px;
+				padding-top: 2em;
+
+				a{       // po propisu zadatka pseudo klase su uvedene na linkove , tacka 4
+					&:link {
+    					color: #FF0000;
+					}
+					&:visited {
+    					color: #00FF00;
+					}
+					&:hover {
+    					color: #FF00FF;
+					}
+					&:active {
+    					color: #0000FF;
+					}
+				}
+			}
+			.modifyheader{
+				width: 50px;
+			}
+		}
+
+	}
+
+	#fred{
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		font-size: 2em;
+		text-shadow: 2px 2px rgba(55, 155, 30, 0.527);  // text shadow po propisu zadatka tacka 5.
+	}
+}
+
+
+.image{
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/first-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+		
+}
+
+.wrapper{
+		width: 40%;
+		margin: 0% auto;
+		color: white;
+		text-align: center;
+		padding-top: 200px;
+
+		
+		h1,h3{
+			margin-bottom: 1em;
+		}
+
+		h1{
+			font-size: 2em;
+			animation-name: colorshift;
+			animation-duration: 5s;
+			animation-iteration-count: 4;   // po propisu zadatka animacija ubacena na h1 kod slike, ponavlja se cetiri puta
+			// jedna iteracija traje 5s
+		}
+
+		h3{
+			font-size: 1.25em;
+		}
+
+	input{
+		background-color: red;
+		padding: 10px 20px 10px 20px;
+		color: whitesmoke;
+		border: none;
+	}
+}
+
+.trislike{
+	width: 100%;
+	min-height: 40px;
+	background-color: white;   // korisceno da lakse vidim divove i sekcije.
+	display: flex;
+	.zezancija{
+		height: 50px;
+		width: 30%;
+		display: block;
+		background-color: white;
+		text-align: center;
+		h3, p{
+			line-height: 2em;
+		}
+	} 
+
+	#prvi{
+		margin-left: 3em;
+
+	}
+
+	.centerthisnonsence{
+		margin: 0% auto; // centrirane slike
+		&:hover{
+			transform: rotate(10deg);   // po zadataku tacka 7 da se slike rotiraju pri prelaska misa preko njih
+		}
+	}
+}
+
+
+.whothefuckisfred{
+	height: 700px;
+	width: 100%;
+	background-color: lightblue;
+	margin-top: 14em;
+	background-image: url(../img/buy-now-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	h3,p{
+		padding-left: 2em;
+		font-size: 16px;
+		line-height: 1.5em;
+		width: 60%;
+	}
+	h3{
+		padding-top: 3em;
+		color: red;
+		font-size: 20px;
+		padding-left: 1.55em;
+
+
+
+	}
+}
+
+
+footer{
+	width: 30%;
+	display: block;
+	margin: 0% auto;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.slikefooter{
+	
+	svg{
+		width: 50px;
+		height: 50px;
+		color: blue;
+		padding: 5px;
+		border: 1px solid blue;
+		border-radius: 50%;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1005px){
+	body{
+		.header{
+			ul{
+				width: 50%;
+				float: none;
+				display: inline-flex;
+				margin-left: 20px;
+				li{
+					a{
+						text-decoration: none;
+					}
+				}
+			}
+			
+		}
+
+		.hidden{
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 1005px){
+	body{
+		.hidden{
+			display: none;
+		}
+
+		.header{
+			ul{
+				li{
+					a{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 720px) and (max-width: 768px){
+	body{
+		.header{                              // podesavanje headera po slici
+			background-color: yellow;
+			height: 160px;
+			margin: 0%;
+			padding: 0%;
+			
+			ul{
+				width: 10%;
+				margin-right: 400px;
+				margin-top: 30px;
+				li{
+					display: block;
+					padding-top: 5px;
+					a{
+					background-color: none;
+					text-align: left;
+					text-decoration: none;
+					
+					}
+
+					label{
+						color: red;
+					}
+
+					
+				}
+
+				.modifyheader{
+						width: 90px;
+						padding-top: 5px;
+						
+					}
+
+			}
+		}
+
+
+
+
+
+		.wrapper{
+			padding-top: 100px;   // pomera h1 i ostale elemente prema slici
+		}
+
+
+
+		.trislike{
+			height: 600px;  // smanjujem visinu zbog sakrivenog elementa koji cu da ubacim da nema lufta
+			.zezancija{
+				display: none;
+			}
+
+		}
+
+		.hidden{                    // sakriven div koji mi se javlja samo kada predje na ovu velicinu i manju
+			margin: 0% auto;
+			text-align: center;
+			h3, p{
+			line-height: 2em;
+			}
+
+			h3{
+				font-size: 22px;
+			}
+			p{
+				font-size: 20px;
+			}
+		}
+
+	
+		.whothefuckisfred{
+			h3, p{
+				margin: 0%;
+				padding: 0%;
+			}
+
+			h3{
+				padding-top: 15px;
+			}
+
+			h3,p{
+				margin-left: 10px;
+			}
+
+		}
+		
+	}
+
+
+	
+}
+
+@media screen and (min-width: 100px) and (max-width: 720px){
+	body{
+		.header{                              // podesavanje headera po slici
+			background-color: yellow;
+			height: 160px;
+			margin: 0%;
+			padding: 0%;
+			img{
+				position: relative;
+				top: +15px;
+				left: -110px;
+				
+			}
+			ul{
+				width: 10%;
+				margin-right: 400px;
+				margin-top: 30px;
+				li{
+					display: block;
+					padding-top: 5px;
+					a{
+					background-color: none;
+					text-align: left;
+					text-decoration: none;
+					
+					}
+
+					label{
+						color: red;
+					}
+
+					
+				}
+
+				.modifyheader{
+						width: 90px;
+						padding-top: 5px;
+						
+					}
+
+			}
+		}
+
+
+
+
+
+		.wrapper{
+			padding-top: 100px;   // pomera h1 i ostale elemente prema slici
+		}
+
+
+
+		.trislike{
+			height: 600px;  // smanjujem visinu zbog sakrivenog elementa koji cu da ubacim da nema lufta
+			.zezancija{
+				display: none;
+			}
+
+		}
+
+		.hidden{                    // sakriven div koji mi se javlja samo kada predje na ovu velicinu i manju
+			margin: 0% auto;
+			text-align: center;
+			h3, p{
+			line-height: 2em;
+			}
+
+			h3{
+				font-size: 22px;
+			}
+			p{
+				font-size: 20px;
+			}
+		}
+
+	
+		.whothefuckisfred{
+			h3, p{
+				margin: 0%;
+				padding: 0%;
+			}
+
+			h3{
+				padding-top: 15px;
+			}
+
+			h3,p{
+				margin-left: 10px;
+			}
+
+		}
+		
+	}
+
+
+	
+}

@@ -1,0 +1,325 @@
+@keyframes colorshift {
+  0% {
+    color: red;
+  }
+  50% {
+    color: #46d34d;
+  }
+  100% {
+    color: red;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  line-height: 1em;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body .header {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+}
+body .header img {
+  float: left;
+  margin-left: 8em;
+  height: 70px;
+}
+body .header img:hover {
+  margin-left: 9.25em;
+}
+body .header ul {
+  width: 80%;
+  float: right;
+}
+body .header ul li {
+  float: right;
+  width: 90px;
+  font-size: 13px;
+  padding-top: 2em;
+}
+body .header ul li a:link {
+  color: #FF0000;
+}
+body .header ul li a:visited {
+  color: #00FF00;
+}
+body .header ul li a:hover {
+  color: #FF00FF;
+}
+body .header ul li a:active {
+  color: #0000FF;
+}
+body .header ul .modifyheader {
+  width: 50px;
+}
+body #fred {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2em;
+  text-shadow: 2px 2px rgba(55, 155, 30, 0.527);
+}
+
+.image {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 40%;
+  margin: 0% auto;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+.wrapper h1, .wrapper h3 {
+  margin-bottom: 1em;
+}
+.wrapper h1 {
+  font-size: 2em;
+  animation-name: colorshift;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+}
+.wrapper h3 {
+  font-size: 1.25em;
+}
+.wrapper input {
+  background-color: red;
+  padding: 10px 20px 10px 20px;
+  color: whitesmoke;
+  border: none;
+}
+
+.trislike {
+  width: 100%;
+  min-height: 40px;
+  background-color: white;
+  display: flex;
+}
+.trislike .zezancija {
+  height: 50px;
+  width: 30%;
+  display: block;
+  background-color: white;
+  text-align: center;
+}
+.trislike .zezancija h3, .trislike .zezancija p {
+  line-height: 2em;
+}
+.trislike #prvi {
+  margin-left: 3em;
+}
+.trislike .centerthisnonsence {
+  margin: 0% auto;
+}
+.trislike .centerthisnonsence:hover {
+  transform: rotate(10deg);
+}
+
+.whothefuckisfred {
+  height: 700px;
+  width: 100%;
+  background-color: lightblue;
+  margin-top: 14em;
+  background-image: url(../img/buy-now-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.whothefuckisfred h3, .whothefuckisfred p {
+  padding-left: 2em;
+  font-size: 16px;
+  line-height: 1.5em;
+  width: 60%;
+}
+.whothefuckisfred h3 {
+  padding-top: 3em;
+  color: red;
+  font-size: 20px;
+  padding-left: 1.55em;
+}
+
+footer {
+  width: 30%;
+  display: block;
+  margin: 0% auto;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.slikefooter svg {
+  width: 50px;
+  height: 50px;
+  color: blue;
+  padding: 5px;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1005px) {
+  body .header ul {
+    width: 50%;
+    float: none;
+    display: inline-flex;
+    margin-left: 20px;
+  }
+  body .header ul li a {
+    text-decoration: none;
+  }
+  body .hidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 1005px) {
+  body .hidden {
+    display: none;
+  }
+  body .header ul li a {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 768px) {
+  body .header {
+    background-color: yellow;
+    height: 160px;
+    margin: 0%;
+    padding: 0%;
+  }
+  body .header ul {
+    width: 10%;
+    margin-right: 400px;
+    margin-top: 30px;
+  }
+  body .header ul li {
+    display: block;
+    padding-top: 5px;
+  }
+  body .header ul li a {
+    background-color: none;
+    text-align: left;
+    text-decoration: none;
+  }
+  body .header ul li label {
+    color: red;
+  }
+  body .header ul .modifyheader {
+    width: 90px;
+    padding-top: 5px;
+  }
+  body .wrapper {
+    padding-top: 100px;
+  }
+  body .trislike {
+    height: 600px;
+  }
+  body .trislike .zezancija {
+    display: none;
+  }
+  body .hidden {
+    margin: 0% auto;
+    text-align: center;
+  }
+  body .hidden h3, body .hidden p {
+    line-height: 2em;
+  }
+  body .hidden h3 {
+    font-size: 22px;
+  }
+  body .hidden p {
+    font-size: 20px;
+  }
+  body .whothefuckisfred h3, body .whothefuckisfred p {
+    margin: 0%;
+    padding: 0%;
+  }
+  body .whothefuckisfred h3 {
+    padding-top: 15px;
+  }
+  body .whothefuckisfred h3, body .whothefuckisfred p {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 720px) {
+  body .header {
+    background-color: yellow;
+    height: 160px;
+    margin: 0%;
+    padding: 0%;
+  }
+  body .header img {
+    position: relative;
+    top: 15px;
+    left: -110px;
+  }
+  body .header ul {
+    width: 10%;
+    margin-right: 400px;
+    margin-top: 30px;
+  }
+  body .header ul li {
+    display: block;
+    padding-top: 5px;
+  }
+  body .header ul li a {
+    background-color: none;
+    text-align: left;
+    text-decoration: none;
+  }
+  body .header ul li label {
+    color: red;
+  }
+  body .header ul .modifyheader {
+    width: 90px;
+    padding-top: 5px;
+  }
+  body .wrapper {
+    padding-top: 100px;
+  }
+  body .trislike {
+    height: 600px;
+  }
+  body .trislike .zezancija {
+    display: none;
+  }
+  body .hidden {
+    margin: 0% auto;
+    text-align: center;
+  }
+  body .hidden h3, body .hidden p {
+    line-height: 2em;
+  }
+  body .hidden h3 {
+    font-size: 22px;
+  }
+  body .hidden p {
+    font-size: 20px;
+  }
+  body .whothefuckisfred h3, body .whothefuckisfred p {
+    margin: 0%;
+    padding: 0%;
+  }
+  body .whothefuckisfred h3 {
+    padding-top: 15px;
+  }
+  body .whothefuckisfred h3, body .whothefuckisfred p {
+    margin-left: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
