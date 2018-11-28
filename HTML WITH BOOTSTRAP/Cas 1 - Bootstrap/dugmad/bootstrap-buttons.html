@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap dugmad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Stilovi za dugmad</h2>
+  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+<!--  pretvori button u izgled linka-->
+  <button type="button" class="btn btn-link">Link</button>      
+</div>
+<div class="container">
+<!-- moze da prikaze a, input i button da budu kao button-->
+  <h2>Bootstrap klase za dugmad u okviru elemenata a,input,button</h2>
+  <a href="#" class="btn btn-info">Link Button</a>
+  <button type="button" class="btn btn-info">Button</button>
+  <input type="button" class="btn btn-info" value="Input Button">
+<!--  u formi radi refresh-->
+  <input type="submit" class="btn btn-info" value="Submit Button">
+</div>
+<div class="container">
+  <h2>Veličina dugmadi</h2>
+  <button type="button" class="btn btn-primary btn-lg">Klasa btn-lg</button>
+  <button type="button" class="btn btn-danger btn-md">Klasa btn-md</button>    
+  <button type="button" class="btn btn-success btn-sm">Klasa btn-sm</button>
+  <button type="button" class="btn btn-warning btn-xs">Klasa btn-xs</button>
+</div>
+
+<!--
+.btn-block {
+    display: block;
+    width: 100%;
+}
+-->
+<div class="container"> 
+  <h2>Dugmad sa .btn-block klasom</h2>
+  <button type="button" class="btn btn-primary btn-block">Dugme 1</button>
+  <button type="button" class="btn btn-default btn-block">Dugme 2</button>
+</div>
+<div class="container">
+  <h2>Stanja dugmadi</h2>
+  <button type="button" class="btn btn-primary">Primarno dugme</button>
+<!--active-  background-color: #286090;-->
+  <button type="button" class="btn btn-primary active">Primarno i aktivno dugme</button>
+  <button type="button" class="btn btn-primary disabled">Primarno i onemogućeno dugme</button>
+<!-- disabled- cursor: not-allowed; box-shadow: none;
+    -->
+</div>
+</body>
+</html>

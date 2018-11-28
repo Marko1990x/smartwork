@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap tabele</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Osnovna tabela - klasa .table</h2>  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pera</td>
+        <td>Perić</td>
+        <td>pera@yahoo.com</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Anić</td>
+        <td>aanic@google.com</td>
+      </tr>
+      <tr>
+        <td>Petar</td>
+        <td>Petrović</td>
+        <td>petar12@msn.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Zebra stil tabele - klasa .table-striped</h2>           
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pera</td>
+        <td>Perić</td>
+        <td>pera@yahoo.com</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Anić</td>
+        <td>aanic@google.com</td>
+      </tr>
+      <tr>
+        <td>Petar</td>
+        <td>Petrović</td>
+        <td>petar12@msn.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Tabela sa granicama - klasa .table-bordered</h2>       
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pera</td>
+        <td>Perić</td>
+        <td>pera@yahoo.com</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Anić</td>
+        <td>aanic@google.com</td>
+      </tr>
+      <tr>
+        <td>Petar</td>
+        <td>Petrović</td>
+        <td>petar12@msn.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Hover na redovima tabele - klasa .table-hover</h2>            
+  <table class="table table-hover">
+   <thead>
+      <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pera</td>
+        <td>Perić</td>
+        <td>pera@yahoo.com</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Anić</td>
+        <td>aanic@google.com</td>
+      </tr>
+      <tr>
+        <td>Petar</td>
+        <td>Petrović</td>
+        <td>petar12@msn.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Kontekstulane klase - klase dodajemo u redove i kolone</h2>
+  <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+  <table class="table">
+    <thead>
+     <tr>
+        <th>Ime klase</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Pera</td>
+        <td>Perić</td>
+        <td>pera@yahoo.com</td>
+      </tr>    
+      <tr class="success">
+        <td>Success</td>
+        <td>Ana</td>
+        <td>Anić</td>
+        <td>aanic@google.com</td>
+      </tr>
+      <tr class="danger">
+        <td>Danger</td>
+        <td>Petar</td>
+        <td>Petrović</td>
+        <td>petar12@msn.com</td>
+      </tr>
+      <tr class="info">
+        <td>Info</td>
+        <td>Žika</td>
+        <td>Žikić</td>
+        <td>zika12@msn.com</td>
+      </tr>
+      <tr class="warning">
+        <td>Warning</td>
+        <td>Jasna</td>
+        <td>Jasnić</td>
+        <td>jeca@msn.com</td>
+      </tr>
+      <tr class="active">
+        <td>Active</td>
+        <td>Janko</td>
+        <td>Jankovic</td>
+        <td>janko@ddd.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Responsive tabela - klasa .table-responsive ide u roditeljski div tag</h2>
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Starost</th>
+        <th>Grad</th>
+        <th>Država</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ana</td>
+        <td>Anić</td>
+        <td>35</td>
+        <td>Novi Sad</td>
+        <td>Srbija</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Georgij</td>
+        <td>Georgijevski</td>
+        <td>23</td>
+        <td>Skoplje</td>
+        <td>Makedonija</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+ 
+</body>
+</html>

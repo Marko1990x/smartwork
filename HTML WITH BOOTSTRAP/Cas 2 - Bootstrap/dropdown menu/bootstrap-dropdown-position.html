@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap dropdown pozicija</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+  <h2>Dropdown pozicija u desno</h2>
+  <p>Klasa .dropdown-menu-right pozicionira udesno dropdown meni:</p>
+  <div class="dropdown">
+    <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Primer
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">O nama</a></li>
+    </ul>
+  </div>
+</div>
+<!--
+.dropdown-menu-right {
+    right: 0;
+    
+}
+moze da se pregazi i da sami odredimo gde zelimo da se pozicionira padajuci deo
+-->
+<div class="container">
+  <h2>Dropdown pozicija na gore</h2>
+  <p>Klasa .dropup omogućuje da se dropdown meni prikaže iznad umesto ispod pozicije zaglavlja:</p>
+  <div class="dropup">
+    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Dropup primer
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">O nama</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <h3>Osnovni Navbar primer</h3>
+  <p>Navigacioni bar je navigaciono zaglavlje koje se nalazi na vrhu stranice.</p>
+</div>
+<!-- navbar-header  zaglavlje, tu ide uglavnom logo ili ime sajta ako zelimo-->
+<!--
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+-->
+<!--
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+-->
+<!--
+@media (min-width: 768px)
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+poziva se klasa kod medie da se uradi float elemenata na min-width:768px
+-->
+<!--active klasa daje malo sivlju pozadinu-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Logo ili ime sajta</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Početna</a></li>
+      <li><a href="#">O nama</a></li>
+      <li><a href="#">Proizvodi</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid">
+  <h3>Invertovan Navbar primer</h3>
+  <p>invertovan navigacioni bar je crne pozadine umesto sive</p>
+</div>
+  
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Logo ili ime sajta</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Početna</a></li>
+      <li><a href="#">O nama</a></li>
+      <li><a href="#">Proizvodi</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+</body>
+</html>
