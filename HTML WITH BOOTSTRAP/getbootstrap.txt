@@ -1,1 +1,248 @@
-getbootstrap.com
+https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
+
+bootstrap klase definicije i sta rade - domaci
+
+struktura: 1 - sta radi 2- primer kako radi
+
+.container {
+	1.
+	Fixed width container with widths determined by screen sites. Equal margin on the left and right.
+	
+	2.
+	<div class="container">
+	<h1>My First Bootstrap Page</h1>
+	<p>This part is inside a .container class.</p> 
+	<p>The .container class provides a responsive fixed width container.</p>           
+</div>
+}
+
+.form-group{
+	1.
+		Container for form input and label
+		
+	2.
+	<div class="container">
+	<h2>Vertical (basic) form</h2>
+	<form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+}
+
+
+
+.form-control{
+
+	1.
+	Used on input, textarea, and select elements to span the entire width of the page and make them responsive
+
+	2.
+	<div class="container">
+	<h2>Vertical (basic) form</h2>
+	<form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+	
+}
+
+
+
+.checkbox{
+	1.
+	Container for checkboxes
+	
+	2.
+	<div class="container">
+	<h2>Form control: checkbox</h2>
+	<p>The form below contains three checkboxes. The last option is disabled:</p>
+	<form>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Option 3</label>
+    </div>
+  </form>
+</div>
+}
+
+
+btn, btn-success, btn-warning{
+
+	btn{
+	
+	1.
+	Creates a basic button (gray background and rounded corners)
+	
+	<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn">Just btn</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
+</div>
+	
+	}
+
+	btn-success{
+	1.Green button. Indicates success or a positive action
+	2.<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>      
+</div>
+	}
+	
+	btn-warning{
+	1.Yellow button. Represents warning or a negative action
+	2.<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>      
+</div>
+	
+	}
+
+}
+
+
+.form-inline{
+	1.
+	Makes a <form> left-aligned with inline-block controls (This only applies to forms within viewports that are at least 768px wide)
+	2.
+	<div class="container">
+  <h2>Inline form</h2>
+  <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside.</p>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+
+}
+
+
+.form-horizontal{
+
+	1.Aligns labels and groups of form controls in a horizontal layout
+	2.<div class="container">
+  <h2>Horizontal form</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+}
+
+
+.control-label{
+
+	1.Allows a label to be used for form validation
+	2.<div class="container">
+  <h2>Horizontal form with static control</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">someone@example.com</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+}
+
+
+.col-sm-2, col-sm-10{
+
+	1. bootstrap stranica ima 12 celina ako jedan deo uzme 2 12stine ostatak mora biti 10.
+	sm se odnosi na velicinu ekrana uredjaja.
+
+}

@@ -1,0 +1,64 @@
+.navbar{
+    background: none;
+    border: none;
+}
+
+.nav{
+    
+    li{
+        margin: 10px;
+        font-size: 1.5em;
+        
+        &:hover{
+            background-color: green;
+            
+        }
+        
+    }
+}
+
+
+.navbar-brand{
+    font-size: 2em;
+    margin: 10px;
+}
+
+
+body{
+    background-image: url(../images/blur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p{
+        color: whitesmoke;
+    }
+
+    h1{
+        color: whitesmoke;
+    }
+    
+}
+
+.white{
+    color: whitesmoke;
+}
+
+.col-xs-4{
+    background-color: black;
+    margin-top: 2em;
+    min-height: 400px;
+}
+
+.navbar-brand{
+    span{
+        color: whitesmoke;
+        
+    }
+    
+}
+
+.nav{
+    span{
+        color: whitesmoke;
+    }
+}
