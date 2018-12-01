@@ -1,0 +1,23 @@
+.text {
+  background-color: lightgrey;
+  min-height: 50px;
+  width: 95%;
+  position: absolute;
+  right: 10px;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 80px;
+}
+.text div {
+  width: 40%;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.collapsingimages {
+  position: absolute;
+  top: 300px;
+  left: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
