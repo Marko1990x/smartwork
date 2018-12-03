@@ -1,0 +1,78 @@
+.header1 {
+  text-align: center;
+}
+
+.enlarge {
+  font-size: 1.2em;
+  margin-bottom: 3em;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-top: -15px;
+}
+
+.panel-body {
+  padding: 0%;
+  border: none;
+}
+
+.navbar {
+  margin-bottom: 0%;
+}
+
+.collapse {
+  background-color: black;
+}
+
+.hover:hover {
+  background-color: whitesmoke;
+}
+
+.modify {
+  display: inline-block;
+}
+.modify img {
+  width: 550px;
+  text-align: center;
+}
+.modify .panel-heading, .modify .panel-body, .modify .panel-footer {
+  width: 600px;
+}
+
+.right {
+  margin-right: 30px;
+}
+
+.panel-group {
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+#inputfield {
+  padding: 5px;
+  border: 5px;
+  border: 1px solid black;
+  padding-right: 200px;
+}
+
+.footer {
+  background-color: whitesmoke;
+  height: 100px;
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 753px) {
+  .modify {
+    display: inline-block;
+  }
+  .modify img {
+    width: 400px;
+    text-align: center;
+  }
+  .modify .panel-heading, .modify .panel-body, .modify .panel-footer {
+    width: 450px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
