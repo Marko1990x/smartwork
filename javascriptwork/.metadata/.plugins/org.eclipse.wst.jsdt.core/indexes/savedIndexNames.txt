@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\Marko\Desktop\Github\smartwork\javascriptwork\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2563722594.index
+653129103.index
+3368304707.index
+3043162575.index
+2468329857.index
