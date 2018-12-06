@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 1 Marko</title>
+    <script>
+        var a = 55; // >=50 i <=99,
+        var b = 44; // >=10 i <=99,
+
+        var c = 22;
+        var d = 22;
+        var e = 22;
+
+
+        var bodovia = 55;
+
+        function zadatak1(){
+            if (b >= 10 && b <=99) {
+                if (a >= 55 && a <= 99) {
+                    alert("Obe vrednosti su u zadatim granicama: " + a +" , "+b);
+                } else {
+            alert("vrednost mora biti >=10 i <=99, trenutna je: "  +a)
+                }
+            } else {
+        alert("vrednost mora biti >=10 i <=99, trenutna je: "  +b)
+            }
+        }
+
+function zadatakONePart2(){
+    if (a-b > 0) {
+alert("The difference of the first two is a positive number");
+    } else if(a-b <0 ) {
+alert("The difference of the first two is a negative number");
+    }
+}
+
+        function zaddva(){
+            if (c >= 20 && e >= 20 && d < 0) {
+alert("Product of the first and the third is greater than 20 and the second variable is negative");
+            } else if (c >= 20 && e >= 20 && d > 0){
+alert("Product of the first and the third number is greater than 20 or the second variable is positive");
+            }else{
+               alert("nesto nije kako treba");
+            }
+            
+        }
+
+        function bodovi(){
+            if (bodovia >= 95) {
+                alert("dobili ste ocenu 10");
+            } else if(bodovia >= 85){
+                alert("dobili ste ocenu 9");
+            } else if(bodovia >= 75){
+                alert("dobili ste ocenu 8");
+            } else if(bodovia >= 65){
+                alert("dobili ste ocenu 7");
+            } else if(bodovia >= 55){
+                alert("dobili ste ocemu 6")
+            } else{
+                alert("you failed son")
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    Zadatak 1
+    <br><br>
+    <input type="button" name="dugme" value="Klikni me" onclick="zadatak1(a,b)">
+
+Zadatak 1 deo 2
+<br><br>
+<input type="button" name="dugme" value="Klikni me" onclick="zadatakONePart2(a,b)">
+
+   
+    <br><br>
+Zadatak 2
+    <input type="button" name="dugme2" value="Klikni me" onclick="zaddva(c,d,e)">
+</body>
+
+<br><br>
+Zadatak 3
+<input type="button" name="dugme2" value="Klikni me" onclick="bodovi(bodovi)">
+</body>
+
+</html>
