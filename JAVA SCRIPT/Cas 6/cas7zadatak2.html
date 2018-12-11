@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script>
+
+        function main() {    // povecava text posle imput prompta
+            var names = prompt("Unesite vase ime","Ime").toUpperCase();
+        alert(names);
+
+        document.getElementById("field1").value = names;
+        }
+
+        function option2() {  // povecava text posle enter dugmeta
+            var b = document.forma.asd.value.toUpperCase();
+            alert(b);
+            document.getElementById("option").value = b;
+        }
+
+    </script>
+</head>
+<body onload="main()">
+
+    <form action="#" name="forma">
+            <input type="text" name="input" id="field1">
+            <br><br>
+            <input type="text" id="option" name="asd" onchange="option2()">
+            
+    </form>
+
+    
+    
+</body>
+</html>

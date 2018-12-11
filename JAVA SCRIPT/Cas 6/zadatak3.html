@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        function border() {
+            for(i=0;i<document.getElementsByTagName('img').length;i++){
+            var imgTag=document.getElementsByTagName('img')[0]; // change 0 to i for all or
+            // change 0 to any other number to find another image
+            imgTag.style.border='2px solid #E8272C';
+            imgTag.onclick=function(){
+            //return !window.open(this.src);
+    }
+
+
+
+
+}//void(0)
+       }
+
+       function border2() {
+            for(i=0;i<document.getElementsByTagName('img').length;i++){
+            var imgTag=document.getElementsByTagName('img')[i]; // change 0 to i for all or
+            // change 0 to any other number to find another image
+            imgTag.style.border='2px solid #E8272C';
+            imgTag.onclick=function(){
+            //return !window.open(this.src);
+    }
+    
+
+
+
+}//void(0)
+       }
+
+
+       function border3() {
+            for(i=0;i<document.getElementsByTagName('img').length;i++){
+            var imgTag=document.getElementsByTagName('img')[i]; // change 0 to i for all or
+            // change 0 to any other number to find another image
+            imgTag.style.border='none';
+            imgTag.onclick=function(){
+            //return !window.open(this.src);
+    }
+
+
+
+
+}//void(0)
+       }
+
+       function resize() {
+        for(i=0;i<document.getElementsByTagName('img').length;i++){
+            var imgTag=document.getElementsByTagName('img')[i]; // change 0 to i for all or
+            // change 0 to any other number to find another image
+            imgTag.style.width= "200px";
+            imgTag.style.height= "200px";
+            imgTag.onclick=function(){
+            //return !window.open(this.src);
+    }
+}//void(0)
+       }
+
+       function resizeMine() {
+           for(i=0;i<document.getElementsByTagName('img').length;i++){   // .lenght duzina niza
+               var imgTag = document.getElementsByTagName('img')[i];
+               imgTag.style.width = "500px";
+               imgTag.style.height = "500px";
+           }
+       }
+       
+    </script>
+</head>
+
+<body>
+
+    <form action="#">
+        <input type="button" onclick="border()" value="Add a border to the first image" id="asd1" style="width: 100px; height: 40px;"> <br><br>
+        <input type="button" onclick="resize()" value="Resize all images" id="asd2" style="width: 100px; height: 40px;">
+        <input type="button" onclick="resizeMine()" value="Resize 2" id="asd2" style="width: 100px; height: 40px;">
+        <input type="button" onclick="border2()" value="border all" id="asd2" style="width: 100px; height: 40px;">
+        <input type="button" onclick="border3()" value="Border none" id="asd2" style="width: 100px; height: 40px;">
+       
+        <br><br>
+        <p>Click one of the buttons above</p>
+        <img src="https://mainline.i3s.unice.fr/mooc/Ntvj5rq.png" alt="slika1" style="width: 400px; height: auto;">
+        <img src="https://mainline.i3s.unice.fr/mooc/yiU59oi.gif" alt="slika2" style="width: 400px; height: auto;">
+        <img src="https://mainline.i3s.unice.fr/mooc/6FstYbc.jpg" alt="slika3" style="width: 400px; height: auto;">
+        <img src="https://mainline.i3s.unice.fr/mooc/L97CyS4.png" alt="slika4" style="width: 400px; height: auto;">
+    </form>
+
+</body>
+
+</html>
