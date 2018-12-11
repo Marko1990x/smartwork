@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Čas 6 Primer 1</title>
+  <script>
+    function danas() {
+      var danas = new Date;
+      var time = danas.getTime();
+      var dan = danas.getDay();
+      var danUMesecu = danas.getDate()
+      var mesec = danas.getMonth()+1;
+
+     
+      var godina1 = danas.getFullYear();
+
+      var sati = danas.getHours();
+      var minuta = danas.getMinutes();
+      var sekundi = danas.getSeconds();
+      
+      var datum = danUMesecu+"/"+mesec+"/"+godina1;
+      document.formular.datum.value = datum;
+      alert(" Dan u nedelji je "+dan+", a dan u mesecu je 	"+danUMesecu+" mesec je "+ mesec+" godina je "+ godina1+". 	Trenutno je "+sati+":"+minuta+":"+sekundi+" sati "+time);
+    }
+  </script>
+  </head>
+  <body>
+    <h1>Čas 6 Primer 1 - DATE objekat</h1>
+    <form name="formular">
+       Dan/mesec/godina <br>
+    <input type="button" name="film" value="Klik" onClick="danas()">
+    <input type="text" name="datum">
+ </form>
+</body>
+</html>

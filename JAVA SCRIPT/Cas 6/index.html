@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script>
+        var a = "marko";
+        var b = "dunovic"
+        console.log(a+" "+b);
+        function petlja() {
+         for (var i = 0; i<5; i++) {
+             document.write("<div>this is a test<\div>");
+            }   
+        }
+
+        function datum() {
+            var vreme = new Date;
+            var dan = vreme.getDay();
+            alert("danas je dan u nedelji: " +dan);
+            if (dan == 0) {
+                alert("danas je nedelja" + dan);
+                console.log("danas je nedelja");
+            }else if(dan == 1){
+                alert("danas je ponedeljak " + dan);
+                console.log("danas je ponedeljak");
+             }else if(dan == 2){
+               alert("danas je utorak " + dan);  
+               console.log("danas je utorak")
+             } else if(dan == 3){
+                 alert("danas je sreda "+ dan);
+                 console.log("danas je sreda")
+             } else if(dan == 4){
+                 alert("danas je cetvrtak" + dan);
+                 console.log("danas je cetvrtak")
+             } else if(dan == 5){
+                 alert("danas je petak " +dan);
+                 console.log("danas je petak");
+             } else if(dan == 6){
+                 alert("danas je subota " + dan);
+                 console.log("danas je subota");
+             }
+        }
+
+        
+        function zadatak2() {
+            var value1 = parseInt(document.forma.var1.value)
+            var value2 = parseInt(document.forma.var2.value)
+            var value3 = parseInt(document.forma.var3.value)
+
+           // alert(value1+value2+value3);
+            if (value1 > value2 && value1 > value3) {
+                alert("najveci broj je: "+value1);
+                console.log("najveci broj je: "+ value1);
+                document.getElementsByTagName("input")[5].value = value1;
+            } else if(value2 > value1 && value2 > value3) {
+                alert("najveci broj je: " +value2);
+                console.log("najveci broj je: " +value2);
+                document.getElementsByTagName("input")[5].value = value2;
+            }else if(value3 > value2 && value3 > value1){
+                alert("najveci broj je: "+value3);
+                console.log("najveci broj je: "+ value3);
+                document.getElementsByTagName("input")[5].value = value3;
+            }else{
+                alert("something is not right");
+            }
+
+        }
+
+        function zadatak3() {
+            var value3 = parseInt(document.forma2.broj1.value)
+            var value4 = parseInt(document.forma2.broj2.value)
+
+            alert(value3+value4);
+
+            var zbir = value3+value4;
+
+            console.log("resenje je: " +zbir);
+            alert("resenje je: " +zbir);
+             document.getElementsByTagName("input")[10].value = zbir;
+            
+        }
+
+        function zadatak4(){
+
+            var ocena = parseInt(document.forma3.bodovi.value)
+
+            if (ocena == 100) {
+                document.getElementsByTagName("input")[13].value = "dobili ste 10 sa ukupnim brojem bodova: " +ocena;
+            } else if( ocena >= 95 && ocena <= 100){
+                document.getElementsByTagName("input")[13].value = "dobili ste 10 sa ukupnim brojem bodova: " + ocena;
+            } else if( ocena >= 85 && ocena <= 95){
+                document.getElementsByTagName("input")[13].value = "dobili ste 9 sa ukupnim brojem bodova: " + ocena;
+            } else if ( ocena >= 75 && ocena <= 85){
+                document.getElementsByTagName("input")[13].value = "dobili ste 8 sa ukupnim brojem bodova: " + ocena;
+            } else if (ocena >= 65 && ocena <= 75){
+                document.getElementsByTagName("input")[13].value = "dobili ste 7 sa ukupnim brojem bodova: " + ocena;
+            } else if( ocena >= 55 && ocena <= 65){
+                document.getElementsByTagName("input")[13].value = "dobili ste 6 sa ukupnim brojem bodova: " + ocena;
+            }else{
+                document.getElementsByTagName("input")[13].value = "niste prosli nedovoljan broj bodova " +ocena;
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <p>this is a test</p>
+    <input type="button" value="petlja" onclick="petlja()">
+    <input type="button" value="datum" onclick="datum()"> <br><br>
+    
+    <form action="#" name="forma">
+        <input type="text" name="var1">
+        <input type="text" name="var2">
+        <input type="text" name="var3"> <br>
+        <input type="text" name="resenje" placeholder="Resenje">
+        <input type="button" value="zadatak2" onclick="zadatak2()">
+
+    </form> <br><br>
+
+    <form action="#" name="forma2">
+        <input type="text" name="broj1">
+        <input type="text" name="broj2">
+        <input type="button" value="zadatak3" onclick="zadatak3()">
+        <br>
+        <input type="text" name="brojResenje" placeholder="BrojResenje">
+    </form>
+
+    <br><br>
+    <form action="#" name="forma3">
+        <input type="text" name="bodovi">
+        <input type="button" value="zadatak4" onclick="zadatak4()"> <br>
+        <input type="text" value="Ocena">
+
+    </form>
+
+    
+    
+</body>
+</html>

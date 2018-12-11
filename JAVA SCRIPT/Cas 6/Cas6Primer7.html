@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Čas 6 Primer 7</title>
+  <meta charset="utf-8">
+  <script>
+    function poredenje() {
+      var danas = new Date;
+      var dan = danas.getDay();
+      var mesec = danas.getMonth() + 1;
+      var godina = danas.getYear();
+      //probati par primera samostalno
+      if (dan == 1 && mesec == 2) {
+        alert("Danas je ponedeljak februar");
+      }else {
+        alert("Danas je neki drugi dan!")
+      }
+    }
+  </script>
+</head>
+  <body>
+    <h1>Čas 6 Primer 7 - Logičke operacije i operatori - 	dva uslova</h1>
+    <form name="formular">
+      <input type="button" name="film" value="Klik" 	onClick="poredenje()"> </form>
+  </body> 
+</html>

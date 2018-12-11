@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Čas 6 Primer 5</title>
+<script>
+  function zbir(){
+    var a=document.getElementsByTagName("input")[0].value;
+    var b=document.getElementsByTagName("input")[1].value;
+    var c=parseFloat(a)+parseFloat(b);
+    document.getElementsByTagName("input")[2].value=c;
+}
+</script>
+</head>
+<body>
+  <h1>Čas 6 Primer 5 - Preuzimanje vrednosti parametra forme, zbir brojeva i dodeljivanje vrednosti parametru forme i ispis na onMouseOut događaj</h1>
+<form name=forma>
+  <label for="prvi">Prvi broj</label>
+  <input type="text" name="prvi"><br>
+  <label for="drugi">Drugi broj</label>
+  <input type="text" name="drugi"><br>
+  <label for="rezultat">Rezultat</label>
+  <input type="text" name="rezultat">
+  <input type=button value="Saberi" onClick="zbir()">
+</form>
+</body>
+</html>

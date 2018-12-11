@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Čas 6 Primer 6</title>
+<script>
+  function zbir(){
+    var a=document.getElementsByTagName("input")[0].value;
+    var b=document.getElementsByTagName("input")[1].value;
+    var c=parseFloat(a)+parseFloat(b);
+    if(c<10){
+      document.getElementsByTagName("input")[2].value=c;
+      
+       document.getElementsByTagName("input")[3].value="";
+    } else {
+      document.getElementsByTagName("input")[3].value=c;
+     
+       document.getElementsByTagName("input")[2].value="";
+    }
+  }
+ 
+</script>
+</head>
+<body>
+  <h1>Čas 6 Primer 6 - Preuzimanje vrednosti parametra forme 	sabiranje provera uslova i upis u odgovarajuće polje</h1>
+	  <form name="forma">
+   <label for="prvi">Prvi broj</label>
+   <input type="text" name="prvi"><br>
+   <label for="drugi">Drugi broj</label>
+   <input type="text" name="drugi"><br>
+   <label for="manji">Manji</label>
+   <input type="text" name="manji"><br>
+   <label for="veci">Veci</label>
+   <input type="text" name="veci"><br>
+   <input type=button value="Saberi" onClick="zbir()">
+ </form><br>
+ 
+	</body>
+</html>
