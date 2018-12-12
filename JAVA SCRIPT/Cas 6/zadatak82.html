@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 83</title>
+
+    <script>
+        function deljivo() {
+            for(var i = 0; i <= 100; i++){
+                if (i % 5 === 0 && i % 3 === 0) {
+                    document.writeln("<div>alert ovaj broj je deljiv sa 3 i 5<\div>" +i);
+                }else if(i % 5 === 0){
+                    document.writeln("<div>alert ovaj broj je deljiv sa 5<\div>" +i);
+                }else if(i % 3 === 0){
+                    document.writeln("<div>alert ovaj broj je deljiv sa 3<\div>" +i);
+                }
+                
+            }
+            
+        }
+        
+    </script>
+
+</head>
+
+
+
+<body onload="deljivo()">
+    
+</body>
+</html>

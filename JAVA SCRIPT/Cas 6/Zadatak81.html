@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 8.2</title>
+
+
+    <script>
+        var autor;
+        var broj1;
+        var broj2;
+        var zbir;
+
+
+        // set timeout napravi jos jedan sa funkcijom 
+
+        function loadx() {
+            autor = prompt("Unesite vase ime","Ime");
+           // alert(autor);   
+        }
+
+        function zbirX(params) {
+            broj1 = parseInt(prompt("broj 1","Ime"));
+            broj2 = parseInt(prompt("broj 2","Ime"));
+            alert(broj1+broj2);
+        }
+
+        function autorAlert(params) {
+            alert(autor);
+        }
+    
+        function newWindow() {
+        window.open('zadatak811.html');
+         }
+
+        function petsecundi() {
+            alert("radi posle pet sekundi jej");
+        }
+    </script>
+
+    
+
+</head>
+<body onload="loadx()">
+    
+
+    <form action="#" name="forma">
+        <button name="noviProzor" onclick="newWindow()" value="Novi Prozor" style="width: 100px; height: 20px;">New Window</button>
+        <button name="Autor" onclick="autorAlert()" value="Autor X" style="width: 100px; height: 20px;">Ime Autora</button>
+        <button name="5sekundi" onclick="setTimeout(petsecundi, 3000);" value="five seconds" style="width: 100px; height: 20px;">Pet Sekundi</button>
+        <button name="zbir" onclick="zbirX()" value="zbirX" style="width: 100px; height: 20px;">Zbir</button>
+    </form>
+
+</body>
+</html>
