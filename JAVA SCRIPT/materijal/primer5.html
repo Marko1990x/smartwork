@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>Ovaj primer pokazuje kako da prosledimo vrednost parametara kada koristimo  addEventListener() metod.</p>
+
+
+
+<button id="myBtn">Klikni</button>
+
+<p id="demo"></p>
+
+<script>
+var p1 = 5;
+var p2 = 7;
+
+document.getElementById("myBtn").addEventListener("click", function() {
+  myFunction(p1, p2);
+});
+
+function myFunction(a, b) {
+  var result = a * b;
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

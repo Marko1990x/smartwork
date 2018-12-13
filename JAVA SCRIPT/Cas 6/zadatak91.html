@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>boja</title>
+    
+</head>
+
+<body onload="myColor">
+
+    <p>Pick a color to change the background color of the page</p>
+
+    A color picker: <input type="color" id="myColor">
+
+    <p id="name"></p>
+
+
+    <script>
+
+        
+
+            //var a = document.getElementById("myColor").value;
+
+
+            function changecolor() {
+               // var b = document.getElementById("myColor").value;
+                b = document.getElementById("myColor").value;
+                document.body.style.backgroundColor = b;
+              //  document.write("color selected: " +b);
+                document.getElementById("name").innerHTML = "izabrali ste boju: " +b;
+            }
+
+            //poziv funkcije bez zagrada
+            document.getElementById("myColor").addEventListener("input", changecolor);
+    
+            
+        
+    </script>
+
+</body>
+
+</html>

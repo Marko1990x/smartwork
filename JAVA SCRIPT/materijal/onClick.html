@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Izvrsava se samo dogadjaj koji je poslednji definisan nad istim elementom</p>
+
+    <p id="demo">Click me.</p>
+
+    <script>
+        document.getElementById("demo").onclick = function() {
+            myFunction()
+        };
+        document.getElementById("demo").onclick = function() {
+            myFunction1()
+        };
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+        }
+
+        function myFunction1() {
+            document.getElementById("demo").innerHTML = "YOU CLICKED ME AGAIN!";
+        }
+    </script>
+
+</body>
+</html>
