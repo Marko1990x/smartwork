@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zadatak 10 2 switch second part</title>
+</head>
+
+<body>
+
+    <input type="button" id="promptButton" value="prompty">
+
+    <!-- 
+        var a = prompt('a', '');
+        if (a == "0"){
+            alert(0);
+
+        }
+        if(a == "1"){
+            alert(1);
+        }
+        if(a == "2" || a == "3"){
+            alert('2,3');
+        }
+    -->
+
+    <!-- modifikacija ove petlje u switch petlju-->
+
+    <script>
+        document.getElementById("promptButton").addEventListener("click", switchX);
+
+        function switchX() {
+            var a = parseInt(prompt("Unesite neki broj"));
+
+            switch (a) {
+                case 0:
+                    alert(a);
+                    break;
+                case 1:
+                    alert(a);
+                    break;
+                
+                case 2:
+                case 3:
+                alert("Uneli ste broj 2 ili 3 po zadataku: " + a)
+                break;
+                default:
+                    alert("broj koji ste uneli nije po zadataku" + a)
+                    break;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

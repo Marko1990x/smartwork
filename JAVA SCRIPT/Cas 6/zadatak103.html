@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zadatak 10 horoskop</title>
+</head>
+
+<body>
+
+
+    <input type="button" id="promptyX" value="prompty">
+
+    <p id="nonsence"></p>
+
+    <script>
+        document.getElementById("promptyX").addEventListener("click", horoskop);
+
+        function horoskop() {
+
+            var a = prompt("unesite horoskopski znak");
+            // ovan bik  blizanci rak  lav  devica  vaga  skorpija strelac jarac vodolija ribe
+
+            var ovan = "izabrali ste horoskop ovna jej: "
+            var bik = "izabrali ste horoskop bik jej: "
+            var blizanci = "izabrali ste horoskop blizanca jej: "
+            var rak = "izabrali ste horoskop rak jej: "
+            var lav = "izabrali ste horoskop lav jej: "
+            var devica = "izabrali ste horoskop devica jej: "
+            var vaga = "izabrali ste horoskop vaga jej: "
+            var skorpija = "izabrali ste horoskop skorpija jej: "
+            var strelac = "izabrali ste horoskop strelac jej: "
+            var jarac = "izabrali ste horoskop jarac jej: "
+            var vodolija = "izabrali ste horoskop vodolica jej: "
+            var ribe = "izabrali ste horoskop ribe jej: "
+
+            switch (a) {
+                case "ovan":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = ovan + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "bik":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = bik + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "blizanci":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = blizanci + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "rak":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = rak + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "lav":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = lav + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+
+                case "devica":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = devica + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "vaga":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = vaga + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "skorpija":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = skorpija + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "strelac":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = strelac + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "jarac":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = jarac + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "vodolija":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = vodolija + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+                case "ribe":
+                    // document.write("uneli ste horoskopski znak: " + a);
+                    document.getElementById("nonsence").innerHTML = ribe + a;
+                    document.getElementById("nonsence").style.color = "red";
+                    document.getElementById("nonsence").style.fontSize = "22px";
+                    break;
+
+
+
+                default:
+                    alert("trazeni znak ne postoji: " + a)
+                    break;
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

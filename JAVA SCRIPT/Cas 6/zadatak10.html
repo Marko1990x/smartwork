@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zadatak 10 Switch</title>
+</head>
+
+<body>
+
+    <input type="button" id="prompt" value="prompt">
+
+
+    <script>
+        document.getElementById("prompt").addEventListener("click", promptX);
+
+        function promptX() {
+            var a = parseInt(prompt("Unesite broj"));
+
+            switch (a) {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    alert("Zadata vrednost je izmedju 1 i 6: " + a)
+                    break;
+
+
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 10:
+                    case 11:
+                    alert("Zadata vrednost je izmedju 7 i 11: " + a)
+                    break;
+
+                default:
+                    alert("zadata vrednost nije u opsegu case slucaja: " + a)
+                    break;
+            }
+        }
+    </script>
+
+
+    <!--  
+
+        /* 
+     switch (a) {
+                case 1:
+                    alert("Zadata vrednost je izmedju 1 i 6: " + a)
+                   // break;
+
+                case 2:
+                    alert("Zadata vrednost je izmedju 1 i 6: " + a)
+                  //  break;
+
+                case 3:
+                    alert("Zadata vrednost je izmedju 1 i 6: " + a)
+                   // break;
+                case 4:
+                    alert("Zadata vrednost je izmedju 1 i 6: " + a)
+                 //   break;
+                case 5:
+                    alert("Zadata vrednost je izmedju 1 i 6: " + a)
+                    break;
+                case 6:
+                    alert("Zadata vrednost je izmedju 1 i 6: " + a)
+                    break;
+
+
+                    case 7:
+                    alert("Zadata vrednost je izmedju 7 i 11: " + a)
+                    break;
+
+                    case 8:
+                    alert("Zadata vrednost je izmedju 7 i 11: " + a)
+                    break;
+
+                    case 9:
+                    alert("Zadata vrednost je izmedju 7 i 11: " + a)
+                    break;
+
+                    case 10:
+                    alert("Zadata vrednost je izmedju 7 i 11: " + a)
+                    break;
+
+                    case 11:
+                    alert("Zadata vrednost je izmedju 7 i 11: " + a)
+                    break;
+
+                default:
+                    alert("zadata vrednost nije u opsegu case slucaja: " + a)
+                    break;
+            }
+        }
+    </script> */
+
+        -->
+    
+
+</body>
+
+</html>

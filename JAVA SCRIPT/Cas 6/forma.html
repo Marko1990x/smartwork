@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Designed Checkbox and Radio Button</title>
+    <!-- include css file here-->
+    <link rel="stylesheet" href="css/design_checkbox.css" />
+    <style>
+        form {
+            background: linear-gradient(#a0e0f5, #5b9bb1);
+            margin: auto;
+            position: relative;
+            width: 550px;
+            height: 450px;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 24px;
+            font-weight: bold;
+            color: #11272e;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #999;
+            border: inset 1px solid #333;
+            -webkit-box-shadow: 3px 3px 8px gray;
+            text-shadow: 4px 2px 3px #968585;
+        }
+        
+        input {
+            width: 375px;
+            display: block;
+            border: 1px solid #999;
+            height: 25px;
+            -webkit-box-shadow: 2px 2px 8px black;
+            margin-bottom: 20px;
+        }
+        
+        textarea#feedback {
+            width: 375px;
+            height: 150px;
+            display: block;
+        }
+        
+        button {
+            width: 100px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background: #09C;
+            color: #fff;
+            font-family: Tahoma, Geneva, sans-serif;
+            height: 30px;
+            border-radius: 15px;
+            border: 1p solid #999;
+        }
+        
+        #button:hover {
+            background: #09C;
+            color: #fff;
+        }
+        
+        #button {
+            width: 380px;
+        }
+        
+        textarea:focus,
+        input:focus {
+            border: 1px solid #09C;
+        }
+        
+        input[type="submit"] {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myformX" id="myform">
+        <div>
+            <h1>Contact Form :</h1>
+            <label> <span>Your fistname</span>
+                <input id="ime" type="text" name="name"> </label> <span>Your lastname</span>
+            <input id="lastname" type="text" name="lastname">
+            <label> <span>Phone Number</span>
+                <input id="number" type="text" name="number"> </label>
+            <label>
+                <input id="button" type="button" value="Submit Form">
+            </label>
+        </div>
+    </form>
+
+
+    <script>
+       
+       document.getElementById("myform").addEventListener("submit", prevent2);
+       document.getElementById("myform").addEventListener("click", function(event) {
+           event.preventDefault();
+       })
+       document.getElementById("button").addEventListener("click", prevent);
+        document.getElementById("button").addEventListener("click", check);
+        document.getElementById("button").addEventListener("click", enable);
+        //document.getElementById("button").addEventListener("click", functionX);
+
+        function prevent(event) {
+            event.preventDefault();
+        }
+
+        function prevent2(event) {
+            event.preventDefault();
+        }
+
+        function enable() {
+            document.forms["myform"].submit();
+
+        }
+
+        function check() {
+
+        var name = document.getElementById("ime").value;
+         var lastName = document.getElementById("lastname").value;
+         var phonenumber = document.getElementById("number").value;
+
+            if (!isNaN(name)) {
+                //var x = name;
+                alert(name + "molimo vas da u polje ne unosite brojeve");
+               // return true;
+            }
+            if (!isNaN(lastName)) {
+                alert(lastName + "molimo vas da u polje ne unosite brojeve 2");
+                //return true;
+            } 
+            if (isNaN(phonenumber)) {
+                alert(phonenumber + " is not a number");
+              //  return true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
