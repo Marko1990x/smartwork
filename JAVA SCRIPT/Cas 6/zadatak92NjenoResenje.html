@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Complete mailing address updated</title>
+    <style>
+        form {
+            background: linear-gradient(#a0e0f5, #afa5a5);
+            margin: auto;
+            position: relative;
+            width: 550px;
+            height: 650px;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 24px;
+            font-weight: bold;
+            color: #11272e;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #999;
+            border: inset 1px solid #333;
+            -webkit-box-shadow: 3px 3px 8px gray;
+            text-shadow: 4px 2px 3px #968585;
+        }
+        
+        input {
+            width: 375px;
+            display: block;
+            border: 1px solid #999;
+            height: 25px;
+            -webkit-box-shadow: 2px 2px 8px black;
+        }
+        
+        textarea#feedback {
+            width: 375px;
+            height: 150px;
+            display: block;
+        }
+        
+        button {
+            width: 100px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background: #09C;
+            color: #fff;
+            font-family: Tahoma, Geneva, sans-serif;
+            height: 30px;
+            border-radius: 15px;
+            border: 1p solid #999;
+        }
+        
+        #button:hover {
+            background: #09C;
+            color: #fff;
+        }
+        
+        #button {
+            width: 380px;
+        }
+        
+        textarea:focus,
+        input:focus {
+            border: 1px solid #09C;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="userInfo"> Firstname:
+        <input type="text" name="firstname" id="name">
+        <br> Lastname:
+        <input type="text" name="lastname" id="lastname">
+        <br> Street:
+        <input type="text" name="street" id="street">
+        <br> City:
+        <input type="text" name="city" id="city">
+        <br>
+        <br> Mailing address:
+        <textarea id="feedback" ROWS="4" COLS="40" name="address"></textarea>
+        <br>
+        <br>
+        <input type="button" id="button" value="Potvrdi"> </form>
+    <script>
+
+        // druga varianta spajanja vrednosti u funkciji.
+
+        document.getElementById("name").addEventListener("change", update);
+        document.getElementById("lastname").addEventListener("change", update);
+        document.getElementById("street").addEventListener("change", update);
+        document.getElementById("city").addEventListener("change", update);
+
+        function update() {
+            document.userInfo.address.value = document.userInfo.firstname.value + '\r' + document.userInfo.lastname.value + '\r' + document.userInfo.street.value + '\r' + document.userInfo.city.value;
+        }
+        //Stop Hiding-->
+    </script>
+</body>
+
+</html>
