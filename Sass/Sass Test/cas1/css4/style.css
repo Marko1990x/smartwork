@@ -14,5 +14,14 @@
   font-size: 25px;
   color: #3C7949;
 }
+.container #parentselector p {
+  color: black;
+}
+.container #parentselector a {
+  font-size: 20px;
+}
+.container #parentselector a:hover {
+  background-color: yellow;
+}
 
 /*# sourceMappingURL=style.css.map */

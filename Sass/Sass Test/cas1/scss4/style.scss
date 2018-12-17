@@ -19,4 +19,17 @@
         color: #3C7949;
     }
 
+    #parentselector{
+        p{
+            color: black;
+        }
+        
+        a{
+            font-size: 20px;
+            &:hover {
+                background-color: yellow;
+            }
+        }
+    }
+
 }

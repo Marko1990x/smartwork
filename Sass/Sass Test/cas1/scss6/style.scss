@@ -1,0 +1,34 @@
+.frst_para{
+    color: green;
+}
+
+.sec_para{
+    @extend .frst_para;
+    font-size: 20px;
+}
+
+// primer extendovanja vrednosti - pogledaj opsirnije
+
+
+/*
+ - red 1
+ - red 2 
+ - red 3 
+
+ - red 5
+ - red 6 
+
+    - viseredni komentari primer xd :(
+    - ovaj komentar ce se videti u generisanom css fajlu 
+*/
+
+
+// jednoredni komentar   -- ovaj se nece videtu u generisanom fajlu zato sto ovo nije kometar u css-u
+
+// asdsd 
+
+// dasdsd
+
+
+$version: "7.8";    // primer ubacivanja vrednosti u css fajl variable
+/*  Framework version for the generated css is #{$version}.  */
