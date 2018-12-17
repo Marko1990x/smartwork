@@ -1,0 +1,14 @@
+$age: 11;
+
+.bool{
+    @if ($age > 10 and $age < 25){
+        color: green;
+    }
+}
+
+
+/*
+
+pogledaj ovo kuci zanimljivo je funkcija u css kodu.
+
+ */ 
