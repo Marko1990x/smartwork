@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+
+#div1{
+    @include div1;
+    .id2{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        margin: 0% auto;
+        position: relative;
+        transform: translate(+0, 150%);
+        animation-name: shiningSquare;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@include anim1;

@@ -1,0 +1,6 @@
+@mixin anim1 {
+    @keyframes animations {
+        from {background-color: red;}
+        to {background-color: yellow;}
+    }
+}
