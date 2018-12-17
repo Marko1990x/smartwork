@@ -1,0 +1,11 @@
+/* Ovo je primer komentara
+ * u vise redova.
+ * dok radim scss, 
+ * nikola gleda u moj monitor
+ * OVAJ KOMENTAR CE SE VIDETI U GENERISANOM CSS FAJLU!!!
+*/
+body {
+  color: black; }
+
+a {
+  color: blue; }

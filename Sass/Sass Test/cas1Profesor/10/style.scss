@@ -1,0 +1,6 @@
+$color1: #333399;
+$color2: #CC3399;
+
+p{
+   color: $color1 + $color2;
+}

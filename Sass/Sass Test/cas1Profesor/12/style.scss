@@ -1,0 +1,6 @@
+$age:20;
+.bool {
+   @if ($age > 10 and $age < 25) {
+      color: green;
+   }
+}
