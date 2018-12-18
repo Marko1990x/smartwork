@@ -1,0 +1,182 @@
+
+@import 'animations';
+@import 'mixins';
+@import 'variables';
+@import 'media';
+
+
+
+.container{
+    p{
+        font-size: 5px + (6px *2);
+        color: darkred;
+    }
+
+    /*
+    druga varianta */
+
+    h2{
+        font-size:  5 * ( 6 + 2 ) + px;
+    }
+
+    h1{
+        font-size:  5 * 6 + 2 + px;
+    }
+    h3{
+        font-size:  5 * 6 / 12 + px;
+    }
+}
+
+
+.funkcije{
+
+    /* Ovo je ugradjena funkcija nije proizvoljno ime    */
+
+    p{
+        color: hsl(260,70%,60%);
+    }
+
+    #second{
+        color: hsl(50,70%,60%);
+    }
+
+    #third{
+        color: rgb(151, 139, 78);
+    }
+
+    h2{
+        color: hsl(100,70%,60%);
+    }
+    #forth{
+        color: rgba(223, 115, 6, 0.671);
+        /*
+        ovo je boja sa providnoscu 
+        bolje bi se videlo da je u divu zbog providnosti*/
+    }
+
+    #fifth{
+        color: hsla(4, 51, 45, 50);
+    }
+
+    #six{
+        color: grayscale($color: #971717);
+    }
+
+    #seven{
+        color: complement(#ad4038);
+    }
+
+    #eight{
+        color: invert(#ad4038);
+    }
+
+
+}
+
+$grad: "Novi Sad";
+$skola: "Smart School";
+
+.interpolation{
+    P:after{
+        content: "i have #{18+2} books in my store.";
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h1:after{
+        content: "zivim u gradu: #{$grad} i ucim sass u skoli #{$skola}";
+        font-size: 30px;
+    }
+
+    // proveri ostale vrednosti  // ovo je mozda nacin da dodajem sadrzaj sa funkcijama posle texta.
+}
+
+.amperson{
+    a{
+        font-size: 30px;
+        &:link {
+            color: #FF0000;
+        }
+        &:visited {
+            color: #00FF00;
+        }
+        &:hover{
+            color: #FF00FF;
+            background-color: #971717;
+        }
+        &:active {
+            color: #0000FF;
+        }
+
+        /* rade samo sa pseudo klasama */
+    }
+}
+
+
+.import{
+    #div1{
+        @include div1;
+    }
+    #div2{
+        @include div2;
+        animation-name: anim2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @include anim1;
+}
+
+
+.testVar{
+    #a1:after{
+        content: "#{$gradX} - ok";  // spajanje kobasice preko variabla ako hocu da imam
+        // jos neke stvari posle promenjive koja se vuce ovak ose spaja string.
+    }
+    #a2:after{
+        content: $dan;
+    }
+    #a3:after{
+        content: $grupa;
+    }
+}
+
+#snowman{
+    background-image: url(../image/snowman.jfif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 100px;
+    color: white;
+    
+}
+
+#img{
+    p:after{
+        content: "ovo je media querry koji je napisan u posebnom fajlu";
+        color: black;
+        margin-left: 10em;
+    }
+}
+
+#extend{
+
+    /* ovo je primer kako extend radi u ovom divu */
+
+    .style{
+        font-size: 30px;
+        font-style: italic;
+    }
+    h2{
+        color: #0000FF;
+        @extend .style;
+    }
+    .container{
+        @extend h2;
+    }
+}
+
+/* 
+primer using sass paranthesis
+*/

@@ -1,0 +1,6 @@
+@mixin anim1 {
+    @keyframes anim2 {
+        from {background-color: red;}
+        to {background-color: yellow;}
+    }
+}

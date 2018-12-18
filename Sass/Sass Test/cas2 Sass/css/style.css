@@ -1,0 +1,154 @@
+@media screen and (orientation: landscape) {
+  img {
+    margin-left: 100px;
+    width: 500px;
+  }
+}
+.container {
+  /*
+  druga varianta */
+}
+.container p {
+  font-size: 17px;
+  color: darkred;
+}
+.container h2, .container #extend .container, #extend .container .container {
+  font-size: 40px;
+}
+.container h1 {
+  font-size: 32px;
+}
+.container h3 {
+  font-size: 2.5px;
+}
+
+.funkcije {
+  /* Ovo je ugradjena funkcija nije proizvoljno ime    */
+}
+.funkcije p {
+  color: #8152e0;
+}
+.funkcije #second {
+  color: #e0c952;
+}
+.funkcije #third {
+  color: #978b4e;
+}
+.funkcije h2, .funkcije #extend .container, #extend .funkcije .container {
+  color: #81e052;
+}
+.funkcije #forth {
+  color: rgba(223, 115, 6, 0.671);
+  /*
+  ovo je boja sa providnoscu 
+  bolje bi se videlo da je u divu zbog providnosti*/
+}
+.funkcije #fifth {
+  color: #ad4038;
+}
+.funkcije #six {
+  color: #575757;
+}
+.funkcije #seven {
+  color: #38a5ad;
+}
+.funkcije #eight {
+  color: #52bfc7;
+}
+
+.interpolation P:after {
+  content: "i have 20 books in my store.";
+}
+.interpolation h1 {
+  font-size: 20px;
+}
+.interpolation h1:after {
+  content: "zivim u gradu: Novi Sad i ucim sass u skoli Smart School";
+  font-size: 30px;
+}
+
+.amperson a {
+  font-size: 30px;
+  /* rade samo sa pseudo klasama */
+}
+.amperson a:link {
+  color: #FF0000;
+}
+.amperson a:visited {
+  color: #00FF00;
+}
+.amperson a:hover {
+  color: #FF00FF;
+  background-color: #971717;
+}
+.amperson a:active {
+  color: #0000FF;
+}
+
+.import #div1 {
+  width: 200px;
+  height: 200px;
+  background-color: #af3535;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+.import #div2 {
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  position: relative;
+  transform: translate(20%, 20%);
+  animation-name: anim2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes anim2 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+.testVar #a1:after {
+  content: "novi Sad - ok";
+}
+.testVar #a2:after {
+  content: "utorak";
+}
+.testVar #a3:after {
+  content: "Najbolji sass polaznici";
+}
+
+#snowman {
+  background-image: url(../image/snowman.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  margin-bottom: 100px;
+  color: white;
+}
+
+#img p:after {
+  content: "ovo je media querry koji je napisan u posebnom fajlu";
+  color: black;
+  margin-left: 10em;
+}
+
+#extend {
+  /* ovo je primer kako extend radi u ovom divu */
+}
+#extend .style, #extend h2, #extend .container {
+  font-size: 30px;
+  font-style: italic;
+}
+#extend h2, #extend .container {
+  color: #0000FF;
+}
+/* 
+primer using sass paranthesis
+*/
+
+/*# sourceMappingURL=style.css.map */
