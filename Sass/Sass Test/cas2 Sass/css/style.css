@@ -147,6 +147,20 @@
 #extend h2, #extend .container {
   color: #0000FF;
 }
+#extend .wrapper, #extend .container {
+  background-color: red;
+}
+
+#atRoot h2, #atRoot #extend .container, #extend #atRoot .container {
+  color: #808000;
+  background-color: #DB7093;
+}
+.style, #extend h2, #extend .container {
+  font-size: 30px;
+  font-style: bold;
+  color: rgba(15, 171, 199, 0.651);
+}
+
 /* 
 primer using sass paranthesis
 */
