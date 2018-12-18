@@ -1,5 +1,6 @@
 Sadrzaj primera:
 
+1. dan
 01 - prvi osnovni sass primer
 02 - drugi osnovni sass primer
 03 - nested rules
@@ -12,5 +13,15 @@ Sadrzaj primera:
 10 - Color Operations
 11 - String Operations
 12 - Boolean Operations
+
+2. dan
+13 - Parantheses
+14 - Functions
+15 - Interpolation
+16 - Amphersand in Sass
+17 - Variable Defaults
+18 - Rules and Directives - import
+19 - Rules and Directives - media
+20 - Rules and Directives - extend
 
 

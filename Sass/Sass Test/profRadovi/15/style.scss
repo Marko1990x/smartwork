@@ -1,0 +1,12 @@
+$grad:"novi sad";
+$skola: "smart school";
+
+p:after {
+   content: "I have #{8 + 2} books on SASS!";
+}
+
+h1:after{
+    content: "Zivim u gradu: #{$grad}, i sass ucim u skoli kompjutera #{$skola}"
+}
+
+    

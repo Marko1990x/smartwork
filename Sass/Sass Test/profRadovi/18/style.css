@@ -1,0 +1,18 @@
+ul {
+  margin: 0;
+  padding: 1; }
+
+li {
+  color: #680000; }
+
+.container {
+  background: #fff; }
+
+h1 {
+  color: #77C1EF; }
+
+h4 {
+  color: #B98D25; }
+
+p:after {
+  content: "Najbolji Sass polaznici - ok!"; }

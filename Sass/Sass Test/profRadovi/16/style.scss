@@ -1,0 +1,7 @@
+a {
+    font-size: 20px;
+    &:link{ text-decoration: none; }
+    &:hover { background-color: yellow; text-decoration:underline;}
+    &:active {color:deepskyblue; }
+    &:visited {color: darkmagenta; }
+}

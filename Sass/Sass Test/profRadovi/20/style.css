@@ -1,0 +1,9 @@
+.style, h2, .container {
+  font-size: 30px;
+  font-style: italic; }
+
+.wrapper, .container {
+  background-color: red; }
+
+h2, .container {
+  color: #787878; }

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*
+http://www.tutorialsteacher.com/sass/sass-color-functions
+
+h = 0 - 360
+s = 0 - 100%
+l = 0 - 100%
+
+h = hue = nijansa
+s = Saturation = Zasićenje
+l = Lightness = osvetljenje
+
+*/
+p {
+  color: #d185e0; }
+
+h1 {
+  color: #d185e0; }
+
+h2 {
+  color: #ad4038; }
+
+h3 {
+  color: rgba(172, 65, 56, 0.5); }
+
+h4 {
+  color: #ad4038; }
+
+h5 {
+  color: #737373; }
+
+h6 {
+  color: #38a5ad; }
+
+.tekst {
+  color: #52bfc7; }

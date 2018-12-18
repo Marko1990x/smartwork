@@ -1,0 +1,11 @@
+a {
+  font-size: 20px; }
+  a:link {
+    text-decoration: none; }
+  a:hover {
+    background-color: yellow;
+    text-decoration: underline; }
+  a:active {
+    color: deepskyblue; }
+  a:visited {
+    color: darkmagenta; }

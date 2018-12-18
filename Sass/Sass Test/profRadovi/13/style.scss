@@ -1,0 +1,16 @@
+p {
+   font-size:  5px + 6px * 2;
+   color:#ff0000;
+}
+
+h2 {
+    font-size:  5 * (6 + 2) + px;
+}
+
+h1 {
+    font-size:  5 * 6 + 2 + px;
+}
+
+h3 {
+    font-size:  5 * 6 / 12 + em;
+}

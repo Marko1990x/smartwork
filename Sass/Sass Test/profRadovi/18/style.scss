@@ -1,0 +1,21 @@
+@import "_partial";
+@import "_promenljive";
+
+
+.container {
+   background: #fff;
+}
+
+h1 {
+   color: #77C1EF;
+}
+
+h4 {
+   color: #B98D25;
+}
+
+p:after {
+   content: "#{$grupa} - ok!";
+}
+
+
