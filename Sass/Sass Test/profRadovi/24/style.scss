@@ -1,0 +1,22 @@
+$type: audi;
+p {
+   @if $type == benz {
+      color: red;
+   } @else {
+      color: black;
+   }
+}
+
+h1 {
+   @if ($type == benz) {
+      color: red;
+   } @else if ($type == mahindra) {
+      color: blue;
+   } @else if ($type == audi) {
+      color: green;
+   } @else {
+      color: black;
+   }
+}
+
+

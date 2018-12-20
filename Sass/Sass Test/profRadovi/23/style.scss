@@ -1,0 +1,4 @@
+p {
+   @if 10 + 10 == 20   { border: 1px dotted; }
+   @if 7 > 2     { border: 2px solid;  }
+}

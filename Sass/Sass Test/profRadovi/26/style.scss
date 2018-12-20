@@ -1,0 +1,16 @@
+$niz: jedan, dva, tri, cetiri;
+
+@each $color in (red, green, yellow, blue) {
+   .p_#{$color} {
+      background-color: #{$color};
+   }
+}
+
+@each $klasa in $niz {
+    .#{$klasa} {
+        color:red;
+        font-weight: bold;
+    }
+}
+
+

@@ -1,0 +1,5 @@
+node-sass -o ./ style.scss
+
+node-sass -o css style.scss
+
+node-sass -o ./ style.scss -w

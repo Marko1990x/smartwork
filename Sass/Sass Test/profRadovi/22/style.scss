@@ -1,0 +1,22 @@
+$a: 2;
+$b: 3;
+$c: 9;
+$d: "11";
+
+
+h1 {
+   color: if( 1 + 2 == 2 , green , red);
+}
+
+h2 {
+   color: if( $a + $b > $c , green , red);
+}
+
+h3 {
+   color: if( ($a + $b) <= $c , green , red);
+}
+
+h4 {
+   color: if( ($a + $b) >= $c , green , red);
+}
+

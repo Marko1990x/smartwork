@@ -148,7 +148,7 @@ adds some variables
 }
 
 /* each function example  */
-// ovo nigde nije primenjeno ali je primer kako niz radi
+/* ovo nigde nije primenjeno ali je primer kako niz radi */
 $niz: jedan,
 dva,
 tri,
@@ -161,7 +161,7 @@ cetiri;
 }
 
 
-// petlja u petlji
+/* petlja u petlji */
 
 $j: 1;
 
@@ -176,10 +176,13 @@ $j: 1;
     $j: $j+1;
 }
 
+/*
+
 // radi ok pogledaj css za resenje.   // ; znaci izvrsi komandu.
 
 // while u while petlji;
 
+*/
 $x: 1;
 
 @while $x < 5 {
@@ -199,4 +202,46 @@ $x: 1;
 
 }
 
-// rezultat je u css fajlu.
+/* rezultat je u css fajlu. */ 
+
+
+.mixins{
+    @mixin styleX {
+        .cont{
+            color: #77C1EF;
+        }
+    }
+
+    @include styleX;
+}
+
+.mixins2{
+    @mixin StyleX2 {
+        .cont{
+            background-color: #77C1EF;
+            color: #ffffff;
+        }
+
+        h3{
+            color: #ffffff;
+        }
+    }
+
+    @include StyleX2;
+}
+
+@mixin bordered($width: 0, $height: 0) {
+    background-color: #77C1EF;
+    border: $width solid black;
+    width: 450px;
+    height: $height;
+}
+
+.styleY{
+    @include bordered(3px, 300px);   /* prosledjivanje parametara u mixin  // dodato sa vise parametara */
+}
+
+/* ako mu nista nije prosledjeno onda uzima defaultnu vredost koja mu je prosledjena*/
+.wrapper{    /* name klase */
+    @include bordered();  /* primer gde nista nije prosledjeno. */
+}

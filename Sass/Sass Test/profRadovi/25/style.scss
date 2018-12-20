@@ -1,0 +1,30 @@
+@for $i from 1 through 4 {
+   h#{$i} { padding-left : 10px + $i; }
+}
+
+
+@for $i from 1 through 4 {
+   .h#{$i} { padding-left : 10px * $i; }
+}
+
+
+@for $i from 1 through 4 {
+   #h#{$i} { padding-left : 0px - $i; }
+}
+
+@for $i from 10 through 4 {
+   p#{$i} { padding-left : 0px; }
+}
+
+// od 1 do 4
+@for $i from 1 to 5 {
+   .grad#{$i} { padding-left : 0px; }
+}
+
+
+
+
+
+
+
+

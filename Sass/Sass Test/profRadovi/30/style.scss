@@ -1,0 +1,21 @@
+@mixin bordered($width: 2px) {
+   background-color: #77C1EF;
+   border: $width solid black;
+   width: 450px;
+}
+
+// saljemo parametar mixinu
+.style  {
+   @include bordered(3px);
+}
+
+// ne saljemo parametar mixinu
+.wrapper {
+    @include bordered();
+}
+
+// poziv mixina, bez zagrada
+.content {
+    @include bordered;
+}
+

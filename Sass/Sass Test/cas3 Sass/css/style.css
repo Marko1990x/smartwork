@@ -129,6 +129,7 @@ adds some variables
 }
 
 /* each function example  */
+/* ovo nigde nije primenjeno ali je primer kako niz radi */
 .jedan {
   color: red;
 }
@@ -145,6 +146,7 @@ adds some variables
   color: red;
 }
 
+/* petlja u petlji */
 .in-1 {
   color: red;
   font-weight: bold;
@@ -175,6 +177,13 @@ adds some variables
   font-weight: bold;
 }
 
+/*
+
+// radi ok pogledaj css za resenje.   // ; znaci izvrsi komandu.
+
+// while u while petlji;
+
+*/
 .klasa-1 {
   color: red;
 }
@@ -253,6 +262,37 @@ adds some variables
 
 .klasa-4 {
   color: blue;
+}
+
+/* rezultat je u css fajlu. */
+.mixins .cont {
+  color: #77C1EF;
+}
+
+.mixins2 .cont {
+  background-color: #77C1EF;
+  color: #ffffff;
+}
+.mixins2 h3 {
+  color: #ffffff;
+}
+
+.styleY {
+  background-color: #77C1EF;
+  border: 3px solid black;
+  width: 450px;
+  height: 300px;
+  /* prosledjivanje parametara u mixin  // dodato sa vise parametara */
+}
+
+/* ako mu nista nije prosledjeno onda uzima defaultnu vredost koja mu je prosledjena*/
+.wrapper {
+  /* name klase */
+  background-color: #77C1EF;
+  border: 0 solid black;
+  width: 450px;
+  height: 0;
+  /* primer gde nista nije prosledjeno. */
 }
 
 /*# sourceMappingURL=style.css.map */
