@@ -131,22 +131,128 @@ adds some variables
 /* each function example  */
 .jedan {
   color: red;
-  font-weight: bold;
 }
 
 .dva {
   color: red;
-  font-weight: bold;
 }
 
 .tri {
   color: red;
-  font-weight: bold;
 }
 
 .cetiri {
   color: red;
+}
+
+.in-1 {
+  color: red;
   font-weight: bold;
+}
+
+.jedan, dva, tri, cetiri-1 {
+  color: red;
+  font-weight: bold;
+}
+
+.in-2 {
+  color: red;
+  font-weight: bold;
+}
+
+.jedan, dva, tri, cetiri-2 {
+  color: red;
+  font-weight: bold;
+}
+
+.in-3 {
+  color: red;
+  font-weight: bold;
+}
+
+.jedan, dva, tri, cetiri-3 {
+  color: red;
+  font-weight: bold;
+}
+
+.klasa-1 {
+  color: red;
+}
+
+.klasa-1 {
+  color: red;
+}
+
+.klasa-1 {
+  color: red;
+}
+
+.klasa-1 {
+  color: red;
+}
+
+.klasa-1 {
+  color: blue;
+}
+
+.klasa-2 {
+  color: red;
+}
+
+.klasa-2 {
+  color: red;
+}
+
+.klasa-2 {
+  color: red;
+}
+
+.klasa-2 {
+  color: red;
+}
+
+.klasa-2 {
+  color: blue;
+}
+
+.klasa-3 {
+  color: red;
+}
+
+.klasa-3 {
+  color: red;
+}
+
+.klasa-3 {
+  color: red;
+}
+
+.klasa-3 {
+  color: red;
+}
+
+.klasa-3 {
+  color: blue;
+}
+
+.klasa-4 {
+  color: red;
+}
+
+.klasa-4 {
+  color: red;
+}
+
+.klasa-4 {
+  color: red;
+}
+
+.klasa-4 {
+  color: red;
+}
+
+.klasa-4 {
+  color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
