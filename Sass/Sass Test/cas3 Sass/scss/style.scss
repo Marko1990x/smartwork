@@ -1,0 +1,144 @@
+$var_a: 2;
+$var_b: 4;
+$var_c: 30;
+$var_d: "11";
+
+#part1{
+    h2{
+        color: if(1 + 1 == 2, green, red);
+    }
+    h1{
+        color: if($var_a+$var_b > $var_c, green, red);
+    }
+    h3{
+        color: if(($var_a+$var_b) <= $var_c, blue, red);
+    }
+    h4{
+        color: if(($var_a+$var_b) >= $var_c, red, lightgrey);
+    }
+
+
+}
+
+
+
+/* part 1 does this 
+if 1+1 == 2 it colors the text in to green
+if 1+whateverElse == 3  colors the text in to red
+*/
+
+
+/*
+adds some variables
+ */
+
+
+ #deo2{
+     p{
+         @if 10 + 120 == 20 {
+             border: 1px dotted;
+         }
+         @if 7 < 2 {
+             border: 2px solid;
+         }
+         @if 7 > 2 {
+            border: 2px solid;
+        }
+         @if null {
+             border: 3px double;
+         }
+     }
+ }
+
+ /* this is the second example */
+
+
+ #deo3{
+     $type: audi;
+     p{
+         @if ($type == benz) {
+             color: red;
+         } @else if ($type == mahindra){
+             color: blue;
+         } @else if ($type == audi){
+             color: green;
+         } @else{
+            color: red;
+         }
+     }
+
+     h1{
+        @if ($type == benz) {
+            color: red;
+        } @else{
+            color: red;
+        }
+     }
+ }
+
+
+ /* deo 3 primer if sa else if  */
+
+
+ #deo4{
+     @for $i from 1 through 4{
+         .p#{$i}{
+             padding-left: 100px;
+         }
+     }
+
+     @for $i from 1 through 4{
+        h#{$i}{
+            padding-left: 100px +$i;
+        }
+    }
+
+    @for $i from 1 through 4{
+        .h#{$i}{
+            padding-left: 100px * $i;
+        }
+    }
+
+    @for $i from 1 through 4{
+        #h#{$i}{
+            padding-left: 100px - $i;
+        }
+    }
+
+    @for $i from 10 through 4{
+        p#{$i}{
+            padding-left: 0px;
+        }
+    }
+
+    @for $i from 1 to 5{
+        .grad#{$i}{
+            padding-left: 0px;
+        }
+    }
+ }
+
+  /* this is an example of a loop that goes through elements with  */ 
+
+ /* all loops have been executed successufully  */
+
+ .deo5{   // there was an error on the class name   // this is an interesting example :)
+     @each $color in (red, green, yellow, blue) {
+         .p_#{$color}{
+             background-color: #{$color};
+         }
+     }
+ }
+
+ /* each function example  */ 
+
+// ovo nigde nije primenjeno ali je primer kako niz radi u java scriptu :) 
+
+ $niz: jedan, dva, tri, cetiri;
+
+ @each $klasa in $niz {
+    .#{$klasa}{
+        color: red;
+        font-weight: bold;
+    }
+}

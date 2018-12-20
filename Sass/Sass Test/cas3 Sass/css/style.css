@@ -1,0 +1,152 @@
+#part1 h2 {
+  color: green;
+}
+#part1 h1 {
+  color: red;
+}
+#part1 h3 {
+  color: blue;
+}
+#part1 h4 {
+  color: lightgrey;
+}
+
+/* part 1 does this 
+if 1+1 == 2 it colors the text in to green
+if 1+whateverElse == 3  colors the text in to red
+*/
+/*
+adds some variables
+ */
+#deo2 p {
+  border: 2px solid;
+}
+
+/* this is the second example */
+#deo3 p {
+  color: green;
+}
+#deo3 h1 {
+  color: red;
+}
+
+/* deo 3 primer if sa else if  */
+#deo4 .p1 {
+  padding-left: 100px;
+}
+#deo4 .p2 {
+  padding-left: 100px;
+}
+#deo4 .p3 {
+  padding-left: 100px;
+}
+#deo4 .p4 {
+  padding-left: 100px;
+}
+#deo4 h1 {
+  padding-left: 101px;
+}
+#deo4 h2 {
+  padding-left: 102px;
+}
+#deo4 h3 {
+  padding-left: 103px;
+}
+#deo4 h4 {
+  padding-left: 104px;
+}
+#deo4 .h1 {
+  padding-left: 100px;
+}
+#deo4 .h2 {
+  padding-left: 200px;
+}
+#deo4 .h3 {
+  padding-left: 300px;
+}
+#deo4 .h4 {
+  padding-left: 400px;
+}
+#deo4 #h1 {
+  padding-left: 99px;
+}
+#deo4 #h2 {
+  padding-left: 98px;
+}
+#deo4 #h3 {
+  padding-left: 97px;
+}
+#deo4 #h4 {
+  padding-left: 96px;
+}
+#deo4 p10 {
+  padding-left: 0px;
+}
+#deo4 p9 {
+  padding-left: 0px;
+}
+#deo4 p8 {
+  padding-left: 0px;
+}
+#deo4 p7 {
+  padding-left: 0px;
+}
+#deo4 p6 {
+  padding-left: 0px;
+}
+#deo4 p5 {
+  padding-left: 0px;
+}
+#deo4 p4 {
+  padding-left: 0px;
+}
+#deo4 .grad1 {
+  padding-left: 0px;
+}
+#deo4 .grad2 {
+  padding-left: 0px;
+}
+#deo4 .grad3 {
+  padding-left: 0px;
+}
+#deo4 .grad4 {
+  padding-left: 0px;
+}
+
+/* this is an example of a loop that goes through elements with  */
+/* all loops have been executed successufully  */
+.deo5 .p_red {
+  background-color: red;
+}
+.deo5 .p_green {
+  background-color: green;
+}
+.deo5 .p_yellow {
+  background-color: yellow;
+}
+.deo5 .p_blue {
+  background-color: blue;
+}
+
+/* each function example  */
+.jedan {
+  color: red;
+  font-weight: bold;
+}
+
+.dva {
+  color: red;
+  font-weight: bold;
+}
+
+.tri {
+  color: red;
+  font-weight: bold;
+}
+
+.cetiri {
+  color: red;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
