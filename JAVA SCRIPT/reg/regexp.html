@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Pritisni dugme za proveru unosa da li su brojevi ili slova</p>
+
+<button onclick="myFunction()">Proveri</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+
+var reg = new RegExp('^[0-9]*$');
+
+    
+
+
+var str = prompt("Unesi broj");
+
+var result = reg.test(str);
+console.log(result);
+    
+var x = document.getElementById("demo");
+if(result){
+    x.innerHTML = "Uneti su samo brojevi sve je ok"
+}else{
+    x.innerHTML = "Ne mozete unositi slova";
+}
+}
+</script>
+
+</body>
+</html>
+
+

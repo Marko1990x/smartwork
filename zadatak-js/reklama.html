@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Reklama</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <img src="popust.jpg">
+
+  <!--script pomeren ispod zato sto je bolja praksa i treba da mi ucita dugme u svakom slucaju-->
+  <button id="closeWin">Zatvori</button>
+
+  <script>
+    function closeWin() {
+      window.close();
+    }
+
+    document.getElementById("closeWin").addEventListener("click", closeWin);
+
+    // kraj ovog dela zadatka
+
+    function closeWindow() {    // automatski se zatvara novi prozor posle 6 sekundi ucitava se automatski pri pokretanju radi provereno
+    setTimeout(function() {
+    window.close();
+    }, 6000);
+    }
+
+    window.onload = closeWindow();
+
+
+    // kraj ovog dela zadataka
+  </script>
+
+
+</body>
+
+</html>

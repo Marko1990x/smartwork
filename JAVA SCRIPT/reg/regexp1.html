@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Pritisni dugme za proveru unosa da li su brojevi ili slova</p>
+    <button onclick="myFunction()">Proveri</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var reg = new RegExp('^[a-zA-Z]*$');
+            var str = prompt("Unesi ime");
+            //    result cuva true ili false
+            var result = reg.test(str);
+            console.log(result);
+            var x = document.getElementById("demo");
+            if (result) {
+                x.innerHTML = "Uneti su samo karakteri sve je ok"
+            }
+            else {
+                x.innerHTML = "Ne mozete unositi brojeve, dozvoljeno je samo mala i velika slova";
+            }
+        }
+    </script>
+</body>
+
+</html>
