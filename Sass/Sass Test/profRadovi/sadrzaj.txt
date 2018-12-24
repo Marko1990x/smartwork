@@ -36,6 +36,12 @@ Sadrzaj primera:
 29 - Mixin (2) - Including a Mixin
 30 - Mixin (3) - Mixin Arguments
 
+4. dan
+31 - Mixin (4) - Passing Content Blocks to a Mixin
+32 - Function Directives
+33 - Nested mixins
+
+
 
 
 

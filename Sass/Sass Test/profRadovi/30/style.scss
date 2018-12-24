@@ -4,6 +4,19 @@
    width: 450px;
 }
 
+@mixin block($width: 2px, $color: red) {
+    background-color: $color;
+    border: $width solid black;
+    width: 450px;
+}
+
+
+.block {
+    @include block(1px, blue);
+}
+
+
+
 // saljemo parametar mixinu
 .style  {
    @include bordered(3px);

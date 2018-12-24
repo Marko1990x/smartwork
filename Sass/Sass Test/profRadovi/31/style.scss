@@ -1,0 +1,9 @@
+@mixin element {
+   @content;
+}
+
+@include element {
+   .block {
+      color: green;
+   }
+}

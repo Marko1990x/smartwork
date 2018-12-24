@@ -1,0 +1,46 @@
+h1 {
+  font-size: $font-size-1;
+  font-weight: bold; 
+}
+
+h2 {
+  font-size: $font-size-1;
+  text-decoration: underline; 
+}
+
+h3, .subtitle {
+  font-size: $font-size-2; 
+}
+
+h4 {
+  font-size: $font-size-2;
+  font-style: italic; 
+}
+
+footer .footMedia {
+    text-decoration: underline;
+    color: deeppink;
+    font-weight: bold; 
+}
+
+.navigation p, .navigation li, .whatPage p, .whatPage li {
+    font-size: $font-size-2;
+    font-weight: bold;
+    font-style: italic; 
+}
+
+#mainContent .mainBody form {
+      color: firebrick;
+      font-weight: bolder;
+      font-size: $font-size-2;
+      line-height: $main-line-height;
+}
+
+#mainContent .mainBody form .formButtons {
+        font-weight: bold;
+}
+
+
+
+
+

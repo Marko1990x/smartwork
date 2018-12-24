@@ -1,0 +1,11 @@
+#set_width {
+  padding-left: 95px; }
+
+#set_height {
+  padding-left: 104px; }
+
+#set_depth {
+  border: 8px; }
+
+p::after {
+  content: "prva vrednost druga vrednost"; }

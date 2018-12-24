@@ -1,0 +1,54 @@
+$first-width: 5px;
+$second-width: 5px;
+
+@function adjust_width($n) {
+   @return $n * $first-width + ($n - 1) * $second-width;
+}
+
+@function adjust_height($n, $m) {
+   @return $m * $first-width + ($n - 1) - $second-width;
+}
+
+@function adjust_depth($n:1, $m:2, $p:4) {
+    //@return $m * $n * #{$p}px ;
+    //@return #{$m}px;
+    $q : $n * $m * $p;
+    @return #{$q}px;
+}
+
+#set_width { padding-left: adjust_width(10); }
+#set_height { padding-left: adjust_height(10, 20); }
+#set_depth {
+    border: adjust_depth(); // koristice defaultne parametre
+}
+
+
+
+
+// funkcija koja poziva drugu funkciju
+
+@function druga() {
+    @return "druga vrednost";
+}
+
+@function prva() {
+    @return "prva vrednost " + druga();
+}
+
+p::after {
+    content: prva();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

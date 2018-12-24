@@ -1,0 +1,18 @@
+#set_width {
+  padding-left: 95px;
+}
+
+#set_height {
+  padding-left: 64px;
+}
+
+.drugi {
+  color: red;
+  padding: white;
+  font-size: 10px;
+  padding: 5;
+}
+
+/* ovo je primer funkcije u sass - u*/
+
+/*# sourceMappingURL=style.css.map */

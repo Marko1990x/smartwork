@@ -1,0 +1,15 @@
+@mixin a {
+  color: red;
+}
+@mixin b {
+  @include a;
+  padding: white;
+  font-size: 10px;
+}
+@mixin c{
+  @include b;
+  padding:6;
+}
+div {
+  @include c;
+}
