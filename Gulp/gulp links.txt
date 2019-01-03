@@ -1,0 +1,19 @@
+tutorialspoint.com/gulp
+
+
+
+
+isapokam82 - internet 30 dana.
+
+gulp install -g // najnovija verzija
+
+npm install --save-dev gulp@3.91.1
+
+gulp -v
+
+
+sva dokumentaja gulp metoda se nalazi u appdata roaming 
+
+https://gulpjs.com/plugins/  
+
+https://www.npmjs.com/   // repozitorijum koji sadrzi pluginove za gulp
