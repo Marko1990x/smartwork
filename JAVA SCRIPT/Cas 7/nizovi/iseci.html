@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Nizovi
+        
+        
+        var niz1 = [1, 2, 3, 4, 5]; //ovo je indeksirani niz
+        var niz2 = [2, 3];
+        //iseci deo niz1 od indeksa 1 do indeksa 4 !
+        //element sa indeksom 4 se NE UKLJUCUJE !
+        //niz1= [1,2,3,4,5];
+        var niz3 = niz1.slice(1, 4); //slice vraca iseceni niz koji pretvori u string, vratice 234, uzima prvi a poslenji ne zato nece ukljuciti broj 5
+        console.log("Niz3 sadrzi deo niza 1 od pozicije 1 do 4: " + niz3);//234
+
+    </script>
+</body>
+
+</html>

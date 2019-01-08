@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zadatak na casu 1</title>
+</head>
+<body>
+
+    <script>
+
+        var towns = ["Novi Sad", "Beograd", "Nis", "subotica", "kikinda"];
+
+        for (i = 0; i<towns.length; i++) {
+            console.log(towns[i]);    // zagrada je bio problem   ();
+        }
+
+        var towns2 = ["Novi Sad", "Beograd", "Niš", "Subotica", "Kikinda"];
+
+        for (i = 0; i<towns2.length; i++){
+            if (towns2[i] == "Subotica") {
+                console.log(i + " " + towns[i]);
+                break;
+            }else{
+                console.log("subotica nije pronadjena");
+            }
+        }
+
+        var towns3 = ["Novi Sad", "Beograd", "Niš", "Subotica", "Kikinda"];
+        for (i = 0; i<towns3.length; i++) {
+            if (towns3[i] == "Subotica") {
+                continue;
+            }
+            console.log(towns3[i]);
+        }
+
+    </script>
+    
+</body>
+</html>

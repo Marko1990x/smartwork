@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Nizovi
+      
+        var niz1 = [1, 2, 3, 4, 5]; //ovo je indeksirani niz
+        var niz2 = [2, 3];
+        var niz3 = [7, 8];
+
+
+        //u niz2 kreni od indeksa 1 obrisi ukupno 1 element (to je broj 3)
+        //i dodaj sledece elemente 9,8 i ceo niz3 
+        console.log("Niz2 pre promene "+niz2)
+        niz2.splice(1, 1, 9, 8, niz3); 
+        console.log("Niz2 nakon brisanja elementa  i dodavanja izgleda : " + niz2);
+        console.log("---------------------------------------------------------------")
+
+        //kreni sa brisanjem elemenata od pozicije 2 i obrisi 1 element
+        console.log("niz1 pre promene " + niz1);
+        niz1.splice(2, 1);
+        console.log("niz1 posle brisanja "+niz1);
+        console.log("---------------------------------------------------------------")
+        
+        
+        //BUDITE OPREZNI 
+        //niz2 = 2,9,8,7,8 (ovde su 7,8 elementi niza 3 !i cine jedan element)
+        console.log("Niz2 pre promene "+niz2)
+        niz2.splice(3, 1)  
+        console.log("Niz2 nakon brisanja elementa na 3.poziciji izgleda : " + niz2);
+        console.log("---------------------------------------------------------------")
+
+        //
+        var niz5 = [1,2,3,4,5,6];
+        console.log("Niz5 pre promene "+niz5)
+        niz5.splice(2, 2); //1,2,5,6 - obrisani su 3,4
+        console.log("Niz5 nakon brisanja "+niz5);
+
+    </script>
+</body>
+
+</html>
