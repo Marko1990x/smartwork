@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Napredni tehnike JavaScripta  - Forme</title>
+  <link rel="stylesheet"  type="text/css"  href="css/stil.css">
+</head>
+<body>
+<h1>Napredni tehnike JavaScripta  - Event - resenje</h1>
+<div>Prva forma</div>
+<form name="prvaForma">
+  <input name="prvi" value="1">
+  <input name="drugi" value="2">
+</form>
+<div>Druga forma</div>
+<form>
+  <input type="radio" name="godine" value="10">
+  <input type="radio" name="godine" value="20">
+</form>
+<button id="dugme1">Prikaži element iz prve forme</button>
+<button id="dugme2">Prikaži element iz druge forme</button>
+<script>
+  // dohvati prvu formu
+  function prvaForma(){
+    var form1 = document.forms.prvaForma; //forms je dom properti, dovlaci sve forme, dovukli smo <form name="prvaForma">...</form> element
+    //ili
+    //var form = document.forms[0];
+    // dohvati element
+    var elem = form1.elements.prvi; //elements je dom properti koji dovlaci sve elemente forme, nama treba konkretno po imenu prvi,  dovukli smo <input name="prvi"> element
+    alert(elem.value); // ispisi vrednost elementa prvi - 1
+  }
+  
+  function drugaForma(){
+    //dohvati drugu formu
+    var form2 = document.forms[1];
+    var godineElems = form2.elements.godine;//svi elementi forme sa name godine, ima ih dve
+    alert(godineElems[0].value); // 10, the first input value
+  }
+  
+  //handler na klik dogadjaj na prvo dugme
+  var dugme1 = document.getElementById("dugme1");
+  dugme1.addEventListener("click",prvaForma);
+  
+  //handler na klik dogadjaj na drugo dugme
+  var dugme2 = document.getElementById("dugme2");
+  dugme2.addEventListener("click",drugaForma);
+  
+</script>
+</body>
+</html

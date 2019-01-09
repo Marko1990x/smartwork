@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body >
+<h1 >Naslov</h1>
+
+<p onclick="myFunction(event)">Click on a paragraph. An alert box will alert the element whose eventlistener triggered the event.</p>
+
+<p><strong>Note:</strong> The currentTarget property does not necessarily return the element that was clicked on, but the element whose eventlistener triggered the event.</p>
+<!--Bolje je koristiti nodeName umesto tagName zbog IE verzija-->
+<script>
+function myFunction(event) { 
+    alert(event.currentTarget.nodeName);
+}
+</script>
+
+</body>
+</html>

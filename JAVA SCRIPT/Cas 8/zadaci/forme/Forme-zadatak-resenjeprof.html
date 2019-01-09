@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Napredni tehnike JavaScripta - Forme - zadatak</title>
+    <link rel="stylesheet" type="text/css" href="css/stil.css"> </head>
+
+<body>
+    <h1>Napredni tehnike JavaScripta  - Forme - zadatak</h1>
+    <form> Ime:
+        <input type="text" name="ime" value="Donald">
+        <br> Prezime:
+        <input type="text" name="prezime" value="Duck">
+        <br> Grad:
+        <input type="text" name="grad" value="Duckburg">
+        <br>
+        <input type="submit" value="Potvrdi"> </form>
+    <p>Potrebno je na klik dugmeta Prikaži da se prikažu sve vrednosti svakog elementa forme. Rezultat prikazati u polje demo. Koristiti DOM properti forms</p>
+    <button id="dugme">Prikaži</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x = document.forms[0];
+            var txt = "";
+//            x.length oznacava koliko elemenata ima forma-4 elementa
+            for ( var i = 0; i < x.length-1; i++) {
+                txt = txt + x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+        var dugme = document.getElementById("dugme");
+        dugme.addEventListener("click", myFunction);
+    </script>
+</body>
+</html
