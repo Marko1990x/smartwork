@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marko D domaci zadatak forma</title>
+    <link rel="stylesheet" href="forme/css/stil.css">
+</head>
+<body>
+
+        <h1>Napredni tehnike JavaScripta  - Forme - zadatak</h1>
+        <form name="myform"> Ime:
+            <input type="text" name="ime" value="Donald">
+            <br> Prezime:
+            <input type="text" name="prezime" value="Duck">
+            <br> Grad:
+            <input type="text" name="grad" value="Duckburg">
+            <br>
+            <input type="submit" value="Potvrdi"> </form>
+        <p>Potrebno je na klik dugmeta Prikaži da se prikažu sve vrednosti svakog elementa forme. Rezultat prikazati u polje demo. Koristiti DOM properti forms</p>
+        <button id="dugme">Prikaži</button>
+        <p id="demo"></p>
+
+
+        <script>
+
+            try {
+                function myfunction1() {
+                var forma1 = document.forms.myform;
+                var x = forma1.elements.ime.value;
+                var y = forma1.elements.prezime.value;
+                var z = forma1.elements.grad.value;
+
+                //alert(x);
+                //alert(x+y+z);
+
+                document.getElementById("demo").innerHTML = ("resenje je " + x + " " + y + " " + z);
+
+            }
+
+            document.getElementById("dugme").addEventListener("click",myfunction1);
+                
+            } catch (error) {
+
+                console.log("greska je " + error);
+                
+            }
+
+        </script>
+    
+</body>
+</html>
