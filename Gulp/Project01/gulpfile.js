@@ -161,7 +161,7 @@ gulp.task('nekoliko-taskova', ['task-2', 'task-1']);
 
 //primer 11 -ciscenje i kompresija html fajla
 //npm install --save-dev gulp-celanhtml
-
+/*
 var gulp = require('gulp');
 var cleamhtml = require('gulp-cleanhtml');
 
@@ -169,4 +169,18 @@ gulp.task('cleanhtml', function(){
     gulp.src('./src/html/example.html')
     .pipe(cleanhtml())
     .pipe(gulp.dest('./dist/html/'));
+});
+*/
+// primer 12  - pracenje promene sadrzaja fajla
+var gulp = require('gulp');
+var minifyCss = require('gulp-minify-css');
+
+gulp.task('minify-css', function(){
+    return gulp.src('./src/css/*.css')
+    .pipe(minifyCss())
+    .pipe(gulp.dest('./dist/css/'))
+});
+
+gulp.task('watch:css', function(){
+    gulp.watch('./src/css/*.css', ['minify-css']);
 });

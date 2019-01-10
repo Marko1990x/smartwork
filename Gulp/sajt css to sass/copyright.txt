@@ -1,0 +1,4 @@
+/*
+*Ovo je linija 1 u copyright
+*Ovo je linija 2 u coypright
+*/
