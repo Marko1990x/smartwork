@@ -1,0 +1,133 @@
+@import 'vars';
+@import 'mixins';
+@import 'keyframes';
+
+@include main;
+
+body {
+	width: 100%;
+	@include clearfix;
+	//background-image: linear-gradient($grad_color1, $grad_color2);
+	background: linear-gradient(lightgreen, green);
+	background-image: url(../img/blurred-background-branches-colors-715134.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 1;
+}
+
+#prvi{
+	margin-top: 7em;
+}
+
+#lastsection{
+	margin-bottom: 6em;
+}
+
+.container{
+	width: 50%;
+	min-height: 350px;
+	//background-color: $background_color_opacity; // opacity problem fixed ha! not fixed :(
+	margin: 0% auto;
+	margin-bottom: 2em;
+	//opacity: 0.5;    fix this. 
+	border-radius: 10px;
+	overflow: hidden;
+	background: $backround_color_opacity1; 
+	background: $background_color_opacity2; 
+	animation-name: boxshadow;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	form{
+		width: 95%;
+	}
+}
+
+
+
+
+@include footer;
+
+@include headerZweiMix;
+@include headerZweiMixAddendum;
+
+
+
+section{
+	form{
+		fieldset{
+			border: 2px solid black;
+			padding: 10px;
+		}
+		#fieldset2{
+			margin-bottom: 2em;
+		}
+		div{
+			display: flex;
+			width: 100%;
+		}
+		.shortenDiv{
+			width: 40%;
+			label{
+			  margin-top: 5px;
+			  animation-name: formFlashingLabels;
+			  animation-duration: 3s;
+			  animation-iteration-count: infinite;
+			  font-size: 20px;
+			}
+		}
+		padding-top: 10px;
+		width: 50%;
+		margin: 0% auto;
+		textarea{
+			width: 100%;
+			
+		}
+		input{
+			width: 100%;
+			height: 35px;
+			border-radius: 2px;
+			border: 1px solid darkred;
+
+		}
+		label{
+			color: $contact_color_label;
+			position: relative;
+			left: 10%;
+		}
+		legend{
+			color: $contact_color_legend;
+			&::first-letter{
+				color: darkred;
+			}
+		}
+		input[type="submit"]{
+			background-color: red;
+			color: whitesmoke;
+			height: 40px;
+			margin-top: 10px;
+			border: none;
+			margin-bottom: 10px;
+			width: 100%;
+			font-size: 25px;
+		}
+		div{
+			margin-bottom: 5px;
+		}
+		legend{
+			text-align: center;
+			font-size: 1.50em;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+#midsection, #lastsection{
+	display: none;
+}
+
+#prvi{
+	margin-bottom: 100px;
+}
+
+@include headColor;   // this adds color to the a element on dropdown buttons

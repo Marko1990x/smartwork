@@ -1,0 +1,62 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+table,tr,td{
+    border: 1px solid black;
+    font-family: sans-serif;
+    padding: 3px;
+}
+
+thead{
+    background-color: #808080;
+    font-size:1em; 
+    
+}
+
+tbody tr,td{
+    font-size: 0.9em;
+}
+
+thead th{
+    height: 30px;
+}
+
+tfoot{
+    background-color: #807000;
+    font-size: 1em;
+}
+
+#home{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.headColor{
+    background-color: orange;
+    font-weight: bold;
+}
+
+.italicStyle{
+    font-style: italic;
+    text-align: center;
+}
+
+.onlyEm{
+    font-style: italic;
+}
+
+.inTotal{
+    background-color:#00FF00;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*additional*/
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}

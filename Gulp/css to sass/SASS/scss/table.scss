@@ -1,0 +1,75 @@
+$bg-color1 : #808080;
+$bg-color2 : #f2f2f2;
+$bg-color3 : #807000;
+$bg-color4 : orange;
+$bg-color5 : #00FF00;
+
+$font-style : italic;
+$font-size : 1em;
+$font-weight : bold;
+
+$text-align-c : center;
+
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+table,tr,td{
+    border: 1px solid black;
+    font-family: sans-serif;
+    padding: 3px;
+}
+
+thead{
+    background-color: $bg-color1;
+    font-size: $font-size; 
+    th{
+        height: 30px;
+    }
+}
+
+tbody {
+    tr,td{
+        font-size: 0.9em;
+    }
+    tr{
+        &:nth-child(even){
+           background-color: $bg-color2;
+        }
+    }
+}
+
+tfoot{
+    background-color: $bg-color3;
+    font-size: $font-size;
+}
+
+#home{
+    text-align: left;
+}
+
+.center{
+    text-align: $text-align-c;
+}
+
+.headColor{
+    background-color: $bg-color4;
+    font-weight: $font-weight;
+}
+
+.italicStyle{
+    font-style: $font-style;
+    text-align: $text-align-c;
+}
+
+.onlyEm{
+    font-style: $font-style;
+}
+
+.inTotal{
+    background-color:$bg-color5;
+    font-style: $font-style;
+    font-weight: $font-weight;
+}
+

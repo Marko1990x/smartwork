@@ -1,0 +1,125 @@
+//ovako moze ali pravi problem kasnije
+$color-bisque : bisque;
+$color-red : red;
+$color-azure : azure;
+$color-aqua : aqua;
+$color-coral : coral;
+//ovako bi trebalo da je lakse za promenu
+$color1 : #ddf;
+$color2 : #dfd;
+$color3 : #fdd;
+
+$padding-size : 5px;
+$width-percent : 25%;
+$height-percent : 100%;
+
+$font-family : Arial,Helvetica,sans-serif; 
+
+html{
+	margin:0;
+	padding:0;
+}
+
+h1{
+    font-family: cursive;
+    text-align: center;
+    font-size: 2em;
+    background-color: $color-bisque;
+    padding:30px;
+    margin-top:0;
+}
+
+h2{
+    color: $color-red;
+    background-color:$color-azure;
+    font-style: italic;
+}
+
+body{
+    background-image: url("../images/background-10.jpg");
+}
+
+a:link{
+    text-decoration: none;
+    padding: $padding-size;
+    font-family:sans-serif;
+}
+
+a:hover{
+    background-color:$color-aqua;
+    padding: $padding-size;
+}
+
+p{
+    font-family: $font-family;
+    font-size: 16px;
+}
+
+#img1{
+     text-align: center;
+   
+}
+#contact{
+    font: italic 14px sans-serif;
+    color: $color-red;
+    
+}
+
+/* this is addition for layouts */
+
+.details{
+    margin: 0 10px 0 10px;
+    /* ako se uvede height: 330px; to moze da pomeri kolonu u novi red pa zato moramo smanjiti width u kolonama na 25%*/
+    height: $height-percent;
+    
+}
+
+
+.service {
+   /* position:relative; ne igra nikakvu ulogu */
+    background-color: $color1;
+    float: left;
+    width: $width-percent;
+    height:  $height-percent;
+    padding: $padding-size;
+}
+.quality {
+
+    background-color: $color2;
+    float: left;
+    width: $width-percent;
+    height:  $height-percent;
+    padding: $padding-size;
+}
+.value {
+
+    background-color: $color3;
+    float: left;
+    width: $width-percent;
+    height:  $height-percent;
+    padding: $padding-size;
+}
+
+/* ako se ovo iskljuci pomeraju se sve u levo */
+.clear{
+    clear: both;
+}
+#header{
+    position:relative;
+    top:0;
+    left:0;
+}
+#logo{
+    position:relative;
+    float:left;
+}
+#title{
+    position:absolute;
+    float:left;
+    left:222px;
+    top:0;
+}
+.menu{
+    background-color: $color-coral;
+    padding: $padding-size;
+}
