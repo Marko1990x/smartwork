@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<title>Best Solar</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body>
+	<header>
+		<h1>Best Solar</h1>
+	</header>
+	<nav>
+		<ul>
+			<li class="active"><a href="index.html">Calculator</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="clients.html">Clients</a></li>
+		</ul>
+		<div class="keepOpen"></div>
+	</nav>
+	<main>
+		<h1>Calculator</h1>
+		<form name="solarForm" action="" method="post">
+			<fieldset id="mpc">
+				<legend>Monthly Power Consumption</legend>
+				<p>In order to accuratly calculate your solar needs, we need to know how much power you use. Please enter the last
+					12 months of electrical usage below.</p>
+				<label><span>January</span><input id="januar" name="jan" type="number" value="1028">kWh</label>
+				<label><span>February</span><input name="feb" type="number" value="760">kWh</label>
+				<label><span>March</span><input name="mar" type="number" value="762">kWh</label>
+				<label><span>April</span><input name="apr" type="number" value="766">kWh</label>
+				<label><span>May</span><input name="may" type="number" value="579">kWh</label>
+				<label><span>June</span><input name="jun" type="number" value="695">kWh</label>
+				<label><span>July</span><input name="jul" type="number" value="1015">kWh</label>
+				<label><span>August</span><input name="aug" type="number" value="1216">kWh</label>
+				<label><span>September</span><input name="sep" type="number" value="1033">kWh</label>
+				<label><span>October</span><input name="oct" type="number" value="769">kWh</label>
+				<label><span>November</span><input name="nov" type="number" value="326">kWh</label>
+				<label><span>December</span><input name="dec" type="number" value="682">kWh</label>
+
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Sunshine Zone</legend>
+				<figure><img src="images/US-Solar-Zone-Map.jpg" alt="zone map"></figure>
+				<p>Please use this map to determine which zone you are in.</p>
+				<select name="zone" id="zone">
+
+
+					<!-- sunca ima od 3 ipo do 6 sati 
+	kaze switch da koristimo-->
+
+					<option value="3.5">Zone 1</option>
+					<option value="5.5">Zone 2</option>
+					<option value="6.0">Zone 3</option>
+					<option value="5.3">Zone 4</option>
+					<option value="4.8">Zone 5</option>
+					<option value="4.0">Zone 6</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Panel Choice</legend>
+
+				<p>Please select a solar panel you would like to use.</p>
+				<select id="panel" name="panel">
+					<option id="pan1" value="250">Axitec AC-250P/156-60S</option>
+					<option id="pan2" value="275">Canadian Solar CS6K-275M</option>
+					<option id="pan3" value="260">Hanwha Q.Pro BFR-G4.260 </option>
+				</select>
+			</fieldset>
+
+		</form>
+
+		<button id="submitDugme">Calculate Solar Needs</button>
+		<h2>Solar Reccomendation</h2>
+		<div id="feedback">
+			<p id="ubacivanjeZanimacija">Enter your information above to calculate your solar needs.</p>
+		</div>
+	</main>
+	<footer>
+		<p>Created by Paul Cheney for a Pluralsight course on JavaScript</p>
+	</footer>
+
+</body>
+
+
+<script>
+	try {
+
+		var formX = document.forms.solarForm;
+
+		//numbers
+
+		var var1 = parseInt(formX.elements.jan.value);
+		var var2 = parseInt(formX.elements.feb.value);
+		var var3 = parseInt(formX.elements.mar.value);
+		var var4 = parseInt(formX.elements.apr.value);
+		var var5 = parseInt(formX.elements.may.value);
+		var var6 = parseInt(formX.elements.jun.value);
+		var var7 = parseInt(formX.elements.jul.value);
+		var var8 = parseInt(formX.elements.aug.value);
+		var var9 = parseInt(formX.elements.sep.value);
+		var var10 = parseInt(formX.elements.oct.value);
+		var var11 = parseInt(formX.elements.nov.value);
+		var var12 = parseInt(formX.elements.dec.value);
+		console.log(var1 + " " + var2 + " " + var3 + " " + var4 + " " +
+			var5 + " " + var6 + " " + var7 + " " + var8 + " " + var9 + " " +
+			var10 + " " + var11 + " " + var12);
+
+		var zbir = var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + var11 + var12;
+		console.log(zbir);
+
+		var dnevniProsek = zbir / 365;
+		console.log(dnevniProsek);
+
+		var zona1 = 3.5;
+		var zona2 = 5.5;
+		var zona3 = 6.0;
+		var zona4 = 5.3;
+		var zona5 = 4.8;
+		var zona6 = 4.0;
+
+		//        var zaza = document.getElementById("zone");
+		//var izabranaZona = zaza.options[zaza.selectedIndex].value;
+		//            
+		//            if (izabranaZona== 3.5) {
+		//                console.log("zona1")
+		//            } else if
+		//             (izabranaZona== 5.5) {
+		//                console.log("zona2")
+		//            } else
+		//            if (izabranaZona== 6.0) {
+		//                console.log("zona3")
+		//            }else
+		//            if (izabranaZona== 5.3) {
+		//                console.log("zona4")
+		//            }else
+		//            if (izabranaZona== 4.8) {
+		//                console.log("zona5")
+		//            }else
+		//            if (izabranaZona== 4.0) {
+		//                console.log("zona6")
+		//            }
+
+
+		var zona1izracunata = dnevniProsek / zona1;
+		var zona2izracunata = dnevniProsek / zona2;
+		var zona3izracunata = dnevniProsek / zona3;
+		var zona4izracunata = dnevniProsek / zona4;
+		var zona5izracunata = dnevniProsek / zona5;
+		var zona6izracunata = dnevniProsek / zona6;
+
+		console.log("ovo su potrebe pre po satu pre racunanja za lose vreme");
+		console.log("ovo je zona 1: " + zona1izracunata, "ovo je zona 2: " + zona2izracunata, "ovo je zona 3: " +
+			zona3izracunata,
+			"ovo je zona 4: " + zona4izracunata, "ovo je zona 5: " + zona5izracunata, "ovo je zona 6: " + zona6izracunata);
+
+		var zona1Lose = zona1izracunata * 1.25;
+		var zona2Lose = zona2izracunata * 1.25;
+		var zona3Lose = zona3izracunata * 1.25;
+		var zona4Lose = zona4izracunata * 1.25;
+		var zona5Lose = zona5izracunata * 1.25;
+		var zona6Lose = zona6izracunata * 1.25;
+
+		console.log("ovo su potrebe sa losim vremenom");
+		console.log("zona 1 lose: " + zona1Lose, "zona 2 lose: " + zona2Lose,
+			"zona 3 lose: " + zona3Lose, "zona 4 lose: " + zona4Lose,
+			"zona 5 lose: " + zona5Lose, "zona 6 lose: " + zona6Lose);
+
+		var panelVrednost1 = zona1Lose * 1000;
+		var panelVrednost2 = zona2Lose * 1000;
+		var panelVrednost3 = zona3Lose * 1000;
+		var panelVrednost4 = zona4Lose * 1000;
+		var panelVrednost5 = zona5Lose * 1000;
+		var panelVrednost6 = zona6Lose * 1000;
+
+		console.log("vrednosti panela kWh: " + "panel 1: " + panelVrednost1 +
+			"panel 2: " + panelVrednost2 + "panel 3: " + panelVrednost3 +
+			"panel 4: " + panelVrednost4 + "panel 5: " + panelVrednost5 +
+			"panel 6: " + panelVrednost6);
+
+		var panel1 = 250;
+		var panel2 = 275;
+		var panel3 = 260;
+
+		//ovo je panel 1 izracunate bvrednosti po zonama
+		var konacanRP11 = panelVrednost1 / panel1;
+		var konacanRP12 = panelVrednost2 / panel1;
+		var konacanRP13 = panelVrednost3 / panel1;
+		var konacanRP14 = panelVrednost4 / panel1;
+		var konacanRP15 = panelVrednost5 / panel1;
+		var konacanRP16 = panelVrednost6 / panel1;
+		//ovo je panel 2 izracunate bvrednosti po zonama
+		var konacanRP21 = panelVrednost1 / panel2;
+		var konacanRP22 = panelVrednost2 / panel2;
+		var konacanRP23 = panelVrednost3 / panel2;
+		var konacanRP24 = panelVrednost4 / panel2;
+		var konacanRP25 = panelVrednost5 / panel2;
+		var konacanRP26 = panelVrednost6 / panel2;
+		//ovo je panel 3 izracunate bvrednosti po zonama
+		var konacanRP31 = panelVrednost1 / panel3;
+		var konacanRP32 = panelVrednost2 / panel3;
+		var konacanRP33 = panelVrednost3 / panel3;
+		var konacanRP34 = panelVrednost4 / panel3;
+		var konacanRP35 = panelVrednost5 / panel3;
+		var konacanRP36 = panelVrednost6 / panel3;
+
+
+
+
+		document.getElementById("submitDugme").addEventListener("click", function (event) {
+			var panel1value = document.getElementById("pan1").value;
+			var panel2value = document.getElementById("pan2").value;
+			var panel3value = document.getElementById("pan3").value;
+
+			//            var e = document.getElementById("ddlViewBy");
+			//var strUser = e.options[e.selectedIndex].value;
+			var e = document.getElementById("panel");
+			var izabraniPanel = e.options[e.selectedIndex].value;
+
+			if (izabraniPanel == 250) {
+				console.log("1")
+				var zaza = document.getElementById("zone");
+				var izabranaZona = zaza.options[zaza.selectedIndex].value;
+
+				if (izabranaZona == 3.5) {
+					console.log("zona1")
+
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP11 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel1 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost1 + " average sunshine per day " + zona1 +
+						"your average daily use electical consumption: " + konacanRP11;
+
+				} else if (izabranaZona == 5.5) {
+					console.log("zona2")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP12 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel1 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost2 + " average sunshine per day " + zona2 +
+						"your average daily use electical consumption: " + konacanRP12;
+				} else
+				if (izabranaZona == 6.0) {
+					console.log("zona3")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP13 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel1 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost3 + " average sunshine per day " + zona3 +
+						"your average daily use electical consumption: " + konacanRP13;
+				} else
+				if (izabranaZona == 5.3) {
+					console.log("zona4")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP14 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel1 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost4 + " average sunshine per day " + zona4 +
+						"your average daily use electical consumption: " + konacanRP14;
+				} else
+				if (izabranaZona == 4.8) {
+					console.log("zona5")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP15 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel1 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost5 + " average sunshine per day " + zona5 +
+						"your average daily use electical consumption: " + konacanRP15;
+				} else
+				if (izabranaZona == 4.0) {
+					console.log("zona6")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP16 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel1 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost6 + " average sunshine per day " + zona6 +
+						"your average daily use electical consumption: " + konacanRP16;
+				}
+			} else if (izabraniPanel == 275) {
+				console.log("2")
+				var zaza = document.getElementById("zone");
+				var izabranaZona = zaza.options[zaza.selectedIndex].value;
+
+				if (izabranaZona == 3.5) {
+					console.log("zona1")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP21 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel2 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost1 + " average sunshine per day " + zona1 +
+						"your average daily use electical consumption: " + konacanRP21;
+				} else if (izabranaZona == 5.5) {
+					console.log("zona2")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP22 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel2 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost2 + " average sunshine per day " + zona2 +
+						"your average daily use electical consumption: " + konacanRP22;
+				} else
+				if (izabranaZona == 6.0) {
+					console.log("zona3")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP23 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel2 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost3 + " average sunshine per day " + zona3 +
+						"your average daily use electical consumption: " + konacanRP23;
+				} else
+				if (izabranaZona == 5.3) {
+					console.log("zona4")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP24 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel2 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost4 + " average sunshine per day " + zona4 +
+						"your average daily use electical consumption: " + konacanRP24;
+				} else
+				if (izabranaZona == 4.8) {
+					console.log("zona5")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP25 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel2 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost5 + " average sunshine per day " + zona5 +
+						"your average daily use electical consumption: " + konacanRP25;
+				} else
+				if (izabranaZona == 4.0) {
+					console.log("zona6")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP26 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel2 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost6 + " average sunshine per day " + zona6 +
+						"your average daily use electical consumption: " + konacanRP26;
+				}
+			} else
+			if (izabraniPanel == 260) {
+				console.log("3")
+				var zaza = document.getElementById("zone");
+				var izabranaZona = zaza.options[zaza.selectedIndex].value;
+
+				if (izabranaZona == 3.5) {
+					console.log("zona1")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP31 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel3 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost1 + " average sunshine per day " + zona1 +
+						"your average daily use electical consumption: " + konacanRP31;
+				
+					
+				} else if (izabranaZona == 5.5) {
+					console.log("zona2")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP32 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel3 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost2 + " average sunshine per day " + zona2 +
+						"your average daily use electical consumption: " + konacanRP32;
+				} else
+				if (izabranaZona == 6.0) {
+					console.log("zona3")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP33 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel3 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost3 + " average sunshine per day " + zona3 +
+						"your average daily use electical consumption: " + konacanRP33;
+				} else
+				if (izabranaZona == 5.3) {
+					console.log("zona4")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP34 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel3 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost4 + " average sunshine per day " + zona4 +
+						"your average daily use electical consumption: " + konacanRP34;
+				} else
+				if (izabranaZona == 4.8) {
+					console.log("zona5")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP35 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel3 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost5 + " average sunshine per day " + zona5 +
+						"your average daily use electical consumption: " + konacanRP35;
+				} else
+				if (izabranaZona == 4.0) {
+					console.log("zona6")
+					document.getElementById("ubacivanjeZanimacija").innerHTML = "Based on your average daily use of" + konacanRP36 +
+						" you will need to purchase 30 Axitec AC-250P/156-60S solar panels to offset 100% of your electricity bill. \n" +
+						"Your average daily electricity consumption:" +
+						"The Axitec AC-250P/156-60S panel you selected generates about " + panel3 + "per hour" +
+						"Realistic watts needed per hour: " + panelVrednost6 + " average sunshine per day " + zona6 +
+						"your average daily use electical consumption: " + konacanRP36;
+				}
+			}
+			//			switch (izabraniPanel) {
+			//				case "1":
+			//						console.log("this is the test")
+			//					break;
+			//			
+			//				default:
+			//					break;
+			//			}
+
+		})
+	} catch (error) {
+		console.log("this is the current error: " + error);
+	}
+</script>
+
+
+</html>
