@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodavanje funkcije u objekat</title>
+    <script>
+       //Dekleracija objekta
+        var korisnik = {
+            ime:"Pera",
+            godina:30
+        }
+        console.log("Objekat bez funkcije ",korisnik);
+
+        //dodavanje funkcije u objekat
+        //kljuc je ime funkcije, u objektu je uvek anonimna funkcija
+        korisnik.ispisi = function(){
+            alert("Pozvao sam metod iz objekta");
+        }
+        console.log("Objekat sa funkcijom ",korisnik);
+    </script>
+</head>
+<body>
+    <h1>Dodavanje funkcije u objekat</h1>
+</body>
+</html>

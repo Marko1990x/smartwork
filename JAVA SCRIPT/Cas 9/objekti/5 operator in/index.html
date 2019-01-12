@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator IN</title>
+    <script>
+       //Dekleracija objekta
+        var korisnik = {
+            ime:"Pera",
+            godina:30
+        }
+        console.log("Objekat pre provere da li promenjiva postoji",korisnik);
+
+        //operator in nam sluzi za proveri da li promenjiva postoji u objektu
+        if("abc" in korisnik){
+            korisnik.abc  = "ABC";
+        }else{
+            korisnik.grad = "Novi Sad";
+        }
+
+        console.log("Objekat posle provere da li promenjiva postoji",korisnik);
+    </script>
+</head>
+<body>
+    <h1>Operator IN</h1>
+</body>
+</html>

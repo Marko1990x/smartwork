@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zombie adventure game 2 more complex</title>
+</head>
+
+<body>
+
+    <script>
+        var beginingScennarios = [
+            "you wake up in the hostpital. It is eerily quiet. you tip toe to the door and peek out.",
+            "You are standing in an open field west of a white house  with a boardered front door. there is a small mailbox here.",
+            "Desperate times call for desperate measures. you see a small convinience store up ahead and decide to loot it for goods"
+        ];
+
+        function randomNumber(range) {
+            return Math.round(Math.random() * range);
+        }
+        // return keyword vraca vrednost na mesto poziva
+        alert(beginingScennarios[randomNumber(beginingScennarios.length - 1)]); // zanimljiv deo koda
+        // -1 je upisan zbog toga sto array ideo od 0 1 2 + a math.random ide od 1 2 3 + 
+        // ovo je random izvacenje pod
+
+        var weaponList = ["shovel", "crosbow", "baseball bat", "rubber chicken"];
+
+        //random number that picks a position cant go over max lenght of array
+
+        var weapon = weaponList[randomNumber(weaponList.length - 1)];
+        alert(
+            "being that it is the zombie apocalipse, you decide to search for a weapon first, after surveying the surounding area you notice and grab a " +
+            weapon + ".");
+
+        alert("suddenly a zombie bursts throught the door ! you ready your " + weapon + "and advance towards the zombie");
+
+        var survival = randomNumber(2);
+
+        if (survival === 0) {   // 1 in 3 chance for this number to be selected
+            alert("the zombie bittes you. You losse !!!")
+        } else if (survival > 0){
+            alert("you kill the zombie with your " + weapon +" you win.");
+        }
+    </script>
+
+</body>
+
+</html>

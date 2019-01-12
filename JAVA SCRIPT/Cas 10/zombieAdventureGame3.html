@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zombie adventure game part 3</title>
+</head>
+
+<body>
+
+    <script>
+        var outcome; // globalna promenjiva
+
+        window.alert( // ispis texta
+            "one day you wake up and the world as you know it has ended. the dead come to life and prey on the living. There is no hope, no cure, only survival. Welcome to the zombie apocalipse!."
+        );
+
+        var beginingScennarios = [ // array list koja ima 3 pozicije u indexu 0 1 2 na osnovu nasumicnog broja bira se pozicija u array listi
+            "you wake up in the hostpital. It is eerily quiet. you tip toe to the door and peek out.",
+            "You are standing in an open field west of a white house  with a boardered front door. there is a small mailbox here.",
+            "Desperate times call for desperate measures. you see a small convinience store up ahead and decide to loot it for goods"
+        ];
+
+
+        // funkcija sa imenom randomNumber koja vraca povratnu vrednost preko kljucne reci return na mesto poziva
+        // koristi 2 metode math.round da bi zaokruzio broj na 0 ili 1 ako je random broj manji od 0.50% broja onda ce biti 0 obrnuto ce biti 1
+        // math random daje random broj i mnozi ga sa range zbog duzine arrayliste.
+        function randomNumber(range) {
+            "use strict"
+            if (typeof range === "number") {
+                return Math.round(Math.random() * range);
+            }
+        }
+
+        // ispis alert poziva array listu koja bira scenario na osnovu funkcije gore definisane  + more joj se unanjiti vrednost za -1 zbog indexa
+        // random number vraca 1 2 3 ali nama treba da ide od 0 1 2 + za index zato ide -1
+        window.alert(beginingScennarios[randomNumber(beginingScennarios.length - 1)]);
+
+
+        // objekat koji smo napravili za naseg karaktera
+        //objekat ima neke svoje parametre 
+        // name i character class parametar se trazi od strane korisnika preko prompt
+        // ako se ne unese nista to jes null onda ce se proveriti dole sa if
+        var character = {
+            health: 5,
+            strenght: 0,
+            stealth: 0,
+            name: window.prompt("what is your name?"),
+            characterClass: window.prompt(
+                "these times test the stenghts of our characters what were you before the war? (chose from: soldier, doctor, or politician)"
+            ).toLowerCase()
+        };
+
+
+        // ovo prosto proverava da li je vrednost character.name === null 
+        // ako je null trazi novi unos
+        // ako korisnik odbije unos sam zadaje vrednost koju sam ja promenio u fully bunny
+        if (!character.name) { // provera
+            character.name = window.prompt(
+                "I dont know what to call you if you dont enter a name, if you dont answer i will be forced to name you myself... Last Chance. What is your name? "
+            )
+
+            if (!character.name) {
+                window.alert("well i did try to warn you fluffy bunny it is then.");
+                character.name = "fluffy bunny";
+            }
+        }
+
+
+        // dodela vrednosti objektu preko if -a
+        // na osnovu stringa koji unesemo prosledjuju se razliciti parametri objektu
+        // pretpostavlajm da bi ovde trebala jos jedna provera ako korisnik unese neku glupost koja nije soldier doctor ili politician
+
+
+        if (character.characterClass === "soldier") {
+            character.strenght = 5;
+        }
+        if (character.characterClass === "doctor") {
+            character.health = 7;
+        }
+        if (character.characterClass === "politician") {
+            character.stealth = 5;
+        }
+
+
+
+
+        // promenjiva koja prima vrednost od korisnika za sta hoce da uradi sneak attack i prompt u sebi vuce parametre od gore 
+        // kada ispisuje poruku korisniku
+
+        var choice = window.prompt("the brave adventurers and former " + character.characterClass + " " + character.name +
+            " enters a store for some loot. you notice a zombie slowly shuffling around the destruction, what action shall you take attack or attempt to sneak by the zombie? "
+        ).toLowerCase();
+
+        // 2 provere prva ako je string attack i druga proverava da li je snaga 5 to jest da li je objekat.strenght ima vrednost 5
+
+        if (choice === "attack") {
+            if (character.strenght === 5) {
+                window.alert(
+                    "using only your bare hands you slay that zombie! success! you loot the store for goods and find an axe, a pack of batteries, and tree packs of beanie weenies"
+                );
+                outcome = "win";
+                character.strenght++;
+                // iteracija na vise to znaci da ce vrednost biti 6
+
+                // ako objekat.strenht nije 5 ili je manji od 5 onda ide else if
+                // treba i esle ja mislim jer nista se ne desava ako je vece od 5 
+            } else if (character.strenght < 5) {
+                // prosti ispis u poruci
+                window.alert(
+                    "you fearlessly charge the zombie with all your strenght, you crush thy foe as if it were a piece of papper to shred."
+                );
+                window.alert(
+                    "just kidding. you are immediatelly bitten by the zombie and die. but not all is lost -- if time spent together makes one friends, then you and the zombie become best friends and live together for eternity the end."
+                );
+                outcome = "lose";
+            }
+        }
+
+
+        // isto 2 if provere prva je za sneak ili sneak by the zombie
+        // druga proverava objekat.stealth
+        // i radi na osnovu toga
+        if (choice === "sneak" || choice === "sneak by the zombie") {
+            if (character.stealth === 5) {
+                window.alert("you sneak by the zombie you cleaver bastard");
+            }
+            if (character.stealth < 5) {
+                window.alert(
+                    "you try to slip by the zombie bugt you just suck to much ass to do that so you are in a bad spot."
+                )
+
+                if (character.strenght === 5) {
+                    window.alert(
+                        "although you have alerted the zombie to your presence you are able to crush its head with your bare hands."
+                    );
+                    outcome = "win";
+                } else {
+                    window.alert(
+                        "weaponless and weak the zombie chops down on your arms as you flail wildly in its general direction"
+                    );
+                    outcome = "lose";
+                }
+            }
+
+        }
+
+        // proverava string od petlje od gore i onda prosta if else if petlja moje i if else isto je
+
+        if (outcome === "lose") {
+            window.alert("You lose!");
+        } else if (outcome === "win") {
+            window.alert("You Win!.")
+        }
+    </script>
+</body>
+
+</html>

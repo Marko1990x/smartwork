@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ispis promenljive iz objekta</title>
+    <script>
+       //Dekleracija objekta
+        var korisnik = {
+            ime:"Pera",
+            godina:30
+        }
+        
+        //ispis promenljivih iz objekta
+        for(var x in korisnik){//promenljiva x čuva kljuc.
+          
+          console.log("Kljuc je :",x); // prikazujemo nazive kljuceva - ime ,godine
+          
+          console.log("Vrednosti kljuca "+x+" je "+korisnik[x]); // prikazujemo vrednosti kljuceva - Pera, 30 
+        }
+    </script>
+</head>
+<body>
+    <h1>Ispis promenljive iz objekta</h1>
+</body>
+</html>

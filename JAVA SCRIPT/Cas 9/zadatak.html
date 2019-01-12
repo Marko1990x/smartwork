@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rad na casu sa objektima</title>
+</head>
+
+<body>
+
+    <p id="prvi"></p>
+
+    <p id="drugi"></p>
+
+    <script>
+    
+        try {
+
+            var student = {
+            ime: "Petar",
+            prezime: "Petrovic",
+            brindeksa: "1123",
+            procena: "8.12",
+            godina: "4",
+            novaOcena: function(x) {
+                student.procena = x;
+                y = x/2;
+                document.getElementById("drugi").innerHTML = ("ovo je nova ocena studenta prosledjena parametrom " + y); 
+            }
+        };
+
+
+        document.getElementById("prvi").innerHTML = ("ovo je godina studenta + " + student.godina + " " +
+            " ovo je prosecna ocena studenta " + student.procena / 2);
+
+        
+        student.novaOcena(10);
+
+        console.log("my object " , student);
+            
+        } catch (error) {
+            console.log("greska je + " + error);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

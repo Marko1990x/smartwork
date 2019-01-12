@@ -26,7 +26,7 @@ gulp.task('ubaci-header', function(){
 
 */
 
-/*
+
 //njegova vertzija
 var gulp = require('gulp');
 var fs = require('fs');
@@ -48,4 +48,3 @@ gulp.task('ubaci-header', function() {
     ;
 
 });
-*/

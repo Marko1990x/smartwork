@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zombie text adventure game</title>
+</head>
+
+<body>
+
+    <script>
+        // select weapon // 50 /50 chance to hit or miss
+
+
+        alert("It is the zombie apocalypse. You are looting a store and suddenly a zombie bursts through the door!.");
+        var weapon = prompt(
+            "You are searchign around frantically for a weapon. what do you chose? a bow and arrow, an axe, or a rubber chicken."
+        );
+        // 50/50 chance to hit the enemy
+        var randomNumber = Math.round(Math.random());
+        alert("you attack the zombie with your" + " " + weapon);
+
+        // Math.round ako je malje od 50% decimala bice 0 1 obrnuto
+
+        if (randomNumber === 0) {
+          alert("the zombie bittes you you losse");  
+        } else if(randomNumber === 1) {
+            alert("you kill the zombie with your" + " " + weapon + " "+ ". You win!");
+        } 
+    </script>
+
+</body>
+
+</html>
