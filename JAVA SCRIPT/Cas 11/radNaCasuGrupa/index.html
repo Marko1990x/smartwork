@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Best online IT courses ever</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,300,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav clear-fix">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="products.html">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="donate"><a href="htmlCss.html">Details about courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="secondary-page clear-fix">
+        <h1>Learn online</h1>
+        <section>
+            <header>
+                <h2>LEARN WHITH US</h2>
+                <p class="subheading">We are the best</p>
+            </header>
+            <p>We have over 1000 high quality courses available across 9 distinct categories, all absolutely free to
+                complete. All our courses have been designed by subject matter experts, to give you an interactive and
+                enriched learning experience.</p>
+
+            <form name="myForm" class="form" autocomplete="on"> Registration:
+                <br>
+                <br>
+                <label>First and Last Name
+                    <br>
+                    <input id="name" type="text" class="provera" name="name"><span id="greska"></span><span id="greska1"></span>
+                </label>
+                <label>Username
+                    <br>
+                    <input id="user" type="text">
+                </label>
+                <label>Password
+                    <br>
+                    <input id="pass" type="text">
+                </label>
+                <label>Confirm Password
+                    <br>
+                    <input type="text" id="potvrdi"> <span id="passwordRed"></span>
+                </label>
+                <label>Phone Number
+                    <br>
+                    <input id="phone" type="text" id="provera11" class="test"><span id="greska2"></span><span id="greska3"></span>
+                </label>
+                <div class="form-section">
+                    <p>Interests:</p>
+                    <p>What interests do you have? Please select all that apply:</p>
+                    <label>
+                        <input type="checkbox" for="interest" name="interest1">Front end</label><label>
+                        <input type="checkbox" for="interest" name="interest2">Back end</label>
+                    <label>
+                        <input type="checkbox" for="interest" name="interest3">Software tester</label>
+                    <label>
+                        <input type="checkbox" for="interest" name="interest4">Database</label>
+                    <label>
+                        <input type="checkbox" for="interest" name="interest5">Administration</label>
+                </div>
+                <div class="form-section">
+                    <p>Print version</p>
+                    <label>
+                        <input type="checkbox">Yes, I would like to receive a newsletter for about new courses.</label>
+                </div>
+                <input id="reg" type="button" value="Submit" onclick="validate()">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script>
+        function brojka() {
+            if (!/^[0-9]*$/g.test(document.myForm.name1.value)) {
+                //alert("molimo vsd ne unesite brojeve");
+                document.getElementById("greska2").innerHTML = "   Molimo vas da ne unosite slova";
+                document.myForm.name1.focus();
+                return false;
+            }
+        }
+
+        function slovka() {
+            if (!/^[a-zA-Z," "]*$/g.test(document.myForm.name.value)) {
+                //alert("molimo vsd ne unesite brojeve");
+                document.getElementById("greska").innerHTML = "   Molimo vas da ne unosite brojeve";
+                document.myForm.name.focus();
+                return false;
+            }
+        }
+
+        function validate() {
+            if (document.myForm.name.value == "") {
+                alert("Enter a name");
+                document.myForm.name.focus();
+                return false;
+            }
+
+            slovka();
+            brojka();
+
+        }
+
+
+        window.onload = function () {
+            const myInput = document.getElementById('potvrdi');
+            myInput.onpaste = function (e) {
+                e.preventDefault();
+               // alert("Ne mozete da kopirate vas password!");
+               document.getElementById("passwordRed").innerHTML = "Ne mozete da kopirate vas password"
+            }
+        }
+
+
+        function splitname() { // na promeni focusa 
+            // seckanje imena i prezimena
+            var nameSplit = document.getElementById("name").value; //array
+            var array = nameSplit.split(" ");
+            console.log(array);
+            var name = array[0];
+            var lastName = array[1];
+            console.log(name + " " + lastName);
+
+            document.getElementById("user").value = name;
+            document.getElementById("pass").value = lastName;
+
+        }
+
+
+
+        document.getElementById("name").addEventListener("change", splitname);
+    </script>
+
+</body>
+
+</html>
