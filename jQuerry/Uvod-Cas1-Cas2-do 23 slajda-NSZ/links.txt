@@ -1,0 +1,5 @@
+1 - https://jquery.com/download/ jquerry main site
+2 - https://code.jquery.com/ - CDN
+
+
+document ready function moze da se koristi da se skript koristi u headu nece praviti probleme.

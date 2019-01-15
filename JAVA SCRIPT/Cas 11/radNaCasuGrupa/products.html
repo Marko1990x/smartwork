@@ -150,6 +150,31 @@
                     </div>
                     <div class="modal-body">
                         <p id="ispis">Neki tekst u upisan u modal .</p>
+                        <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
+                    <thead>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Price
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody id="orderedProductsTblBody">
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" align="right" id="cart_total">
+                                
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </td>
+        </tr>
+    </table> 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
@@ -192,7 +217,7 @@
                     <div class="panel-heading">Angular JS</div>
                     <div class="panel-body"><img src="images/AngularJS.jpg" class="img-responsive" style="width:100% ;height:230px"
                             alt="Image"></div>
-                    <div class="panel-footer" id="one" data-naziv="Angular JS" data-cena="30000" style="cursor:pointer">Cena:30,000din
+                    <div class="panel-footer" id="one" data-naziv="Angular JS" data-cena="30000" style="cursor:pointer" onclick="AddtoCart('Angular JS',30000)">Cena:30,000din
                         <span id="test1" class="glyphicon glyphicon-shopping-cart"></span>DODAJ U KORPU</div>
                 </div>
             </div>
@@ -201,7 +226,7 @@
                     <div class="panel-heading">JQ</div>
                     <div class="panel-body"><img src="images/JQ.png" class="img-responsive" style="width:100% ;height:230px;"
                             alt="Image"></div>
-                    <div class="panel-footer" id="two" data-naziv="JQ" data-cena="35000" style="cursor:pointer">Cena:
+                    <div class="panel-footer" id="two" data-naziv="JQ" data-cena="35000" style="cursor:pointer" onclick="AddtoCart('JQ',35000)">Cena:
                         35,000din <span class="glyphicon glyphicon-shopping-cart"></span> DODAJ U KORPU</div>
                 </div>
             </div>
@@ -210,8 +235,7 @@
                     <div class="panel-heading">JavaScript</div>
                     <div class="panel-body"><img src="images/javascript.jpg" class="img-responsive" style="width:100%;height:230px;"
                             alt="Image"></div>
-                    <div class="panel-footer" id="tre" data-naziv="JavaScript" data-cena="9990" style="cursor:pointer">Cena:
-                        9,990din <span class="glyphicon glyphicon-shopping-cart"></span> DODAJ U KORPU</div>
+                    <div class="panel-footer" id="tre" data-naziv="JavaScript" data-cena="9990" style="cursor:pointer" onclick="AddtoCart('Javascript',9990)">Cena: 9,990din <span class="glyphicon glyphicon-shopping-cart"></span> DODAJ U KORPU</div>
                 </div>
             </div>
         </div>
@@ -224,7 +248,7 @@
                     <div class="panel-heading">TS</div>
                     <div class="panel-body"><img src="images/TS.jpg" class="img-responsive" style="width:100%;height:230px;"
                             alt="Image"></div>
-                    <div class="panel-footer" id="four" data-naziv="TypeScript" data-cena="40000" style="cursor:pointer">Cena:
+                    <div class="panel-footer" id="four" data-naziv="TypeScript" data-cena="40000" style="cursor:pointer" onclick="AddtoCart('TS',40000)">Cena:
                         40,000din <span class="glyphicon glyphicon-shopping-cart"></span> DODAJ U KORPU</div>
                 </div>
             </div>
@@ -233,7 +257,7 @@
                     <div class="panel-heading">HTML</div>
                     <div class="panel-body"><img src="images/html1jpg.jpg" class="img-responsive" style="width:100%;height:230px;"
                             alt="Image"></div>
-                    <div class="panel-footer" id="five" data-naziv="HTML" data-cena="5690" style="cursor:pointer">Cena:
+                    <div class="panel-footer" id="five" data-naziv="HTML" data-cena="5690" style="cursor:pointer" onclick="AddtoCart('HTML',5690)">Cena:
                         5,690din <span class="glyphicon glyphicon-shopping-cart"></span> DODAJ U KORPU</div>
                 </div>
             </div>
@@ -242,7 +266,7 @@
                     <div class="panel-heading">CSS</div>
                     <div class="panel-body"><img src="images/CSS1.jpg" class="img-responsive" style="width:100%;height:230px;"
                             alt="Image"></div>
-                    <div class="panel-footer" id="six" data-naziv="CSS" data-cena="15990" style="cursor:pointer">Cena:
+                    <div class="panel-footer" id="six" data-naziv="CSS" data-cena="15990" style="cursor:pointer" onclick="AddtoCart('CSS',15990)">Cena:
                         15,990din <span class="glyphicon glyphicon-shopping-cart"></span> DODAJ U KORPU</div>
                 </div>
             </div>
@@ -279,37 +303,48 @@
 
 
             var array = [one, two, tree, four, five, six];
-            var naziv = ["Angular JS", "JQ", "JavaScript", "ts", "HTML", "CSS"];
+            var naziv = ["Angular JS","JQ","JavaScript","ts","HTML","CSS"];
 
             console.log(array);
 
             for (var i = 0; i < array.length; i++) {
-                var arrayX = "Naziv " + naziv[i] + " Cena " + array[i];
+                var arrayX = "Naziv "+naziv[i] +" Cena "+ array[i];
                 console.log(arrayX);
-
-                if (i == 2) {;
-                    console.log("ovo je treci element");
-                }
-
             }
-
         }
 
         saberiCene();
 
+        function thisIsAPain() {
+            var one = document.getElementById("one").getAttribute("data-cena");
+            var two = document.getElementById("two").getAttribute("data-cena");
+            var tree = document.getElementById("tre").getAttribute("data-cena");
+            var four = document.getElementById("four").getAttribute("data-cena");
+            var five = document.getElementById("five").getAttribute("data-cena");
+            var six = document.getElementById("six").getAttribute("data-cena");
 
-        //    document.getElementById("one").addEventListener("click", saberiCene)
-        document.getElementById("two").addEventListener("click", saberiCene)
-        document.getElementById("tre").addEventListener("click", saberiCene)
-        document.getElementById("four").addEventListener("click", saberiCene)
-        document.getElementById("five").addEventListener("click", saberiCene)
-        document.getElementById("six").addEventListener("click", saberiCene)
+
+            console.log(one + " " + two + " " + tree + " " + four + " " + five + " " + six);
 
 
-        // stavili smo drugi dogadaj na mouse leave drukcije nemoze
+            var array = [one, two, tree, four, five, six];
+            var naziv = ["Angular JS","JQ","JavaScript","ts","HTML","CSS"];
+
+            console.log(array);
+
+            for (var i = 0; i < array.length; i++) {
+                var arrayX = "Naziv "+naziv[i] +" Cena "+ array[i];
+                console.log(arrayX);
+                
+            }
+
+            
+        }
+
+
 
         var timesClicked = 0;
-        // radi ali samo dva puta
+
         $("#zum").click(function () {
             timesClicked++;
 
@@ -328,94 +363,46 @@
             }
 
         })
-
-        //document.getElementById("zum").addEventListener("click", zumiranje);
-        //  document.getElementById("zum").addEventListener("mouseleave", odZumiranje);
-
-
-        function basket(params) {
-            var elementIsClicked1 = false; // declare the variable that tracks the state
-            function clickHandler() { // declare a function that updates the state
-                elementIsClicked1 = true;
-                alert("clicked");
-                var one = document.getElementById("one").getAttribute("data-cena");
-                alert(one);
-                return one;
-            }
-
-            var element = document.getElementById('one'); // grab a reference to your element
-            element.addEventListener('click', clickHandler);
-
-            var elementIsClicked2 = false; // declare the variable that tracks the state
-            function clickHandler() { // declare a function that updates the state
-                elementIsClicked2 = true;
-                alert("clicked");
-                var one = document.getElementById("two").getAttribute("data-cena");
-                alert(one);
-                return two;
-            }
-
-            var element = document.getElementById('two'); // grab a reference to your element
-            element.addEventListener('click', clickHandler);
-
-            var elementIsClicked3 = false; // declare the variable that tracks the state
-            function clickHandler() { // declare a function that updates the state
-                elementIsClicked3 = true;
-                alert("clicked");
-                var one = document.getElementById("tre").getAttribute("data-cena");
-                alert(one);
-                return tree;
-            }
-
-            var element = document.getElementById('tre'); // grab a reference to your element
-            element.addEventListener('click', clickHandler);
-
-            var elementIsClicked4 = false; // declare the variable that tracks the state
-            function clickHandler() { // declare a function that updates the state
-                elementIsClicked4 = true;
-                alert("clicked");
-                var one = document.getElementById("four").getAttribute("data-cena");
-                alert(one);
-                return four;
-            }
-
-            var element = document.getElementById('four'); // grab a reference to your element
-            element.addEventListener('click', clickHandler);
-
-            var elementIsClicked5 = false; // declare the variable that tracks the state
-            function clickHandler() { // declare a function that updates the state
-                elementIsClicked5 = true;
-                alert("clicked");
-                var one = document.getElementById("five").getAttribute("data-cena");
-                alert(one);
-                return five;
-            }
-
-            var element = document.getElementById('five'); // grab a reference to your element
-            element.addEventListener('click', clickHandler);
-
-            var elementIsClicked6 = false; // declare the variable that tracks the state
-            function clickHandler() { // declare a function that updates the state
-                elementIsClicked6 = true;
-                alert("clicked");
-                var one = document.getElementById("six").getAttribute("data-cena");
-                alert(one);
-                return six;
-            }
-
-            var element = document.getElementById('six'); // grab a reference to your element
-            element.addEventListener('click', clickHandler);
-
-            if (elementIsClicked1 == true) {
-                console.log("element 1 was clicked");
+          var shoppingCart = [];
+        
+        function displayShoppingCart(){
+            var orderedProductsTblBody=document.getElementById("orderedProductsTblBody");
+        while(orderedProductsTblBody.rows.length>0) {
+                orderedProductsTblBody.deleteRow(0);
             }
             
+                   
+            
+            var cart_total_price=0;
+            
+            for(var product in shoppingCart){    
+                var row=orderedProductsTblBody.insertRow();
+                
+                var cellName = row.insertCell(0);
+                var cellPrice = row.insertCell(1);
+                cellPrice.align="right";
+                
+                cellName.innerHTML = shoppingCart[product].Name;
+                cellPrice.innerHTML = shoppingCart[product].Price;
+                cart_total_price+=shoppingCart[product].Price;
+            }
+             
+            document.getElementById("cart_total").innerHTML=cart_total_price;
+        
         }
-
-
-
-
-        basket();
+        
+        function AddtoCart(name,price){
+           
+           var singleProduct = {};
+           
+           singleProduct.Name=name;
+           singleProduct.Price=price;
+           
+           shoppingCart.push(singleProduct);
+           
+           displayShoppingCart();
+           
+        }  
     </script>
 
 </body>

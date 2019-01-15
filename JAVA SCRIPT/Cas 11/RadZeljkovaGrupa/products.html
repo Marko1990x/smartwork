@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+        /* Remove the jumbotron's default bottom margin */
+        
+        .jumbotron {
+            margin-bottom: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+        
+        .glyphicon-shopping-cart:before {
+            color: white;
+        }
+        
+        .modal-content {
+            position: relative;
+            background-color: #cdd3d3;
+            border: 1px solid #999;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            outline: 0;
+            box-shadow: 0 3px 9px rgba(23, 163, 142, 0.5);
+        }
+        
+        .jumbotron h1 {
+            color: #ffffff;
+            text-shadow: 3px 4px 4px gray;
+            background-color: black;
+            width: 500px;
+            margin-left: 300px;
+        }
+        
+        .jumbotron p {
+            color: red;
+            font-size: 24px;
+            background-color: white;
+            
+        }
+        
+        .btn1 {
+            color: white;
+            background-color: #1f1e1e;
+/*            box-shadow: 3px 3px 9px gray;*/
+            height: 30px;
+            font-size: 21px;
+        }
+        
+        .btn1:hover {
+            color: #f7f3f3;
+            background-color: #0b0b0b;
+            
+        }
+        
+        .navbar-inverse .navbar-collapse,
+        .navbar-inverse .navbar-form {
+            background-color: #1f1e1e;
+        }
+        
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+            font-size: 18px;
+        }
+        
+        .navbar-inverse .navbar-nav>.active>a,
+        .navbar-inverse .navbar-nav>.active>a:focus,
+        .navbar-inverse .navbar-nav>.active>a:hover {
+            color: #fff;
+            background-color: #1f1e1e
+        }
+        
+        .navbar-inverse {
+            background-color: #1f1e1e;
+            border-color: #080808;
+        }
+        
+        .modal-title {
+            font-size: 30px;
+            color: #27867b;
+        }
+        
+        .btn-default {
+            color: white;
+            background-color: #27867b;
+            border-color: #ccc;
+        }
+        
+        .jumbotron {
+            background-image: url(love-background-1_xjkr1dqt__F0000.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 350px;
+        }
+        body{
+            background-color: #beb9b9;
+        }
+        .modal-title {
+    font-size: 30px;
+    color: #f4092d;
+}
+        .panel-heading{
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+/*
+        #korpa{
+            color: blueviolet;
+            font-size: 16px;
+        }
+*/
+    </style>
+</head>
+
+<body>
+    <input type="color" id="color">Choose the background-color
+    <div class="jumbotron">
+        <div class="container text-center">
+            
+            <h1>Online Store</h1>
+            <p>Learn with us</p>
+        </div>
+       
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Sadrzaj modala-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Spisak kupljenih proizvoda</h4> </div>
+                    <div class="modal-body">
+                        <p id="ispis">Neki tekst u upisan u modal .</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-inverse">
+       
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!--       tri linijice kje se pojave--><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                      <a class="navbar-brand" href="#">Logo</a><img src="images/shopping-online-logo.jpg" height="52px" width="50px"> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    
+                    <li> <button id="dugmeKorpa" type="button" class="btn btn1 btn-lg" data-toggle="modal" data-target="#myModal">Cart <span class="glyphicon glyphicon-shopping-cart"></span></button></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <div>
+        <input type="button" id="dugmeZumiraj" value="Zumiraj cene" style="float:right"> </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Angular JS</div>
+                    <div class="panel-body"><img src="images/AngularJS.jpg" class="img-responsive" style="width:100% ;height:230px" alt="Image"></div>
+                    <div class="panel-footer div-cena" data-naziv="Angular JS" data-cena="30000" style="cursor:pointer">Cena:30,000din <span class="glyphicon glyphicon-shopping-cart"></span> <span class="dugmeDodaj">DODAJ U KORPU</span></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success" >
+                    <div class="panel-heading">JQ</div>
+                    <div class="panel-body"><img src="images/JQ.png" class="img-responsive" style="width:100% ;height:230px;" alt="Image"></div>
+                    <div class="panel-footer div-cena" data-naziv="JQ" data-cena="35000" style="cursor:pointer">Cena: 35,000din <span class="glyphicon glyphicon-shopping-cart"></span> <span class="dugmeDodaj">DODAJ U KORPU</span></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">JavaScript</div>
+                    <div class="panel-body"><img src="images/javascript.jpg" class="img-responsive" style="width:100%;height:230px;" alt="Image"></div>
+                    <div class="panel-footer div-cena" data-naziv="JavaScript" data-cena="9990" style="cursor:pointer">Cena: 9,990din <span class="glyphicon glyphicon-shopping-cart"></span> <span class="dugmeDodaj">DODAJ U KORPU</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">TS</div>
+                    <div class="panel-body"><img src="images/TS.jpg" class="img-responsive" style="width:100%;height:230px;" alt="Image"></div>
+                    <div class="panel-footer div-cena" data-naziv="TypeScript" data-cena="40000" style="cursor:pointer">Cena: 40,000din <span class="glyphicon glyphicon-shopping-cart"></span> <span class="dugmeDodaj">DODAJ U KORPU</span></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">HTML</div>
+                    <div class="panel-body"><img src="images/html1jpg.jpg" class="img-responsive" style="width:100%;height:230px;" alt="Image"></div>
+                    <div class="panel-footer div-cena" data-naziv="HTML" data-cena="5690" style="cursor:pointer">Cena: 5,690din <span class="glyphicon glyphicon-shopping-cart"></span> <span class="dugmeDodaj">DODAJ U KORPU</span></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">CSS</div>
+                    <div class="panel-body"><img src="images/CSS1.jpg" class="img-responsive" style="width:100%;height:230px;" alt="Image"></div>
+                    <div class="panel-footer div-cena" data-naziv="CSS" data-cena="15990" style="cursor:pointer">Cena: 15,990din <span class="glyphicon glyphicon-shopping-cart"></span> <span class="dugmeDodaj">DODAJ U KORPU</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>Online Store Copyright</p>
+        
+    </footer>
+    
+    <script src="js/products.js"></script>
+    
+</body>
+
+</html>
