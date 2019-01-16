@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>JQuery Primer - Iteracije kroz nodove</title>
+    <style type="text/css">
+        .BlueDiv { background-color: Navy; color:White;width:200px;}
+        .RedDiv { background-color: Red; color:White; width:200px;}
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+    <script src="jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Primer 1 - Selektuj BlueDiv i RedDiv uzmi indeks i tekst i upisi u novi OutputDiv
+            
+            var output = $('#OutputDiv');
+            
+            var x = "";
+            $('div.BlueDiv, div.RedDiv').each(function(index){
+              
+              x = x + index+" "+$(this).text()+"<br>";
+              
+            });
+            output.html(x);//konvertuje sve sto se nalazi u x iz stringa u html kod i sada ce <br>imati smisla
+          
+          
+            //Vežba 7 - Selektuj sve input elemente u formi prikaži ih u div sa id DivZaVezbu
+            //i ofarbaj ivice diva u plavu boju
+            
+            
+          
+        });
+    </script>
+</head>
+<body>
+  <h1>JQuery Primer  - Iteracije kroz nodove</h1>
+    <div id="OutputDiv"></div>
+    <div id="DivZaVezbu"></div>
+    <div id="TestDiv" title="Div Title">
+        Ovo je moj div tekst
+    </div>
+    
+    <div title="Contains Table">
+        <table id="DataTable">
+          <tr>
+             <td>Ćelija 1 Red 1</td>
+          </tr>
+          <tr>
+             <td>Ćelija 1 Red 2</td>
+          </tr>
+          <tr>
+             <td>Ćelija 1 Red 3</td>
+          </tr>
+          <tr>
+             <td>
+                <table style="width:100%">
+                    <tr>
+                        <td>Ugneždena tabela sa ćelijom i redom</td>
+                    </tr>
+                </table>
+             </td>
+          </tr>
+        </table>
+        <br />
+    </div>
+    <div class="BlueDiv">
+        <span>Plavi div</span>
+    </div>
+    <br />
+    <span class="BlueDiv">Ovo je moj plavi span u divu</span>
+    <br />
+    <div class="RedDiv">
+        <span>Crveni div</span>
+    </div>
+    <p>
+        <img src="ns.jpg" />
+    </p>
+
+    <form id="form1">
+        <table style="width:300px;">
+            <tr>
+                <td style="width:30%;">Ime</td>
+                <td style="width:70%;"><input id="FirstNameTextBox" value="Pera" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Prezime</td>
+                <td><input id="LastNameTextBox" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Komentari</td>
+                <td><textarea rows="5" cols="60" id="CommentsTextBox">Tekst za unos</textarea></td>
+            </tr>           
+            <tr>
+                <td>
+                <select id="sel">
+                    <option value="SU">Subotica</option>
+                    <option value="NS" selected="true">Novi Sad</option>
+                </select></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><input id="SubmitButton" type="button" value="Unesi" /></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>  
+
+    </form>
+</body>
+</html>
+

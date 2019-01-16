@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JQuery fadeIn-fadeOut animacija</title>
+    <script src="jquery-1.12.4.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("p").fadeIn(5000);//prvi parametar je vremenski koliko traje sakrivanje
+
+    });
+    $(".btn2").click(function(){
+         $("p").fadeOut(5000);
+    });
+    
+});
+</script>
+</head>
+<body>
+  <h1>JQuery fadeIn-fadeOut animacija</h1>
+  <p id="p1">Ovo je paragraf</p>
+
+  <button class="btn1">FadeIn</button>
+  <button class="btn2">FadeOut</button>
+ 
+</body>
+</html>

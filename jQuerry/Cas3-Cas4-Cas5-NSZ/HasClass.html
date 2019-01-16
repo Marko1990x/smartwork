@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>JQuery HasClass primer</title>
+    <script src="jquery-1.12.4.js"></script>
+    <style type="text/css">
+        .mojaKlasa { background-color: Navy; color:White;width:200px;}
+        .mojaKlasa1{ background-color: Red; color:White; width:300px;}
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+          if($('#OutputDiv').hasClass('mojaKlasa1')){
+            alert("Klasa postoji !");
+          }else{
+            alert("Klasa ne postoji pa je dodajem !");
+            $('#OutputDiv').addClass('mojaKlasa');
+          }
+        });
+    </script>
+</head>
+<body>
+  <h1>JQuery HasClass primer</h1>
+    <div id="OutputDiv">Ovo je prvi div</div>
+    <div id="TestDiv" class="mojaKlasa1" title="Div Title">
+        Ovo je moj div tekst
+    </div>
+</body>
+</html>

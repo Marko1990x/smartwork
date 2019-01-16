@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JQuery change dogadjaj primer</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //Primer1
+
+            $('#gradovi').change(function() {
+                 alert("Neko je odabrao"+$(this).val());
+                
+        
+            });
+
+
+
+            // Primer2
+            
+          $('#tekst1').change(function(){
+               alert("uneta je promena");
+           });
+           
+        });
+    </script>
+</head>
+
+<body>
+    <h1>JQuery change dogadjaj primer</h1>
+    <div id="izlaz">Tekst iz inputa</div>
+    <form id="form1">
+        <table style="width:300px;">
+            <tr>
+                <td>
+                    <select id="gradovi" class="MojInput">
+                    <option value="SU">Subotica</option>
+                    <option value="NS" selected="true">Novi Sad</option>
+                    <option value="SO">Sombor</option>
+                </select></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><input id="tekst1" type="text" value="Unesi" /></td>
+                <td><input id="tekst2" type="text" value="Vezbanje" /></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

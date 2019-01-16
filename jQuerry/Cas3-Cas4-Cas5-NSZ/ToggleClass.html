@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>JQuery toggle klasa primer</title>
+    <script src="jquery-1.12.4.js"></script>
+    <style type="text/css">
+        .mojaKlasa { background-color: yellow; color:White;width:200px;}
+        .mojaKlasa1{ background-color: Red; color:White; width:300px;}
+    </style>
+    <script type="text/javascript">
+        function toggleKlasa(inputPolje){
+          $(inputPolje).toggleClass('mojaKlasa')
+        }
+    </script>
+</head>
+<body>
+  <h1>JQuery toggle klasa primer</h1>
+    <label for="tekst">Unesi tekst</label>
+    <input id="tekst" type="text" onfocus="toggleKlasa(this)" onblur="toggleKlasa(this)">
+    <!-- kada kliknemo u input polje okine se dogadjaj onfocus i sa this se prosledi celo input polje kao parametar, zatim se sa toggleClass ispituje da li klasa "mojaKlasa" postoji, ako ne postoji dodaje se. Kada izadje input polje iz fokusa okida se dogadjaj onblur i opet se sa this prosledjuje input polje i ispitujemo da li postoji klasa, posto posle fokusa postoji onda se uklanja-->
+</body>
+</html>

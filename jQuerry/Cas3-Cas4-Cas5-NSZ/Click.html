@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>JQuery click dogadjaj primer</title>
+    <script src="jquery-1.12.4.js"></script>
+    <style type="text/css">
+        .mojaKlasa { background-color: yellow; color:White;width:200px;}
+        .mojaKlasa1{ background-color: Red; color:White; width:300px;}
+    </style>
+    <script type="text/javascript">
+         $(document).ready(function () {
+            $('#OutputDiv').click(function(){
+                alert("Neko me je kliknuo !");
+            });
+        });
+    </script>
+</head>
+<body>
+  <h1>JQuery click primer</h1>
+    <div id="OutputDiv">Ovo je div</div>
+    <div id="IspisDiv">Ovde treba da se ispise tekst</div>
+    <label for="tekst">Unesi tekst</label>
+    <input id="tekst" type="text" value="Moje ime">
+</body>
+</html>

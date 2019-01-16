@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>JQuery Primer - Modifikovanje osobina-property i atributa</title>
+    <style type="text/css">
+        .BlueDiv { background-color: Navy; color:White;width:200px;}
+        .RedDiv { background-color: Red; color:White; width:200px;}
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+    <script src="jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+          //  Primer1 - Sada koristeći JQuery objekat ponavljamo primer 1
+            
+            $('div.BlueDiv,div.RedDiv').each(function(){
+              $(this).attr('title','Neki Naslov2');// setovanje
+              var x = $(this).attr('title');// get sada ga dovlacimo posle setovanja u promenljivo
+              alert(x); //vraca se u petlju dok ima elemenata
+            });
+            
+
+           //Vezba 8 -  Promeniti atribute nad divovima sa klasama BlueDiv i 
+            //RedDivtitle i to title u Neki tekst 4 ,
+            //zatim, veličinu fonta na 20pt , boju teksta u crnu ,poyadinu  u zutu boju
+        });
+    </script>
+</head>
+<body>
+  <h1>JQuery  Primer - Modifikovanje osobina-property i atributa</h1>
+    <div id="OutputDiv"></div>
+    <div id="TestDiv" title="Div Title">
+        Ovo je moj div tekst
+    </div>
+    
+    <div title="Contains Table">
+        <table id="DataTable">
+          <tr>
+             <td>Ćelija 1 Red 1</td>
+          </tr>
+          <tr>
+             <td>Ćelija 1 Red 2</td>
+          </tr>
+          <tr>
+             <td>Ćelija 1 Red 3</td>
+          </tr>
+          <tr>
+             <td>
+                <table style="width:100%">
+                    <tr>
+                        <td>Ugneždena tabela sa ćelijom i redom</td>
+                    </tr>
+                </table>
+             </td>
+          </tr>
+        </table>
+        <br />
+    </div>
+    <div class="BlueDiv">
+        <span>Plavi div</span>
+    </div>
+    <br />
+    <span class="BlueDiv">Ovo je moj plavi span u divu</span>
+    <br />
+    <div class="RedDiv" >
+        <span>Crveni div</span>
+    </div>
+    <p>
+        <img src="ns.jpg" />
+    </p>
+
+    <form id="form1">
+        <table style="width:300px;">
+            <tr>
+                <td style="width:30%;">Ime</td>
+                <td style="width:70%;"><input id="FirstNameTextBox" value="Pera" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Prezime</td>
+                <td><input id="LastNameTextBox" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Komentari</td>
+                <td><textarea rows="5" cols="60" id="CommentsTextBox">Tekst za unos</textarea></td>
+            </tr>           
+            <tr>
+                <td>
+                <select id="sel">
+                    <option value="SU">Subotica</option>
+                    <option value="NS" selected="true">Novi Sad</option>
+                </select></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><input id="SubmitButton" type="button" value="Unesi" /></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>  
+
+    </form>
+</body>
+</html>
+
