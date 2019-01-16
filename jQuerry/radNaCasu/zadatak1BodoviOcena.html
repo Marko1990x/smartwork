@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak1</title>
+    <script src="../Uvod-Cas1-Cas2-do 23 slajda-NSZ/jquery-1.12.4.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#buttona').click(function(){
+                x = $('#value1').val();
+                if (x >= 56 && x<= 64) {
+                    console.log("dobili ste 6"+" "+x);
+                } else  if(x >= 65 && x<= 74){
+                    console.log("dobili ste 7"+" "+x);
+                } else if(x >= 75 && x<= 84){
+                    console.log("dobili ste 8"+" "+x);
+                }else if(x >= 85 && x<= 94){
+                    console.log("dobili ste 9"+" "+x);
+                }else if (x >= 95){
+                    console.log("dobili ste 10"+" "+x);
+                }
+
+             $('#ocena').val("vasa ocena je: " +x);
+
+             // mora ici val na input polje
+            });
+        });
+    </script>
+    
+</head>
+<body>
+
+    <form action="">
+        <label for="">Unesite bodove<input id="value1" type="text"></label>
+        <br>
+        <label for=""> Dugme <input id="buttona" type="button" ></label>
+        <label for=""> ocena <input id="ocena" type="text"></label>
+    </form>
+    
+</body>
+</html>

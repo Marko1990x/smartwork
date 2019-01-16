@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zadatak2</title>
+    <script src="../Uvod-Cas1-Cas2-do 23 slajda-NSZ/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#theblastedbutton').click(function(){
+                firstName = $('#firstname').val();
+                lastName = $('#lastName').val();
+                Email = $('#Email').val();
+                Phone = $('#Phone').val();
+                $('#input1').val(firstName);
+                $('#input2').val(lastName);
+                $('#input3').val(Email);
+                $('#input4').val(Phone);
+           // pogledaj primer sa regex 
+        //     $('#ocena').val("vasa ocena je: " +x);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <form style="border: 2px solid black; width: 500px; padding: 3px" action="">
+        <label style="width: 30px; border: 2px solid red" for="">First Name</label>
+        <label style="width: 30px; border: 2px solid red"for="">Last Name</label>
+        <label style="width: 30px; border: 2px solid red"for="">Email Adress</label>
+        <label style="width: 30px; border: 2px solid red"for="">Contact Number</label>
+        <br>
+        <input id="input1" style="width: 100px; border: 2px solid red">1</input>
+        <input id="input2" style="width: 100px; border: 2px solid red">2</input>
+        <input id="input3" style="width: 100px; border: 2px solid red">3</input>
+        <input id="input4" style="width: 100px; border: 2px solid red">4</input>
+
+        <br>
+        <br>
+        First Name <input id="firstname" type="text"><br>
+        Last Name <input id="lastName" type="text"><br>
+        Email <input id="Email" type="email"><br>
+        Phone <input id="Phone" type="text"><br>
+        the button<input style="width: 100px; margin-top: 5px" id="theblastedbutton" type="submit" >
+    </form>
+    
+</body>
+</html>
