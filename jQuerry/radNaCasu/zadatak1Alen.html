@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JQuery fadeIn-fadeOut animacija</title>
+    <script src="jquery-1.12.4.js"></script>
+<script>
+    
+$(document).ready(function(){
+    $("#forma").click(function(){
+    var ime = $("#ime").val();
+    var prezime = $("#prezime").val();
+    var email = $("#email").val();
+    var kontakt = $("#kontakt").val();
+//    var markup = "<tr>"+"<td>" + ime + "</td>"+"<td>" + prezime + "</td>"+"<td>" + email + "</td>"+"<td>" + kontakt + "</td>+</tr>";
+      $("#tabela").append("<tr>"+"<td>" + ime + "</td>"+"<td>" + prezime + "</td>"+"<td>" + email + "</td>"+"<td>" + kontakt + "</td>+</tr>"); 
+//    $("#tabela").append(markup);
+        return false;
+//        $("#forma").submit(function(e) {
+//    e.preventDefault();
+            
+});
+        });
+    
+//});
+</script>
+<style>
+    table,tr,td{
+        border: 1px solid black;
+    }    
+    
+</style>
+</head>
+<body>
+  <table id="tabela">
+      <tr>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Email Address</td>
+          <td>Contact Number</td>
+      </tr>
+      
+  </table>
+  
+  <h2>Add User</h2>
+  <form action="" id="forma">
+  First Name: <input type="text" id="ime"> <br>
+  Last Name: <input type="text" id="prezime"><br>
+  Email Address <input  type="email" id="email" required><br>
+  Contact Number: <input type="text" id="kontakt"><br>
+  
+  <input type="submit" value="Ass User" id="butt">
+ </form>
+</body>
+</html>
