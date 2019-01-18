@@ -18,5 +18,11 @@ $(document).ready(function () {
    
     });
    });
-   
+
+
+
+   //   <xml vraca tip xml u api kada s e izvuku pdoaci 
+   //  { vraca json}
+//  <!-- vraca doctype
+// postoji json i jsonp api json p vraca sa brojevima poziva funkcija   
    
