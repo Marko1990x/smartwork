@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Praktican deo testa</title>
+  <!--Ubacena jquerry biblioteka sa jquerry sajta-->
+  <script src="zadatak-jq/jquery-1.12.4.js"></script>
+  <!--Ubacen script fajl za kod-->
+  <script src="zadatak-jq/scriptjq.js"></script>
+  <style>
+    .stilForme {
+      background-color: cadetblue;
+      font-family: cursive;
+      font-size: 0.8em;
+    }
+    .sakrij {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<h1>Praktican deo JQUERY</h1>
+<div id="slika"></div>
+<h3>Unesite podatke za rezervaciju</h3>
+  <form>
+     <label id="label1ime" for="ime">Ime</label>
+     <input id="ime" name="ime"> <br>
+      
+     <label id="label2prez" for="prezime">Prezime</label>
+     <input id="prezime" name="prezime"><br>
+     
+     <label for="adresa">Adresa</label>
+     <input id="adresa" name="adresa"><br>
+      
+     <label for="telefon">Telefon</label>
+     <input id="telefon" name="telefon"><br><br>
+
+     <label for="cenaEvri">Aranzman Evri:</label>
+     <input type="text" id="evriUkupno" name="cenaEvri"><br>
+     <label for="kursEvra">Kurs Evra:</label>
+     <input type="text" id="evriKurs" name="kursEvra"><br>
+     <label for="rezultat">Rezultat:</label>
+     <input type="text" id="rezultatEvri" name="rezultat"><br><br>
+      
+     <label for="rezervacija">Rezervacija</label><br>
+     <textarea id="rezervacija" name="rezervacija" cols="50" rows="7"></textarea><br>
+      
+     <input type="button" value="Obrisi">
+     <input type="button" value="Pošalji">
+     <input type="button" id="evriIzracunaj" value="izracunaj-Evre">
+     <input id="sakrij" type="button" value="Sakrij">
+     <input type="button" id="prikazi" value="Sakrij-Prikazi">
+     <input id="kontakt" type="button" value="Kontakt podaci">
+  </form>
+  <div id="kontaktPodaci" class="sakrij"></div>
+</body>
+</html>
