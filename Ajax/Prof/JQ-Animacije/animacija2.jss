@@ -1,0 +1,13 @@
+$(document).ready(function(){
+  $('#showHide').click(function(){
+    $('#logo').animate({
+         height:'toggle'
+    },500);
+  });
+  $('#move').click(function(){
+    $('#logo').animate({
+         opacity:'-=0.3',
+         left:'+=100'
+    },500);
+  });
+});

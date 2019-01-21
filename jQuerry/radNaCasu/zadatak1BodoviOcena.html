@@ -13,18 +13,22 @@
                 x = $('#value1').val();
                 if (x >= 56 && x<= 64) {
                     console.log("dobili ste 6"+" "+x);
+                    $('#ocena').val("Dobili ste 6 sa bodovima: " +x);
                 } else  if(x >= 65 && x<= 74){
                     console.log("dobili ste 7"+" "+x);
+                    $('#ocena').val("Dobili ste 7 sa bodovima: " +x);
                 } else if(x >= 75 && x<= 84){
                     console.log("dobili ste 8"+" "+x);
+                    $('#ocena').val("Dobili ste 8 sa bodovima: " +x);
                 }else if(x >= 85 && x<= 94){
                     console.log("dobili ste 9"+" "+x);
+                    $('#ocena').val("Dobili ste 9 sa bodovima: " +x);
                 }else if (x >= 95){
                     console.log("dobili ste 10"+" "+x);
+                    $('#ocena').val("Dobili ste 10 sa bodovima: " +x);
+                }else{
+                    $('#ocena').val("Niste postigli dovoljan broj bodova: " +x);
                 }
-
-             $('#ocena').val("vasa ocena je: " +x);
-
              // mora ici val na input polje
             });
         });

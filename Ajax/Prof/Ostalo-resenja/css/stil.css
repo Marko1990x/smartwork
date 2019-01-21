@@ -1,0 +1,46 @@
+body{ 
+  box-sizing: border-box;
+  background-color: #D8F781;
+}
+
+h1 {
+  font-family: cursive;
+  text-align: center;
+  text-decoration: underline;
+  border-bottom: thick double #ff0000;
+}
+
+ul {
+  width: 100%;
+  text-align: center;
+ 
+}
+
+ul > li {
+  width: 100px;
+  background-color: aqua;
+  border: solid 1px red;
+  /*float: left;*/
+  list-style-type: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+ul > li:hover{
+   cursor:pointer;
+   background-color: coral;
+   box-shadow: 5px 5px 5px black;
+}
+
+#omotac {
+  border:2px solid green;
+}
+
+#element {
+  border:2px solid red;
+}
+
+.unutrasnji {
+  border:2px solid blue;
+}
+
