@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 1 Marko</title>
+    <script src="angular/angular.js"></script>
+    <script src="angular/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="myApp">
+
+    <div class="prvi"  ng-controller="myCtrl">
+            <p1 style="color: red">this is my name: {{mojeIme}}</p1> <br>
+            <p1 style="color: red">this is my Last name: {{mojePrezime}}</p1> <br>
+            <p1 style="color: red">this is my BirthPlace: {{mestoRodjenja}}</p1> <br>
+
+            <p>this is the pciture + name</p>
+            <p>{{zanimacija1}}</p>
+            <p>The property "carname" was made in the controller, and can be referred to in the view by using the {{ }} brackets.</p>
+
+            <div ng-repeat="x in slika">
+                <p>{{x.naziv}}</p>
+                <img ng-src="{{x.img}}"> <!--ovo sada radi kako treba-->
+            </div>
+    </div>
+
+  
+    <div class="prvi" ng-controller="cont2">
+            <p>click the button to fill the form</p>
+            <button ng-click="fill()">Fill the form in console</button>
+    </div>
+    
+
+    
+    
+</body>
+</html>
