@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,50 @@
     <script src="angular/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body ng-app="myApp">
 
-    <div class="prvi"  ng-controller="myCtrl">
-            <p1 style="color: red">this is my name: {{mojeIme}}</p1> <br>
-            <p1 style="color: red">this is my Last name: {{mojePrezime}}</p1> <br>
-            <p1 style="color: red">this is my BirthPlace: {{mestoRodjenja}}</p1> <br>
+    <div class="prvi" ng-controller="controller1">
+        <p1 style="color: red">this is my name: {{mojeIme}}</p1> <br>
+        <p1 style="color: red">this is my Last name: {{mojePrezime}}</p1> <br>
+        <p1 style="color: red">this is my BirthPlace: {{mestoRodjenja}}</p1> <br>
 
-            <p>this is the pciture + name</p>
-            <p>{{zanimacija1}}</p>
-            <p>The property "carname" was made in the controller, and can be referred to in the view by using the {{ }} brackets.</p>
+        <p>this is the pciture + name</p>
+        <p>{{zanimacija1}}</p>
+        <p>The property "carname" was made in the controller, and can be referred to in the view by using the {{ }}
+            brackets.</p>
 
-            <div ng-repeat="x in slika">
-                <p>{{x.naziv}}</p>
-                <img ng-src="{{x.img}}"> <!--ovo sada radi kako treba-->
-            </div>
+        <div ng-repeat="x in slika">
+            <p>{{x.naziv}}</p>
+            <img ng-src="{{x.img}}">
+            <!--ovo sada radi kako treba-->
+        </div>
+
+        <p ng-click="count = count + 1">Broj je: {{count}} povecava po 1</p>
+        <p ng-click="count = count + 5">Broj je: {{count}} povecava po 5</p>
+
+        <p ng-dblclick="increment()">Broj je {{count}} povecava na double klick</p>
+        <form action="#">
+            <input type="text" ng-model="mojeIme">
+            <input type="text" ng-model="mojePrezime">
+            <input type="text" ng-model="godiste">
+            <input type="text" ng-model="email">
+
+            <a ng-click="submit();">Submit</a>
+            <br>
+            <p>{{mojeIme}}</p>
+            <p>{{mojePrezime}}</p>
+            <p>{{godiste}}</p>
+            <p>{{email}}</p>
+        </form>
+
+
     </div>
 
-  
-    <div class="prvi" ng-controller="cont2">
-            <p>click the button to fill the form</p>
-            <button ng-click="fill()">Fill the form in console</button>
-    </div>
-    
 
-    
-    
+
+
+
 </body>
+
 </html>

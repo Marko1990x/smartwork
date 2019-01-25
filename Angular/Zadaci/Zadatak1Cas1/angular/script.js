@@ -1,8 +1,6 @@
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function ($scope) {
-    $scope.mojeIme = "Marko";
-    $scope.mojePrezime = "Dunovic";
-    $scope.mestoRodjenja = "Novisad";
+app.controller('controller1', function ($scope) {
+    
     $scope.slika = [{
             img: "https://img-9gag-fun.9cache.com/photo/aM23KQV_460s_v1.jpg",
             naziv: "slika 1"
@@ -17,16 +15,32 @@ app.controller('myCtrl', function ($scope) {
         }
 
     ];
-});
-app.controller('cont2', function ($scope) {
 
-    $scope.myFunc = function () {
-        $scope.ime2 = "pera";
-        $scope.prezime = "peric";
-        $scope.godine = "1980 godiste";
-        $scope.email = "pera@peric.com";
-    };
+    $scope.mojeIme = "Marko";
+    $scope.mojePrezime = "Dunovic";
+    $scope.mestoRodjenja = "Novisad";
+    $scope.godiste = 28;
+    $scope.email = "marko_Dunovic@hotmail.com"
+
+    $scope.name = 'world';
+    $scope.count = 10;
+
+    $scope.increment = () => {
+        $scope.count++;
+    }
+
+    $scope.submit = () =>{
+        const userObj = {
+            name: $scope.mojeIme,
+            lastName: $scope.mojePrezime,
+            age: $scope.godiste,
+            email: $scope.email
+        }
+        console.log('userObj');
+        console.log(userObj);
+    }
 });
+
 
 //var app2 = angular.module('myApp2',[]);
 // greska je bila zbog app2 :(
