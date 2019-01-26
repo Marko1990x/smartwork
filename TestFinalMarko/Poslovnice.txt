@@ -1,0 +1,16 @@
+Prva poslovnica
+grad – Novi Sad – String vrednost
+adresa – Bulevar Oslobodenja 5 - String vrednost
+telefon – 021-333-444 - String vrednost
+
+Druga poslovnica
+grad – Beograd - String vrednost
+adresa – Terazije 25 - String vrednost
+telefon – 011-1333-234 - String vrednost
+
+Treca poslovnica 
+grad – Niš - String vrednost
+adresa – Konstantina Velikog 45 - String vrednost
+telefon – 018-22-555 - String vrednost
+
+"Adresa poslovnice Novi Sad nalazi se na adresi Bulevar Oslobodenja 5 .Kontakt telefon 021-333-444”

@@ -1,0 +1,7 @@
+<a href='#'><img src='img/grcka.jpg' alt='Aranžmani Grcka'></a>
+<a href='#'><img src='img/turska.jpg' alt='Aranžmani Turska'></a>
+<a href='#'><img src='img/spanija.jpg' alt='Aranžmani Španija'></a>
+
+<p>Aranžmani Grcka 2017</p><p>Više informacija o aranžmanima  ... </p>
+<p>Aranžmani Turska 2017</p><p>Više informacija o aranžmanima  ... </p>
+<p>Aranžmani Španija 2017</p><p>Više informacija o aranžmanima  ... </p>
