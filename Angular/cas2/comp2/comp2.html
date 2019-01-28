@@ -1,0 +1,19 @@
+<div class="prvi">
+        <p ng-click="count = count + 1">Broj je: {{count}} povecava po 1</p>
+        <p ng-click="count = count + 5">Broj je: {{count}} povecava po 5</p>
+        
+        <p ng-dblclick="increment()">Broj je {{count}} povecava na double klick</p>
+        <form action="#">
+            <input type="text" ng-model="mojeIme">
+            <input type="text" ng-model="mojePrezime">
+            <input type="text" ng-model="godiste">
+            <input type="text" ng-model="email">
+        
+            <a ng-click="submit();">Submit</a>
+            <br>
+            <p>{{mojeIme}}</p>
+            <p>{{mojePrezime}}</p>
+            <p>{{godiste}}</p>
+            <p>{{email}}</p>
+        </form>
+</div>
