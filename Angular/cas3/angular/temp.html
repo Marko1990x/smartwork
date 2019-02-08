@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        change: <input type="text" ng-model="$crtl.naslov.name">
+
+        <span>Name: {{$ctrl.naslov.name}}</span>
+        <form>
+            <input type="text" ng-model="$ctrl.ja.ime"> <br />
+            <input type="text" ng-model="$ctrl.ja.prezime"> <br />
+            <input type="text" ng-model="$ctrl.ja.godina"> <br />
+            <input type="text" ng-model="$ctrl.ja.email"> <br />
+            <a ng-click="$ctrl.send()">Send</a>
+        </form>
+    
+</body>
+</html>

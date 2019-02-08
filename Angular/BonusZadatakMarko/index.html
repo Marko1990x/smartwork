@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 1 Marko</title>
+    <script src="angular/angular.js"></script>
+    <script src="angular/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="myApp">
+
+    <div class="prvi" ng-controller="controllerTwo">
+        my name is: {{myname}} + {{lastname}};
+
+        <div ng-repeat="x in Zemlje">
+            <p>{{x.naziv}}</p>
+            <ul>{{x.subnaziv1}}</ul>
+            <ul>{{x.subnaziv2}}</ul>
+            <ul>{{x.subnaziv3}}</ul>
+            <!--ovo sada radi kako treba-->
+        </div>
+
+        <div class="tablePart">
+            <form action="#">
+                <label for="name"><input id="name" type="text" ng-model="imeONE"></label>
+                <label for="prezime"><input id="prezime" type="text" ng-model="lastONE"></label>
+                <label for="Pol"><input id="Pol" type="text" ng-model="polONE"></label><br><br>
+
+                Ime: {{imeONE}} <br>
+                prezime: {{lastONE}} <br>
+                Pol: {{polONE}} <br>
+
+            </form>
+        </div>
+
+        <div class="tablePart">
+            <!-- dodaj ovo kasnije kuci-->
+            <!--Pogledaj Direktive za angular kada dojes kuci-->
+        </div>
+
+        <div class="tablePart">
+                <table>
+                        <thead>
+                            <th>
+                                <tr>
+                                    <td>Ime</td>
+                                    <td>Volim</td>
+                                    <td>Ne Volem</td>
+                                    <td>Volim / Ne Volem</td>
+                                </tr>
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>C#</td>
+                                <td>{{count}}</td>
+                                <td>{{count1}}</td>
+                                <td><input ng-click="count = count + 1" type="button" value="VOLEM">
+                                    <input ng-click="count1 = count1 - 1" type="button" value="NEVOLEM"></td>
+            
+                            </tr>
+                            <tr>
+                                <td>ASP.NET</td>
+                                <td>{{count2}}</td>
+                                <td>{{count3}}</td>
+                                <td><input ng-click="count2 = count2 + 1" type="button" value="VOLEM">
+                                    <input ng-click="count3 = count3- 1" type="button" value="NEVOLEM"></td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td>{{count4}}</td>
+                                <td>{{count5}}</td>
+                                <td><input ng-click="count4 = count4 + 1" type="button" value="VOLEM">
+                                    <input ng-click="count5 = count5 - 1" type="button" value="NEVOLEM"></td>
+                            </tr>
+                            <tr>
+                                <td>ANGULAR</td>
+                                <td>{{count6}}</td>
+                                <td>{{count7}}</td>
+                                <td><input ng-click="count6 = count6 + 1" type="button" value="VOLEM">
+                                    <input ng-click="count7 = count7 - 1" type="button" value="NEVOLEM"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+        </div>
+        
+    </div>
+    <div class="prvi" ng-controller="controller1">
+        <p1 style="color: red">this is my name: {{mojeIme}}</p1> <br>
+        <p1 style="color: red">this is my Last name: {{mojePrezime}}</p1> <br>
+        <p1 style="color: red">this is my BirthPlace: {{mestoRodjenja}}</p1> <br>
+
+        <p>this is the pciture + name</p>
+        <p>{{zanimacija1}}</p>
+        <p>The property "carname" was made in the controller, and can be referred to in the view by using the {{ }}
+            brackets.</p>
+
+        <div ng-repeat="x in slika">
+            <p>{{x.naziv}}</p>
+            <img ng-src="{{x.img}}">
+            <!--ovo sada radi kako treba-->
+        </div>
+
+        <p ng-click="count = count + 1">Broj je: {{count}} povecava po 1</p>
+        <p ng-click="count = count + 5">Broj je: {{count}} povecava po 5</p>
+
+        <p ng-dblclick="increment()">Broj je {{count}} povecava na double klick</p>
+        <form action="#">
+            <input type="text" ng-model="mojeIme">
+            <input type="text" ng-model="mojePrezime">
+            <input type="text" ng-model="godiste">
+            <input type="text" ng-model="email">
+
+            <a ng-click="submit();">Submit</a>
+            <br>
+            <p>{{mojeIme}}</p>
+            <p>{{mojePrezime}}</p>
+            <p>{{godiste}}</p>
+            <p>{{email}}</p>
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

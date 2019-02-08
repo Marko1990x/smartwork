@@ -1,0 +1,9 @@
+<div ng-controller="HomeController">
+    <h2>{{title}}</h2>
+    <ul>
+        <li ng-repeat="x in homes">
+            <a href="#!homes/{{x.id}}">Izaberite da vidite ID kuce</a>
+            <p>{{ x.snippet }}</p>
+        </li>
+    </ul>
+</div>

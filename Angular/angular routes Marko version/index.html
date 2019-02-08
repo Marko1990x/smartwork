@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularJSKurs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS ROUTING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <ul>
+        <li>
+        <a href="#!home">Home</a>
+        </li>
+        <li>
+        <a href="#!phones">Telefoni</a>  <!--zasto ovako-->
+        </li>
+    </ul>
+
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+    <script src="home/home.controller.js"></script>
+    <script src="phone/phone.controller.js"></script>
+    <script src="phoneDetails/phone-details.js"></script>
+    <script src="homedetails/home.details.js"></script>
+</body>
+</html>

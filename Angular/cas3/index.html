@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 1 Marko</title>
+    <script src="angular/angular.js"></script>
+    <!-- <script src="angular/script.js"></script>
+    <script src="angular/app.js"></script> -->
+    <script src="angular/angInicialization.js"></script>
+    <script src="angular/newAngular.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="zadatak1">
+
+
+    <div ng-controller="KursCtrl as ctrl">
+        Naslov: {{ctrl.naslov}}
+        <ctrl-two naslov="ctrl.naslov" ja="ctrl.ja" on-send="ctrl.send()"></ctrl-two>
+    </div>
+    
+
+   
+</body>
+
+</html>
