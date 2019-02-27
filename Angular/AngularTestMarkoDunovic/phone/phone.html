@@ -1,0 +1,32 @@
+<div ng-controller='PhoneController'>
+    <h2>{{title}}</h2>
+
+    <div>
+        <p>The blasted api button console logs and sorts value by "naziv"</p> <button ng-click="getRequest()">Test Rest</button>
+    </div>
+    <div>
+            {{ response.data.galerija | orderBy : "naziv"}}  <!--zanimacija je sortirana po nazivu-->
+    </div>
+    <div>
+            <div ng-repeat="slike in galerija | orderBy: '+naziv'">
+                  <div>
+                    <div>
+                      {{slike.naziv}}
+                    </div>
+                    <div class="colorDiv">
+                      <img ng-src="{{slike.slika}}" class="card-img-top">
+                    </div>
+                    <div>
+                      ID: {{slike.id}}
+                    </div>
+                  </div>
+                </div>
+            </div>
+    <ul>
+        <li ng-repeat="phone in phones" class="secondRepeater">
+            <a href="#!phones/{{phone.id}}">ID Slike</a>
+            <p>{{ phone.snippet }}</p>
+            <p>{{phone.img}}</p>
+        </li>
+    </ul>
+</div>

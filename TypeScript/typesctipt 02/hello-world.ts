@@ -17,8 +17,8 @@ let fn_2 = function () {
 
 
 /**
- * 
- * @param a broj 1 
+ *
+ * @param a broj 1
  * @param b broj 2
  * @param c broj 3
  * @param d broj 4
@@ -30,10 +30,10 @@ const cetiri = (a: number, b: number, c: number = 0, d: number = 0): number => {
 class Person {
     firstName: string;
     lastName: string;
-    constructor(){}
+    constructor() {}
 
 }
 const aPerson = new Person();
-aPerson.firstName = "Pera";
-console.log("aPerson.firstName");
+aPerson.firstName = 'Pera';
+console.log('aPerson.firstName');
 console.log(aPerson.firstName);
