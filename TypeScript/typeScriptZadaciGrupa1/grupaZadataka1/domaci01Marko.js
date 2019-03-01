@@ -80,4 +80,3 @@ console.log('----------------pocetak-Zadataka-5--------------- \n');
 var extendovanaKlasa = new NovaHrana(['this is my new food 1', 'this is my new food 2', 'this is my new food 3'], 69);
 console.log(extendovanaKlasa);
 console.log('----------------kraj-Zadataka-5--------------- \n');
-//# sourceMappingURL=domaci01Marko.js.map

@@ -1,0 +1,19 @@
+{
+  "name": "typescriptzadacigrupa1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "gulp-typescript": "^5.0.0"
+  }
+}
