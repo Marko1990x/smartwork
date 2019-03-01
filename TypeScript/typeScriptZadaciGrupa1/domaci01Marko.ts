@@ -1,3 +1,4 @@
+//#region    // prvih pet zadataka
 // zadatak 1
 // tslint:disable: no-inferrable-types
 let string1: string = 'This is my stringy';
@@ -50,7 +51,6 @@ class NovaHrana extends Hrana {
 }
 
 
-
 // pozivi funkcija
 console.log(test(string1, broj1, boolean));   // sa boolean = true
 console.log(test(string1, broj1, boolean2)); // false
@@ -72,4 +72,7 @@ console.log('----------------pocetak-Zadataka-5--------------- \n');
 const extendovanaKlasa = new NovaHrana(['this is my new food 1', 'this is my new food 2', 'this is my new food 3'], 69);
 console.log(extendovanaKlasa);
 console.log('----------------kraj-Zadataka-5--------------- \n');
+//#endregion
+//#region 
 
+//#endregion
