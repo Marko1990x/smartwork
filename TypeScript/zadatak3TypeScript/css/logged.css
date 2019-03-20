@@ -1,0 +1,91 @@
+/*
+<div id="wrapperX">
+        <div id="wrapper2">
+         <p id="first">Show All</p>
+         <p id="second">Add More</p>
+        </div>
+        <div id="wrapper3">
+            <form>
+                <input type="text" id="First" placeholder="Enter Title">
+                <select>
+                    <option value="Vehicles">Vehicles</option>
+                    <option value="SAB">SuperAdventureBox</option>
+                    <option value="RockAndRoll">RockAndRoll</option>
+                    <option value="Music" selected>Music</option>
+                  </select>
+                <input type="text" placeholder="Enter Price">
+                <button>Add</button>
+                <button>Clear</button>
+            </form>
+        </div>
+    </div>
+
+
+     <button id="buttonAdd" class="button firstButton">Add</button>
+                <button id="buttonClear" class="button secondButton">Clear</button>
+*/
+#wrapperX {
+  min-height: 600px;
+  background-color: lightgreen;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+#wrapperX #wrapper2 {
+  min-height: 50px;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  text-align: right;
+}
+#wrapperX #wrapper2 #first, #wrapperX #wrapper2 #second {
+  padding: 10px 0px 10px 0px;
+  width: 100px;
+  background-color: lightgreen;
+  display: inline-block;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  text-align: center;
+  color: whitesmoke;
+}
+#wrapperX #wrapper3 {
+  width: 50%;
+  margin: 0% auto;
+  min-height: 200px;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#wrapperX #wrapper3 input, #wrapperX #wrapper3 select {
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 30px;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+}
+#wrapperX #wrapper3 #First {
+  margin-top: 5px;
+}
+#wrapperX #wrapper3 .button {
+  background-color: lightgreen;
+  width: 30%;
+  text-align: center;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 30px;
+}
+#wrapperX #wrapper3 .firstButton {
+  margin-left: 30%;
+}
+#wrapperX #wrapper3 #backButton {
+  color: red;
+  width: 50px;
+  margin-left: 5%;
+  margin-bottom: -15px;
+}
+
+/*# sourceMappingURL=logged.css.map */

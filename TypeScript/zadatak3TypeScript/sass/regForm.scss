@@ -1,0 +1,43 @@
+// <div id="wrapper1">
+// <div id="wrapper2">
+//     <form action="#">
+//         <input class="sortThis" type="text" placeholder="Enter Username" value="Enter Username">
+//         <input class="sortThis" type="text" placeholder="Enter Password" value="Enter Password">
+//         <input class="sortThis" type="text" placeholder="Confirm Password" value="Confirm password">
+//         <button id="regButton">Register</button>
+//     </form>
+// </div>
+// </div>
+
+#wrapper1{
+    background-color: lightgreen;
+    height: 600px;
+}
+#wrapper2{
+    width: 50%;
+    margin: 0% auto;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+    transform: translate(+0px, +50%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .sortThis{
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 90%;
+        box-shadow: 2px 2px lightseagreen;
+        margin-bottom: 10px;
+    }
+    #regButton{
+        margin-top: 5px;
+        height: 40px;
+        width: 90%;
+        border: 1px solid lightgreen;
+        background-color: lightgreen;
+        border-radius: 5px;
+
+    }
+}

@@ -1,0 +1,36 @@
+#wrapper{
+    min-height: 600px;
+    background-color: grey;
+
+}
+
+#wrapper2{
+    width: 50%;
+    margin: 0% auto;
+    text-align: center;
+    position: relative;
+    transform: translate(+0px,+280%);
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    #first{
+       // background-color: lightblue;
+        height: 30px;
+        color: red
+    }
+    #second{
+        color: aqua;
+        padding-bottom: 15px;
+        button{
+            color: red;
+            width: 70px;
+            height: 30px;
+            border-radius: 3px;
+        }
+        #backLoginButton{
+            margin-left: 10px;
+        }
+    }
+
+
+}

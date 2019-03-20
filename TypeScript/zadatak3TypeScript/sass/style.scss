@@ -1,0 +1,38 @@
+#wrapper1{
+    background-color: green;
+    min-height: 600px;
+}
+
+#wrapper2{
+    background-color: whitesmoke;
+    width: 50%;
+    min-height: 350px;
+    margin: 0% auto;
+    position: relative;
+    transform: translate(+0,+100px);
+    border-radius: 10px;
+    .inp1{
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin-top: 2em;
+
+    }
+
+    #loginButton{
+        position: relative;
+        width: 70%;
+        margin-left: 100px;
+        margin-top: 30px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: lightgreen;
+
+    }
+
+    #text{
+        text-align: center;
+        font-size: 20px;
+    }
+}
