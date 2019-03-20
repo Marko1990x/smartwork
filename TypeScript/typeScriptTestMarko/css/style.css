@@ -1,0 +1,25 @@
+#wrapper {
+  background-color: lightgreen;
+  min-height: 100px;
+  width: 50%;
+  margin: 0% auto;
+}
+#wrapper #menu {
+  display: inline-block;
+  margin-left: 15%;
+  margin-top: 35px;
+}
+#wrapper #menu button {
+  height: 30px;
+  width: 70px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#wrapper #menu input {
+  width: 80%;
+  margin-bottom: 5px;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
