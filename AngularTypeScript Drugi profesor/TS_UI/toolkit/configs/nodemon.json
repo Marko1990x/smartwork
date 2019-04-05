@@ -1,0 +1,8 @@
+{
+    "script": "../server/main.js",
+    "ext": "js html json",
+    "watch": ["../server/**/*", "./**/*"],
+    "env": {
+        "NODE_ENV": "development"
+    }
+}

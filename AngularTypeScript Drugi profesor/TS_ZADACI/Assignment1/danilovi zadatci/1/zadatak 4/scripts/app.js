@@ -1,0 +1,27 @@
+"use strict";
+var Menu = (function () {
+    function Menu(myInterface) {
+        this.meals = myInterface.meals;
+        this.pages = myInterface.pages;
+    }
+    Menu.prototype.list = function () {
+        console.log.apply(console, this.meals);
+    };
+    Menu.prototype.custList = function () {
+        var customize = '';
+        for (var i in this.meals) {
+            customize += 'Meal: ' + this.meals[i] + '\n';
+        }
+        console.log(customize);
+    };
+    return Menu;
+}());
+var broj_strana = 1;
+var nas_meni = new Menu({ meals: ['jelo_1', 'jelo_2', 'jelo_3'], pages: broj_strana });
+console.log('Requested List _:');
+nas_meni.list();
+console.log('====================');
+console.log('Customizable List _:');
+nas_meni.custList();
+console.log('====================');
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vYXBwL2FwcC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBSUE7SUFHSSxjQUFZLFdBQTBCO1FBQ2xDLElBQUksQ0FBQyxLQUFLLEdBQUcsV0FBVyxDQUFDLEtBQUssQ0FBQztRQUMvQixJQUFJLENBQUMsS0FBSyxHQUFHLFdBQVcsQ0FBQyxLQUFLLENBQUM7SUFDbkMsQ0FBQztJQUNELG1CQUFJLEdBQUo7UUFDSSxPQUFPLENBQUMsR0FBRyxPQUFYLE9BQU8sRUFBUSxJQUFJLENBQUMsS0FBSyxFQUFFO0lBQy9CLENBQUM7SUFDRCx1QkFBUSxHQUFSO1FBQ0ksSUFBSSxTQUFTLEdBQVcsRUFBRSxDQUFDO1FBQzNCLEdBQUcsQ0FBQyxDQUFDLElBQUksQ0FBQyxJQUFJLElBQUksQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDO1lBQ3ZCLFNBQVMsSUFBSSxRQUFRLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUM7UUFDakQsQ0FBQztRQUNELE9BQU8sQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLENBQUM7SUFDM0IsQ0FBQztJQUNMLFdBQUM7QUFBRCxDQUFDLEFBakJELElBaUJDO0FBRUQsSUFBTSxXQUFXLEdBQVcsQ0FBQyxDQUFDO0FBQzlCLElBQU0sUUFBUSxHQUFHLElBQUksSUFBSSxDQUFDLEVBQUUsS0FBSyxFQUFFLENBQUMsUUFBUSxFQUFFLFFBQVEsRUFBRSxRQUFRLENBQUMsRUFBRSxLQUFLLEVBQUUsV0FBVyxFQUFFLENBQUMsQ0FBQTtBQUV4RixPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDLENBQUM7QUFDakMsUUFBUSxDQUFDLElBQUksRUFBRSxDQUFDO0FBQ2hCLE9BQU8sQ0FBQyxHQUFHLENBQUMsc0JBQXNCLENBQUMsQ0FBQztBQUNwQyxPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFzQixDQUFDLENBQUM7QUFDcEMsUUFBUSxDQUFDLFFBQVEsRUFBRSxDQUFDO0FBQ3BCLE9BQU8sQ0FBQyxHQUFHLENBQUMsc0JBQXNCLENBQUMsQ0FBQyJ9

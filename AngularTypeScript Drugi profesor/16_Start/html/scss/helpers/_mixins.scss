@@ -1,0 +1,23 @@
+/*---------- sprite
+------------------------------------------------------------------------------*/
+@mixin sprite($sprite) {
+    background: sprite-url($icons) no-repeat sprite-position($icons, $sprite);
+    height: image-height(sprite-file($icons, $sprite));
+    width: image-width(sprite-file($icons, $sprite));
+}
+
+/*---------- breakpoints
+------------------------------------------------------------------------------*/
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == "phone" {
+        @media only screen and (min-width: 50px) and (max-width: 630px) {
+            @content;
+        }
+    }
+    
+    @else if $breakpoint == "tablet" {
+        @media only screen and (min-width: 631px) and (max-width: 896px) {
+            @content;
+        }
+    }
+}

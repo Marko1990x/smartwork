@@ -1,0 +1,73 @@
+h1 {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding: 41px 0 25px 0;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 16px; 
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 13px 0 21px 0;
+    max-width: 466px;
+    margin: 0 auto 3px auto;
+}
+
+p {
+    font-weight: 300;
+    font-size: 13.5px;
+    line-height: 30px;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 900;
+}
+.border-bot {
+    margin: 18px auto 24px auto;
+    width: 63px;
+    height: 1px;
+    background-color: $black;
+    position: relative;
+    &:after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: $white;
+        border: 1px solid $black;
+        position: absolute;
+        top: -5px;
+        left: 26px;
+        @include border-radius(50%);
+    }
+}

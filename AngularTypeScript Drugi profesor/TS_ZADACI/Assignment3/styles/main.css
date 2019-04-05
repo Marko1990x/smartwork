@@ -1,0 +1,30 @@
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+	border-spacing: 0;
+}
+table>thead>tr>th, table>tbody>tr>td {
+    padding: 5px;
+    text-align: center;
+}
+table thead tr {
+    border-bottom: 1px solid black;
+    background-color: lightblue;
+}
+#display table>tbody tr {
+    cursor: pointer;
+    transition-duration: .4s;
+}
+#display table>tbody tr:hover {
+    background-color: aquamarine;
+}
+#display table {
+    margin: 50px auto;
+    transform: scale(1.5);
+    user-select: none;
+}

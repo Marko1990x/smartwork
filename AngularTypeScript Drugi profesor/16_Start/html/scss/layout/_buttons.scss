@@ -1,0 +1,89 @@
+//.btn {
+//    font-size: 13px;
+//    font-weight: 700;
+//    line-height: 40px;
+//    padding: 13px 20px;
+//    color: $white;
+//    text-transform: uppercase;
+//    white-space: nowrap;
+//    background: $gold;
+//    cursor: pointer;
+//    letter-spacing: 1px;
+//    outline: none;
+//    @include transition(all $mediumDuration ease-out);
+//    border-bottom: 4px solid $yellow;
+//
+//    &:hover {
+//        background-color: $yellow;
+//        border-bottom: 4px solid $gold;
+//    }
+//}
+
+.button-wrapper {
+    max-width: 210px;
+    margin: 0 auto;
+    clear: both;
+
+    .button {
+        font-size: 14px;
+        display: block;
+        padding: 16px 0;
+        border: 2px solid;
+        background: none;
+        color: $black; 
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        -webkit-backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .button:focus {
+        outline: none;
+    }
+    .button > span {
+        vertical-align: middle;
+    }
+
+    .button--wayra {
+        overflow: hidden;
+        -webkit-transition: border-color 0.3s, color 0.3s;
+        transition: border-color 0.3s, color 0.3s;
+        -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+    .button--wayra::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        height: 100%;
+        background: $gold;
+        z-index: -1;
+        -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+        transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+        transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+    }
+    .button--wayra:hover {
+        color: $black;
+    }
+    .button--wayra.button--inverted:hover {
+        color: $black;
+    }
+    .button--wayra:hover::before {
+        opacity: 1;
+        background-color: $gray;
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+    .button--wayra.button--inverted:hover::before {
+        background-color: $gold;
+    }
+}

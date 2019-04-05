@@ -1,0 +1,18 @@
+{
+  "name": "z1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/systemjs": "^0.20.6",
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "systemjs": "^0.21.0"
+  }
+}

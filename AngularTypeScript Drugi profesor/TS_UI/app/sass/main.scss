@@ -1,0 +1,129 @@
+@import 'reset';
+$color-theme0: white;
+$color-theme1: green;
+$color-theme2: grey;
+$color-theme3: lightgrey;
+*,
+html,
+body {
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $color-theme1;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: $color-theme3;
+    input,
+    select {
+        box-sizing: border-box;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        border: 0;
+        margin: 10px 0;
+    }
+    #btnLogin,
+    #btnRegister {
+        width: 100%;
+        float: none;
+    }
+    #btnAdd {
+        margin-right: 10px;
+    }
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: $color-theme1;
+        color: $color-theme0;
+        font-weight: bold;
+        float: right;
+        width: 100px;
+        border-radius: 5px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    p {
+        width: 80%;
+        margin: 10px auto;
+        font-size: 12px;
+        color: $color-theme2;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    a {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: $color-theme2;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.itemHeading {
+    background-color: $color-theme0;
+    overflow: hidden;
+    padding: 5px;
+    button {
+        background-color: $color-theme1;
+        color: $color-theme0;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        float: right;
+        text-transform: uppercase;
+    }
+}
+
+#allAids {
+    width: 90%;
+    margin: 0 auto;
+    .aidItem {
+        width: 100%;
+        background-color: $color-theme0;
+        border-radius: 10px;
+        margin: 10px auto;
+        overflow: hidden;
+        padding: 10px;
+        img {
+            width: 150px;
+            height: 150px;
+            float: left;
+        }
+        p {
+            float: right;
+            width: calc(100% - 160px);
+            text-align: center;
+            line-height: 24px;
+            font-size: 18px;
+        }
+        b {
+            font-weight: bold;
+        }
+    }
+}
+#currentUser {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 7px;
+}

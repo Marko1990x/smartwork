@@ -1,0 +1,52 @@
+@import 'init/imports';
+nav {
+    float: left;
+    ul {
+        list-style-type: none;
+        padding: 10px;
+        background-color: darkcyan;
+        li {
+            transition-duration: .4s;
+            background-color: aquamarine;
+            border: 1px solid black;
+            margin: 2.5px;
+            text-align: center;
+            display: block;
+            user-select: none;
+            padding: 10px;
+            font-size: 18px;
+            &:hover {
+                background-color: lightseagreen;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+table {
+    float: right;
+    margin: 20px;
+    th,
+    td {
+        transition-duration: .4s;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+        cursor: none;
+    }
+    th {
+        background-color: grey;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        &:hover {
+            color: yellow;
+        }
+    }
+    td {
+        &:hover {
+            background-color: lightcoral;
+        }
+    }
+}
